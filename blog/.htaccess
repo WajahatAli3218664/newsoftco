@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Ignore real files and directories
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite all /blog/* requests to /blog/index.html
+RewriteRule ^ index.html [L]

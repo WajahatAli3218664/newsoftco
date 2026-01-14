@@ -1,0 +1,887 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="h7hfse3JFti_sMxNo5NyeBNdppsT_IoYYuhI9tWNWlU" />
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+   
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="../assets/img/logo-icon.png" type="image/x-icon">
+
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../assets/css/magnific-popup.css" rel="stylesheet">
+    <link href="../assets/css/flaticon-set.css" rel="stylesheet">
+    <link href="../assets/css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="../assets/css/animate.min.css" rel="stylesheet">
+    <link href="../assets/css/validnavs.css" rel="stylesheet">
+    <link href="../assets/css/helper.css" rel="stylesheet">
+    <link href="../assets/css/unit-test.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="../assets/css/blogOnly.css" rel="stylesheet">
+    
+    <title></title>
+    
+
+ <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9WE78333PK"></script>
+<script>  window.dataLayer = window.dataLayer || [];  function gtag(){dataLayer.push(arguments);}  gtag('js', new Date());  gtag('config', 'G-9WE78333PK');
+</script>
+</head>
+
+<style>
+.custom-title {
+    margin-top:20px;
+  font-size: 3vw;
+  font-weight: bold;
+  color: #1a1a1a;
+  line-height: 1.3; 
+  display: inline-block;
+}
+
+  .blog-content {
+    /*color: #F6EFE8;*/
+    color: #1a1a1a;
+    font-size: 1rem;
+    line-height: 1.625;
+  }
+
+  @media (min-width: 768px) {
+    .blog-content {
+      font-size: 1.125rem; 
+    }
+  }
+
+  .blog-content p {
+    margin-bottom: 1rem;
+  }
+
+  .blog-content h1 {
+    line-height: 1.25;
+  }
+
+  .blog-content h2 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .blog-content h3 {
+    font-size: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .blog-content ul {
+    list-style-type: disc !important;
+    margin-left: 1.25rem;
+    margin-bottom: 1rem;
+    display: block !important;
+  }
+
+  .blog-content ol {
+    list-style-type: decimal !important;
+    margin-left: 1.25rem;
+    margin-bottom: 1rem;
+    display: block !important;
+  }
+
+  .blog-content li {
+    margin-bottom: 0.25rem;
+     display: list-item !important;
+  }
+
+
+  .blog-content table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .blog-content td,
+  .blog-content th {
+    border: 1px solid black;
+    padding: 0.5rem 1rem;
+  }
+
+  .blog-content th {
+    text-align: left;
+  }
+.blog-content ul,
+.blog-content ol {
+  list-style-position: outside !important;
+}
+
+ 
+
+</style>
+
+
+
+<script>
+(function () {
+      emailjs.init("PlyYRnFVHyUpSTd3e"); 
+    })();
+
+      document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+  });
+
+//   if (window.location.href.endsWith("index.html")) {
+//     const cleanUrl = window.location.href.replace("index.html", "");
+//     window.history.replaceState(null, "", cleanUrl);
+//   }
+</script> 
+
+<style>
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f0f0f0;
+        border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+</style>
+
+<body>
+
+  
+    <header>
+        <nav class="navbar mobile-sidenav navbar-sticky navbar-default validnavs navbar-fixed no-background">
+
+
+            <div class="container d-flex justify-content-between align-items-center">
+
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="/">
+                        <img src="../assets/img/logo.png" class="logo" alt="Logo">
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbar-menu">
+
+                    <img src="../assets/img/logo.png" alt="Logo">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-times"></i>
+                    </button>
+
+                    <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li class="dropdown">
+                            <a href="/" data-toggle="dropdown">Home</a>
+
+                           
+                        </li>
+                        <li class="dropdown">
+                            <a href="/about" data-toggle="dropdown">About Us</a>
+                        
+                        </li>
+                        <li class="dropdown">
+                            <a href="/services" class="dropdown-toggle" data-toggle="dropdown">Services</a>
+                               <ul class="dropdown-menu">
+                <li>
+                  <a href="/online-reputation-management">Online Reputation
+                  </a>
+                </li>
+                <li>
+                  <a href="/pay-per-click-advertising">Pay Per Click Ads</a>
+                </li> 
+                <li>
+                  <a href="/social-media-marketing">Social Media Marketing
+                  </a>
+                </li> 
+                <li>
+                  <a href="/content-marketing">Content Marketing </a>
+                </li>
+               
+                <li>
+                  <a href="/website-design-and-development">Website Design & Development
+                  </a>
+                </li>
+                <li><a href="/ui-ux">UI/UX </a></li>
+                <li> 
+                  <a href="/search-engine-optimization">Search Engine Optimization
+                  </a>
+                </li>
+                <li><a href="/branding">Branding </a></li>
+                <li><a href="/consultant">consultation </a></li>
+              </ul>
+                        </li>
+                       
+                        <li><a href="/contact-us">contact</a></li>
+                    </ul>
+
+                <div class="attr-right">
+                    <div class="attr-nav flex">
+                        <ul>
+                            <li class="side-menu">
+                                <a href="#">
+                                    <span class="bar-1"></span>
+                                    <span class="bar-2"></span>
+                                    <span class="bar-3"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="side">
+                        <a href="#" class="close-side"><i class="fas fa-times"></i></a>
+                        <div class="widget">
+                            <div class="logo">
+                                <img src="../assets/img/logo-light.png" alt="Logo">
+                            </div>
+                        </div>
+                        <div class="widget">
+                            <p>
+                                Digital marketing is the component of marketing that uses the Internet and online based
+                                digital technologies such as desktop computers, mobile phones and other digital media
+                                and platforms to promote products and services.
+                            </p>
+                        </div>
+                        <div class="widget address">
+                            <div>
+                                <ul>
+                                    <li>
+                                        <div class="content">
+                                            <p>Address</p>
+                                            <strong>PLOT NO 122-C BLOCK 2 COMMERCIAL AREA PECHS Karachi Sindh</strong>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="content">
+                                            <p>Email</p>
+                                            <a href="mailto:info@brintor.com"><strong>info@brintor.com</strong></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="content">
+                                            <p>Phone No:</p>
+                                            <strong><a href="tel:021-34303796"> 021-34303796</a></strong>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="widget newsletter">
+                            <h4 class="title">Get Subscribed!</h4>
+                            <form action="#">
+                                <div class="input-group stylish-input-group">
+                                    <input type="email" placeholder="Enter your e-mail" class="form-control"
+                                        name="email">
+                                    <span class="input-group-addon">
+                                        <button type="submit">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="widget social">
+                            <ul class="link">
+                                <li><a href="https://www.facebook.com/profile.php?id=61567849599982"><i
+                                            class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://wa.me/+923702785975"><i class="fab fa-whatsapp"></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/brintor/"><i
+                                            class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!-- End Side Menu -->
+
+                </div>
+                <!-- Main Nav -->
+
+            </div>
+            <div class="overlay-screen"></div>
+        </nav>
+    </header>
+
+    <div class="services-details-area default-padding">
+        <div class="container">
+            <div class="services-details-items">
+                <div class="row">
+
+                    <div class="col-xl-8 col-lg-7 pr-45 pr-md-15 pr-xs-15 services-single-content">
+                        <div class="service-single-thumb" id="blogImageContainer">
+                        </div>
+                        <div id="blogDetailContainer">
+
+
+                        </div>
+
+                       
+
+                        <br>
+
+
+
+
+                        <div class="services-more mt-40">
+                            <h2 class="mb-20"></h2>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    
+                                </div>
+                                <div class="col-md-6">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-5 mt-md-50 mt-xs-50 pl-30 pl-md-15 pl-xs-15 services-sidebar">
+                        <div class="single-widget services-list-widget2">
+                            <h4 class="widget-title">Recent Blogs</h4>
+                            <div class="recentBlogContainer" id="recentBlogContainer">
+                            </div>
+
+                           
+                            </div>
+                            <div class="single-widget quick-contact-widget bg-gradient text-light">
+                                <div class="content">
+                                    <h3>Need Help?</h3>
+                                    <p>
+                                        Speak with a human to filling out a form? call corporate office and we will
+                                        connect.
+                                    </p>
+                                    <a href="tel:021-34303796">
+                                        <h2>021-34303796
+                                        </h2>
+                                    </a>
+                                    <h4><a href="mailto:info@brintor.com">info@brintor.com</a></h4>
+                                    <a class="btn mt-30 btn-sm circle btn-light effect" href="/contact-us">Contact
+                                        Now</a>
+                                </div>
+                            </div>
+
+                           
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="creative-services-area overflow-hidden default-padding">
+
+            <div class="bg-static">
+                <img class="bg-move" src="../assets/img/shape/5.png" alt="Image Not Found">
+            </div>
+
+            <div class="container ">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="site-heading">
+                            <h2 class="sub-title">Protect Your Reputation with Proven Strategies</h2>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container container-stage">
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <div class="services-item-one-items">
+                            <div class="services-nav">
+                                <div class="nav-items">
+                                    <div class="services-button-prev"></div>
+                                    <div class="services-button-next"></div>
+                                </div>
+                            </div>
+                            <div class="services-carousel swiper">
+                                <div class="swiper-wrapper">
+
+                                    <div class="swiper-slide">
+                                        <div class="cteative-service-item">
+                                            <img src="../assets/img/icon/1.png" alt="Icon">
+                                            <h3><a href="/search-engine-optimization">Search Engine Optimization
+                                                    (SEO) –
+                                                    Getting You Seen</a></h3>
+                                            <p>
+                                                Imagine this: Your website is like a beautiful shop, but it’s stuck down
+                                                a
+                                                hidden alley. With our SEO services, we bring it to the main street of
+                                                the
+                                                internet—Google’s first page. From technical optimization to
+                                                keyword-driven
+                                                content, we make sure your site ranks high where it matters most. Get
+                                                ready
+                                                for traffic that doesn’t just land on your site but converts into sales.
+                                            </p>
+                                            <span>01</span>
+                                        </div>
+                                    </div>
+                                  
+                                    <div class="swiper-slide">
+                                        <div class="cteative-service-item">
+                                            <img src="../assets/img/icon/2.png" alt="Icon">
+                                            <h3><a href="/social-media-marketing">Social Media Marketing (SMM) –
+                                                    Building Your Brand Community</a></h3>
+                                            <p>
+                                                Social media isn’t just for selfies and memes (though, let’s be honest,
+                                                those help). SMM is about connecting with your audience on a personal
+                                                level.
+                                                At <a href="/" style="text-decoration: none; color: inherit;">Brintor</a>, we craft SMM strategies that turn followers into fans, and
+                                                fans
+                                                into lifelong customers. Whether it’s engaging Instagram content or
+                                                in-depth
+                                                LinkedIn campaigns, we’ve got you covered. </p>
+                                            <span>02</span>
+                                        </div>
+                                    </div>
+                                  
+                                    <div class="swiper-slide">
+                                        <div class="cteative-service-item">
+                                            <img src="../assets/img/icon/3.png" alt="Icon">
+                                            <h3><a href="/pay-per-click-advertising">Pay-Per-Click Advertising (PPC)
+                                                    –
+                                                    Instant Visibility, Guaranteed Results</a></h3>
+                                            <p>
+                                                Ever wish you could pay for your brand to show up exactly when someone’s
+                                                looking for what you offer? Well, you can! Our PPC services ensure your
+                                                ads
+                                                appear front and center to the right audience at the right time. With
+                                                Brintor, you’re not just buying clicks—you’re buying potential
+                                                customers.
+                                            </p>
+                                            <span>03</span>
+                                        </div>
+                                    </div>
+                                 
+                                    <div class="swiper-slide">
+                                        <div class="cteative-service-item">
+                                            <img src="../assets/img/icon/4.png" alt="Icon">
+                                            <h3><a href="/services">Search Engine Marketing (SEM) – The
+                                                    Perfect
+                                                    Blend of Paid & Organic</a></h3>
+                                            <p>
+                                                SEM is like SEO and PPC’s smarter, cooler cousin. It combines the power
+                                                of
+                                                organic search with paid ads to maximize your brand’s visibility. Think
+                                                of
+                                                it as a one-two punch that guarantees you’re at the top of search
+                                                results
+                                                and on the radar of your ideal customers. </p>
+                                            <span>04</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="cteative-service-item">
+                                            <img src="../assets/img/icon/5.png" alt="Icon">
+                                            <h3><a href="/website-design-and-development">Website Design &
+                                                    Development –
+                                                    Your 24/7 Salesperson</a></h3>
+                                            <p>
+                                                A website isn’t just a digital business card—it’s your hardest working
+                                                salesperson. At Brintor, our Website Design & Development services
+                                                ensure
+                                                your site is more than just good-looking; it’s fast, responsive, and
+                                                designed to convert. Let us build a site that not only wows your
+                                                visitors
+                                                but also turns them into loyal customers.
+                                                <span>05</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="cteative-service-item">
+                                            <img src="../assets/img/icon/6.png" alt="Icon">
+                                            <h3><a href="/online-reputation-managementl">Online Reputation Management
+                                                    (ORM) – Protecting Your Brand’s Good Name</a></h3>
+                                            <p>
+                                                In the world of business, your reputation is everything. One bad review
+                                                or
+                                                negative post can snowball into a serious issue. That’s where Brintor’s
+                                                ORM
+                                                services come in. We monitor, manage, and improve your online reputation
+                                                so
+                                                your brand is always putting its best foot forward. Remember: your
+                                                reputation can make or break your business—let’s make sure it’s the
+                                                former.
+                                                <span>06</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="cteative-service-item">
+                                            <img src="../assets/img/icon/7.png" alt="Icon">
+                                            <h3><a href="/content-marketing">Content Marketing – Telling Your Story
+                                                    Right</a></h3>
+                                            <p>
+                                                Content isn’t just king—it’s the entire castle. Brintor’s Content
+                                                Marketing
+                                                services ensure your brand tells a story that resonates. Whether it’s
+                                                through engaging blog posts, eye-catching videos, or insightful social
+                                                media
+                                                content, we help your brand’s voice shine through. Good content doesn’t
+                                                just
+                                                inform—it inspires.
+                                                <span>07</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <footer>
+            <div class="footer-box">
+                <div class="container">
+                    <div class="f-items default-padding-bottom pt-70 pt-xs-0">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 footer-item mt-50">
+                                <div class="f-item about pr-50 pr-xs-0 pr-md-0">
+                                    <img class="logo" src="../assets/img/logo.png" alt="Logo">
+                                    <p>
+                                        We turn your ideas into Digital Masterpieces.
+                                    </p>
+                                    <div class="footer-social mt-30">
+                                        <ul>
+                                            <li><a href="https://www.facebook.com/brintor.official"
+                                                    target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="https://wa.me/+923702785975" target="_blank"><i
+                                                        class="fab fa-whatsapp"></i></a></li>
+                                            <li><a href="https://www.linkedin.com/company/brintor/" target="_blank"><i
+                                                        class="fab fa-linkedin-in"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 mt-50 footer-item pl-50 pl-md-15 pl-xs-15">
+                                <div class="f-item link">
+                                    <h4 class="widget-title">Company</h4>
+                                    <ul>
+                                        <li>
+                                            <a href="/">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="/about">About</a>
+                                        </li>
+                                        <li>
+                                            <a href="/contact-us">Contact</a>
+                                        </li>
+                                        <li>
+                                            <a href="/blogs">Blogs</a>
+                                        </li>
+                                    
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 footer-item  mt-50">
+                                <div class="f-item contact">
+                                    <h4 class="widget-title">Contact Info</h4>
+                                    <ul>
+                                        <li>
+                                            <div class="content">
+                                                <strong>Address:</strong>
+                                                PLOT NO 122-C BLOCK 2 COMMERCIAL AREA PECHS Karachi Sindh
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="content">
+                                                <strong>Email:</strong>
+                                                <a href="mailto:info@brintor.com">info@brintor.com</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="content">
+                                                <strong>Phone:</strong>
+                                                <a href="tel:021-34303796">021-34303796</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 footer-item mt-50">
+                                <div class="f-item newsletter">
+                                    <h4 class="widget-title">Newsletter</h4>
+                                    <p>
+                                        Join our subscribers list to get the instant latest news and special offers.
+                                    </p>
+                                    <form action="#">
+                                        <input type="email" placeholder="Your Email" class="form-control" name="email">
+                                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!-- <div class="footer_region">
+                        
+    
+                            <div class="footer-grid">
+        
+                               <div class="sameBorder1">EUROPE</div>
+                               <div class="sameBorder">AUSTRALIA</div>
+                               <div class="sameBorder">AMERICA</div>
+                               <div class="sameBorder2">ASIA</div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="footer-bottom bg-dark text-light text-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-9 offset-lg-3">
+                                <p>
+                                    Copyright &copy; <span id="currentYear"> </span> Brintor. All Rights Reserved
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+<script>
+  function sendEmail() {
+    const name = document.getElementById("name").value;
+    const phone = document.getElementById("phone").value;
+    const website = document.getElementById("website").value;
+   
+
+    const templateParams = {
+      name: name,
+      phone: phone,
+      website: website,
+      message: `Name: ${name}\nPhone: ${phone}\nWebsite: ${website}`
+    };
+
+    emailjs.send("service_owksgf4", "template_ondvxlb", templateParams)
+      .then(function (response) {
+        alert("Message sent successfully!");
+        console.log("SUCCESS!", response.status, response.text);
+      }, function (error) {
+        alert("Failed to send message!");
+        console.log("FAILED...", error);
+      });
+  }
+
+
+    function sendNewsletter(event) {
+    event.preventDefault();
+
+    const email = document.getElementById("newslatter").value;
+
+    if (!email) {
+      alert("Please enter your email.");
+      return;
+    }
+
+    const templateParams = {
+      name: email,
+      message: `${email} This Person to Our Website PPC landing page`
+    };
+
+    emailjs.send("service_owksgf4", "template_apnwfhc", templateParams)
+      .then(function (response) {
+        alert("Message sent successfully!");
+        console.log("SUCCESS!", response.status, response.text);
+      }, function (error) {
+        alert("Failed to send message!");
+        console.log("FAILED...", error);
+      });
+  }
+
+
+</script>
+
+        <!--<script>-->
+        <!--    if (window.location.href.endsWith("pay-per-click-advertising.html")) { const cleanUrl = window.location.href.replace("pay-per-click-advertising.html", "pay-per-click-advertising"); window.history.replaceState(null, "", cleanUrl); } -->
+        <!--</script>-->
+        <script src="../assets/js/jquery-3.6.0.min.js"></script>
+        <script src="../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../assets/js/jquery.appear.js"></script>
+        <script src="../assets/js/swiper-bundle.min.js"></script>
+        <script src="../assets/js/progress-bar.min.js"></script>
+        <script src="../assets/js/circle-progress.js"></script>
+        <script src="../assets/js/isotope.pkgd.min.js"></script>
+        <script src="../assets/js/imagesloaded.pkgd.min.js"></script>
+        <script src="../assets/js/magnific-popup.min.js"></script>
+        <script src="../assets/js/count-to.js"></script>
+        <script src="../assets/js/jquery.scrolla.min.js"></script>
+        <script src="../assets/js/ScrollOnReveal.js"></script>
+        <script src="../assets/js/YTPlayer.min.js"></script>
+        <script src="../assets/js/validnavs.js"></script>
+        <script src="../assets/js/gsap.js"></script>
+        <script src="../assets/js/ScrollTrigger.min.js"></script>
+        <script src="../assets/js/main.js"></script>
+
+</body>
+<script>
+   
+    // Set the current year dynamically
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+  </script>
+<!-- Mirrored from brintor.com/pay-per-click-advertising.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Dec 2024 19:37:20 GMT -->
+<script src="../config.js"></script>
+<script>
+  const API_BASE = CONFIG.API_BASE;
+
+  // Get the slug from the URL (removes .html if present)
+  function getSlugFromPath() {
+    const pathParts = window.location.pathname.split('/').filter(Boolean);
+    if (pathParts.length >= 2 && pathParts[0] === 'blog') {
+      const rawSlug = pathParts[1];
+      const cleanSlug = rawSlug.replace(/\.html$/, ''); // Remove .html from the slug
+      return cleanSlug;
+    }
+    return null;
+  }
+
+//   Function to render the blog post
+//   function renderPost(post) {
+//     const blogContainer = document.getElementById("blogDetailContainer");
+//     const blogImageContainer = document.getElementById("blogImageContainer");
+
+//     const title = post.title.rendered;
+//     const content = post.content.rendered;
+//     const image = post._embedded?.['wp:featuredmedia']?.[0]?.source_url || "";
+//     const author = post._embedded?.author?.[0]?.name || "Unknown Author";
+//     const date = new Date(post.date).toLocaleDateString();
+
+//     blogImageContainer.innerHTML = image
+//       ? `<img src="${image}" class="mb-4 w-full h-auto rounded" alt="${title}" />`
+//       : "";
+
+//     blogContainer.innerHTML = `
+//       <h1 class="text-2xl font-bold mb-2">${title}</h1>
+//       <p class="text-sm text-gray-500 mb-4">By ${author} | ${date}</p>
+//       <div class="blog-content">${content}</div>
+//     `;
+//   }
+
+
+function renderPost(post) {
+  const blogContainer = document.getElementById("blogDetailContainer");
+
+  const title = post.title.rendered;
+  const content = post.content.rendered;
+  const image = post._embedded?.['wp:featuredmedia']?.[0]?.source_url || "";
+  const author = post._embedded?.author?.[0]?.name || "Unknown Author";
+  const date = new Date(post.date).toLocaleDateString();
+console.log("detail content", content);
+  blogContainer.innerHTML = `
+    <div class="max-w-3xl mx-auto px-4">
+    <span class="custom-title">${title}</span>
+      <p class="text-sm underline "><a href="/"
+      title="https://brintor.com/"
+      >Home<a> > <a 
+      title="https://brintor.com/blogs"
+      href="/blogs">Blogs<a> > <a 
+      title="https://brintor.com/blog/${post.slug}"
+      href="/blog/${post.slug}">${post.slug}<a></p>
+
+      ${image ? `<img src="${image}" class="mb-6 w-full h-auto rounded-lg" alt="${title}" />` : ""}
+
+      <p class="text-sm text-gray-500 mb-6">By <span class="font-medium">${author}</span> | ${date}</p>
+
+      <div class="blog-content prose max-w-none">${content}</div>
+    </div>
+  `;
+}
+
+
+  // Load blog post
+  async function loadBlogPost() {
+    const slug = getSlugFromPath();
+
+    if (!slug) {
+      document.getElementById("blogDetailContainer").innerHTML =
+        "<p class='text-red-600'>Invalid blog URL.</p>";
+      return;
+    }
+
+    try {
+      const response = await fetch(`${API_BASE}/posts?slug=${slug}&_embed`);
+      const posts = await response.json();
+
+      if (posts.length === 0) {
+        document.getElementById("blogDetailContainer").innerHTML =
+          "<p class='text-red-600'>Post not found.</p>";
+        return;
+      }
+
+      renderPost(posts[0]);
+    } catch (error) {
+      console.error("Error fetching post:", error);
+      document.getElementById("blogDetailContainer").innerHTML =
+        "<p class='text-red-600'>Failed to load blog post.</p>";
+    }
+  }
+
+  // Run after DOM is ready
+  document.addEventListener("DOMContentLoaded", loadBlogPost);
+  
+  const currentSlug = getSlugFromPath();
+  
+// Fetch recent posts (excluding the current one)
+fetch(`https://bisque-llama-685613.hostingersite.com/posts?_embed&per_page=5&orderby=date&order=desc`)
+  .then(res => res.json())
+  .then(posts => {
+    const recentHTML = posts
+      .filter(post => post.slug !== currentSlug) // Exclude current post by slug
+      .slice(0, 4)
+      .map(post => {
+        const img = post._embedded?.["wp:featuredmedia"]?.[0]?.source_url || "../assets/img/default.jpg";
+        const title = post.title.rendered;
+        const link = `/blog/${post.slug}`;
+
+        return `
+          <div class="recentSingleContainer">
+            <div class="recentImg">
+              <img src="${img}" alt="${title}">
+            </div>
+            <div class="recentText">
+              <h5><a href="${link}">${title}</a></h5>
+            </div>
+          </div>
+        `;
+      })
+      .join("");
+
+    const recentContainer = document.getElementById("recentBlogContainer");
+    if (recentContainer) {
+      recentContainer.innerHTML = recentHTML;
+    }
+  })
+  .catch(err => console.error("❌ Failed to fetch recent posts:", err));
+</script>
+
+</html>

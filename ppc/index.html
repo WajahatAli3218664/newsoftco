@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PPC Landing Page Brintor</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preload" href="./font/Poppins-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="./font/BagelFatOne-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="./font/Poppins-Medium.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="./font/Poppins-SemiBold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("PlyYRnFVHyUpSTd3e"); 
+    })();
+
+      document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+  });
+
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const images = document.querySelectorAll("img");
+    images.forEach((img) => {
+      img.setAttribute("draggable", "false");
+      img.addEventListener("dragstart", (e) => e.preventDefault());
+    });
+  });
+  </script>
+
+  <style>
+       body {
+      user-select: none;
+            -webkit-user-drag: none;
+  user-drag: none;
+    }
+
+      img, a, div, span {
+      user-drag: none;
+    }
+
+
+    @font-face {
+      font-family: "MyCustomFont";
+      src: url("./font/BagelFatOne-Regular.ttf") format("truetype");
+    }
+
+    @font-face {
+      font-family: "PoppinsMedium";
+      src: url("./font/Poppins-Medium.ttf") format("truetype");
+    }
+
+    @font-face {
+      font-family: "PoppinsRegular";
+      src: url("./font/Poppins-Regular.ttf") format("truetype");
+    }
+
+    @font-face {
+      font-family: "PoppinsSemibold";
+      src: url("./font/Poppins-SemiBold.ttf") format("truetype");
+    }
+
+    body{
+      
+    }
+
+    .MyCustomFont {
+      font-family: "MyCustomFont", sans-serif;
+      text-transform: uppercase;
+    }
+
+    .PoppinsSemibold {
+      font-family: "PoppinsSemibold", sans-serif;
+
+    }
+
+    .PoppinsMedium {
+      font-family: "PoppinsMedium", sans-serif;
+    }
+
+    .PoppinsRegular {
+      font-family: "PoppinsRegular", sans-serif;
+    }
+
+    @layer utilities {
+      .text-shadow {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .text-shadow-lg {
+        text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+      }
+    }
+
+    .text-outline-black {
+      -webkit-text-stroke: 1px black;
+      color: #efbe00;
+      /* fallback to keep color intact */
+    }
+
+    .text-outline-yellow {
+      -webkit-text-stroke: 1px black;
+      color: #efbe00;
+    }
+
+    .text-outline-green {
+      -webkit-text-stroke: 1px black;
+      color: #02ebad;
+    }
+
+    .capitalize-first {
+      text-transform: lowercase;
+    }
+
+    .capitalize-first::first-letter {
+      text-transform: uppercase;
+    }
+
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .hide-scrollbar {
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+    }
+
+    .CustomGradient {
+      font-size: 120px;
+      font-weight: bold;
+      background: url('./images/textgradient.svg') no-repeat center center;
+      background-size: cover;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+
+
+
+    @media (min-width: 1920px) {
+      .ParentPurple {
+        padding: 2rem 8rem !important;
+      }
+
+      .YellowText {
+        font-size: 4.7vw !important;
+        line-height: 1.2 !important;
+        padding: 0 4rem !important;
+      }
+
+      .GreenText {
+        font-size: 4.7vw !important;
+        line-height: 1.2 !important;
+      }
+
+      .smalLTextPurple {
+        font-size: 1.3vw !important;
+        line-height: 1.2 !important;
+      }
+
+      .smalLTextPurpletext {
+        font-size: 1vw !important;
+        line-height: 1.2 !important;
+      }
+
+      .parentForm {
+        width: 90% !important;
+        padding: 2rem 4rem !important;
+      }
+
+      .formText {
+        font-size: 0.95vw !important;
+        width: 23% !important;
+        height: 63px !important;
+        padding: 0 2rem !important;
+
+
+      }
+
+      .emojiEyes {
+        height: 170px !important;
+
+      }
+
+      .starFive {
+        height: 35px !important;
+
+      }
+
+      .EmojiEyesPosition {
+        top: -30px !important;
+        right: -100px !important;
+      }
+
+      .FingerBoldText {
+        font-size: 1.8vw !important;
+
+      }
+
+      .GradientParent {
+        padding-top: 5rem !important;
+        gap: 2.2rem !important;
+      }
+
+      .SettleText {
+        font-size: 4.5vw !important;
+      }
+
+      .GradWhiteText {
+        margin-top: 2rem !important;
+        font-size: 2.8vw !important;
+      }
+
+      .KhabySmallText {
+        font-size: 1.5vw !important;
+        margin-top: 0.5rem !important;
+
+      }
+
+      .khabyHeight {
+        height: 500px !important;
+      }
+
+      .btnWhatsapp {
+        font-size: 1vw !important;
+        padding: 1rem 4rem !important;
+
+      }
+
+      .whatsappIcon {
+        height: 65px !important;
+        left: -20px !important;
+        top: -10px !important;
+      }
+
+      .pinkGirlWidth {
+        width: 100% !important;
+        height: auto !important;
+      }
+
+      .Startedbtn {
+        font-size: 1.2vw !important;
+      }
+
+      .GirldRightSide {
+        height: 800px !important;
+      }
+
+
+      .leadingLine {
+        line-height: 2rem !important;
+      }
+
+      .pLeft {
+        padding: 8rem 3rem !important;
+      }
+
+      .threexl-padding-up {
+        padding: 5px 40px !important;
+
+      }
+
+      .threexl-paddingtopbottom {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+
+      }
+
+
+      .threexl-mr {
+        margin-right: 120px !important;
+      }
+
+
+      .height-threexl {
+        height: 10vh !important;
+        width: 10vw !important;
+      }
+
+
+
+      .threexl_size {
+        height: 20vh !important;
+        padding: 1vw;
+      }
+
+
+    }
+
+
+    @keyframes vibrate {
+      0% {
+        transform: translate(0);
+      }
+
+      20% {
+        transform: translate(-1px, 1px);
+      }
+
+      40% {
+        transform: translate(-1px, -1px);
+      }
+
+      60% {
+        transform: translate(1px, 1px);
+      }
+
+      80% {
+        transform: translate(1px, -1px);
+      }
+
+      100% {
+        transform: translate(0);
+      }
+    }
+
+    .vibrate-on-hover:hover {
+      animation: vibrate 0.3s infinite;
+    }
+  </style>
+</head>
+
+<body class="PoppinsMedium">
+  <header class="w-full px-4  xl:px-16 py-6 ">
+    <div class="w-full flex justify-between items-center">
+      <a href="/" class="w-1/3">
+        <img src="./images/LogoBrintor.svg" loading="lazy" class="h-10" alt="Logo" />
+      </a>
+
+      <div class="w-1/2 hidden lg:flex justify-end gap-3">
+        <a href="https://wa.me/+923702785975"
+          class="PoppinsMedium bg-[#07BA39] px-10 text-white py-2 rounded-[30px] relative">
+          <img src="./images/BusinessWhatsapp.svg" loading="lazy" class="absolute -top-1 h-12 -left-5" alt="" />
+          +92 370 2785975
+        </a>
+        <button onclick="window.location.href='tel:+92 370 2785975'"
+          class="px-10 py-2 rounded-[30px] bg-[#000000] text-[#FFFFFF] PoppinsMedium">
+          Free Strategy Call
+        </button>
+      </div>
+      <div class=" flex lg:hidden justify-center items-center gap-2">
+        <a href="https://wa.me/+923702785975" onclick="window.location.href='tel:+92 370 2785975'">
+          <img src="./images/BusinessWhatsapp.svg" loading="lazy" class="w-12 h-12" alt="" />
+
+        </a>
+        <button onclick="window.location.href='tel:+92 370 2785975'"
+          class="w-12 h-12 rounded-full flex justify-center items-center bg-black">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.72 19.72 0 01-8.63-3.13 
+           19.5 19.5 0 01-6-6 19.72 19.72 0 01-3.13-8.63A2 2 0 014.09 
+           2h3a2 2 0 012 1.72c.13 1.14.45 2.24.94 3.28a2 2 0 01-.45 
+           2.11L8.09 10.91a16 16 0 006 6l1.8-1.8a2 2 0 012.11-.45 
+           13.43 13.43 0 003.28.94 2 2 0 011.72 2z" />
+          </svg>
+
+
+        </button>
+      </div>
+
+
+    </div>
+  </header>
+
+
+  <main class="w-full">
+    <section class="w-full px-4  xl:px-36 pt-6 pb-1  PoppinsRegular flex flex-col xl:flex-row justify-between ">
+      <div class="w-full xl:w-2/3  flex flex-col justify-start ">
+        <div class="w-full flex justify-center xl:justify-end p-2 2xl:px-2 2xl:py-2 threexl-paddingtopbottom">
+          <button
+            class="bg-[#BF1E2E] vibrate-on-hover PoppinsRegular text-[3vw] lg:text-[1vw] threexl-padding-up  text-white py-1 px-10 mr-3 rounded-[30px] ">
+            Content Production
+          </button>
+        </div>
+        <div
+          class="w-full  flex justify-center xl:justify-end gap-1 xl:gap-3  p-2 2xl:px-2 2xl:py-2 threexl-paddingtopbottom">
+          <button
+            class="bg-[#02EBAD] vibrate-on-hover text-black text-[3vw] lg:text-[1vw] threexl-padding-up py-1 px-4 xl:px-8 rounded-[30px]">
+            Community Management
+          </button>
+          <button
+            class="bg-[#F8D53A] vibrate-on-hover text-black text-[3vw] lg:text-[1vw] threexl-padding-up py-1 px-2 xl:px-8 rounded-[30px]">
+            Social Selling
+          </button>
+        </div>
+        <div
+          class="w-full  flex justify-center 2xl:justify-end p-2 2xl:px-2 2xl:py-2 threexl-paddingtopbottom threexl-mb">
+          <button
+            class="bg-[#5A57FB] vibrate-on-hover text-white py-1 threexl-padding-up text-[3vw] lg:text-[1vw]  px-10 2xl:mr-28 rounded-[30px]">
+            Social Strategy
+          </button>
+        </div>
+      </div>
+
+      <div class="w-full xl:w-[15%]  relative flex justify-center ">
+        <img src="./images/smallCalender.svg" loading="lazy" class=" relative xl:absolute bottom-0 xl:-bottom-5"
+          alt="" />
+      </div>
+      <div class="w-full xl:w-2/3   2xl:mt-5 ">
+        <div class="w-full  flex justify-center p-2 2xl:px-2 2xl:py-2 threexl-paddingtopbottom threexl-mt ">
+          <button
+            class="bg-[#F7630C] vibrate-on-hover text-white py-1 text-[3vw] lg:text-[1vw] threexl-padding-up px-10 2xl:mr-32 rounded-[30px]">
+            Paid Social Advertising
+          </button>
+        </div>
+        <div class="w-full  flex justify-start gap-3  p-2 2xl:px-2 2xl:py-2 threexl-paddingtopbottom">
+          <button
+            class="bg-[#EDEBDF] vibrate-on-hover  sm:ml-28 lg:ml-60 xl:ml-0 text-[3vw] lg:text-[1vw] threexl-padding-up text-black py-1 px-10 rounded-[30px]">
+            Influencer Marketing
+          </button>
+        </div>
+        <div class="w-full  flex justify-center p-2 2xl:px-2 2xl:py-2  threexl-paddingtopbottom">
+          <button
+            class="bg-[#000000] vibrate-on-hover ml-16 text-white py-1 text-[3vw] lg:text-[1vw] threexl-padding-up  threexl-mr 2xl:mr-16 px-10 rounded-[30px]">
+            Website Development
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="ParentPurple bg-[#5A57FB] w-full px-3 xl:px-36 flex flex-col text-white items-center  py-6 gap-3 sm:gap-5 lg:gap-3 2xl:gap-6">
+      <p
+        class="smalLTextPurple lg:text-sm xl:text-base text-[2.5vw] sm:text-lg 2xl:text-lg PoppinsRegular text-center ">
+        Ab business wahi grow karega jo online dikhega</p>
+      <h1
+        class="YellowText text-center xl:text-[3.5rem] text-[5.5vw] sm:text-5xl 2xl:text-7xl xl:font-bold leading-snug MyCustomFont text-outline-yellow text-shadow-lg xl:leading-[4rem] 2xl:leading-[5rem] sm:leading-[3.5rem] lg:px-28 px-0 xl:px-0">
+        Click nahi, ab sirf conversion ka zamana hai 🔥
+      </h1>
+      <h1
+        class="GreenText text-center xl:text-[3.5rem] text-[5.5vw] sm:text-5xl 2xl:text-7xl xl:font-bold leading-snug MyCustomFont text-outline-green text-shadow-lg">
+        Tayyar ho success ke liye?
+      </h1>
+
+      <p
+        class="FingerBoldText lg:text-lg xl:text-xl text-[3vw] sm:text-xl 2xl:text-2xl PoppinsMedium text-center xl:mt-2">
+        Free Strategy Call + Audit → Bas form fill karein 👇
+      </p>
+
+      <div
+        class="parentForm submitform lg:w-[85%] xl:w-[90%] w-[95%] sm:w-[80%]  relative p-4 lg:py-6 lg:px-12 rounded-3xl lg:rounded-full flex flex-col lg:flex-row gap-1 lg:gap-3  justify-start bg-white bg-opacity-30">
+        <input type="text" placeholder="Full Name" id="name"
+          class="formText placeholder-white PoppinsRegular border border-white bg-black text-white xl:w-48 2xl:w-64 2xl:h-12 lg:w-48 w-full px-4 sm:px-6 2xl:px-6 mt-1 xl:mt-0  h-12 lg:h-9 xl:h-10 flex items-center justify-center lg:rounded-full rounded-2xl text-[2.8vw] xl:text-[0.7rem] 2xl:text-[0.9rem] lg:text-[0.7rem] sm:text-[0.9rem] outline-none" />
+        <input type="text" placeholder="Phone Number" id="phone"
+          class="formText placeholder-white PoppinsRegular  border border-white bg-black text-white xl:w-48 2xl:w-64 2xl:h-12 lg:w-48 w-full px-4 sm:px-6 2xl:px-6 mt-1 xl:mt-0  h-12 lg:h-9 xl:h-10 flex items-center justify-center lg:rounded-full rounded-2xl text-[2.8vw] xl:text-[0.7rem] 2xl:text-[0.9rem] lg:text-[0.7rem] sm:text-[0.9rem] outline-none" />
+        <input type="text" placeholder="Website (optional)" id="website"
+          class="formText placeholder-white PoppinsRegular  border border-white bg-black text-white xl:w-48 2xl:w-64 2xl:h-12 lg:w-48 w-full px-4 sm:px-6 2xl:px-6 mt-1 xl:mt-0  h-12 lg:h-9 xl:h-10 flex items-center justify-center lg:rounded-full rounded-2xl text-[2.8vw] xl:text-[0.7rem] 2xl:text-[0.9rem] lg:text-[0.7rem] sm:text-[0.9rem] outline-none" />
+        <button type="submit"
+         onclick="sendEmail()"
+          class="formText border border-white PoppinsRegular bg-[#BF1E2E] text-white xl:w-48 2xl:w-64 2xl:h-12 lg:w-48 w-full px-2 mt-1 xl:mt-0 flex items-center xl:px-0 h-12 lg:h-9 xl:h-10 justify-center lg:rounded-full rounded-2xl text-[2.8vw] xl:text-[0.7rem] 2xl:text-[0.9rem] lg:text-[0.7rem] sm:text-[0.9rem] cursor-pointer">
+          Submit
+        </button>
+        <div
+          class="EmojiEyesPosition hidden lg:block absolute  lg:-right-14 lg:-top-4 xl:-right-20 xl:-top-4 2xl:-right-24 2xl:-top-5">
+          <img class="emojiEyes h-16 xl:h-28 lg:h-28 2xl:h-32" loading="lazy" src="./images/EmojiEyes.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="flex justify-center gap-6 items-center  my-3">
+        <span><img class="starFive h-4 md:h-5 2xl:h-7" src="./images/Stars.svg" loading="lazy" alt="" /></span>
+        <p class="smalLTextPurple text-[2.8vw] lg:text-base 2xl:text-xl PoppinsRegular">4.9 stars out of 100+ reviews
+        </p>
+      </div>
+    </section>
+
+
+
+
+
+    <section class="w-full  py-7 flex flex-col items-center">
+      <span class="PoppinsMedium text-center smalLTextPurpletext">Trusted by 450+ World-Class Startups and Established
+        Enterprises!</span>
+      <div
+        class="w-full py-4  grid grid-cols-2 gap-4 justify-items-center sm:flex lg:flex md:justify-center xl:flex xl:flex-row xl:justify-center xl:items-center xl:overflow-x-auto px-20 sm:px-0">
+        <img src="./images/SliderLogo01.svg" loading="lazy" class="h-20 w-40 object-contain height-threexl" alt="" />
+        <img src="./images/SliderLogo02.svg" loading="lazy" class="h-20 w-40 object-contain height-threexl" alt="" />
+        <img src="./images/SliderLogo03.svg" loading="lazy" class="h-20 w-40 object-contain height-threexl" alt="" />
+        <img src="./images/SliderLogo04.svg" loading="lazy" class="h-20 w-40 object-contain height-threexl" alt="" />
+        <img src="./images/SliderLogo05.svg" loading="lazy" class="h-20 w-40 object-contain height-threexl" alt="" />
+      </div>
+
+
+      <h2 class="my-7 MyCustomFont text-[6vw] xl:text-[3.5vw]  px-4  xl:px-72 text-center leading-tight">
+        Complete Digital Marketing & <span class="text-[#5A57FB]">Website Solutions!</span>
+      </h2>
+
+      <span class="text-center PoppinsRegular mb-4 smalLTextPurpletext">Aaj ka zamana online presence ka hai — aur hum
+        banaate hain
+        aapko digital dunia ka king!</span>
+
+      <div class="w-full  px-4 xl:px-16 flex flex-col lg:flex-row lg:justify-center  xl:flex-row  gap-4  py-6">
+
+        <div class="w-full lg:w-full xl:w-1/2 flex justify-center   ">
+
+          <img src="./images/HeroImg01.svg" loading="lazy" class="w-full" alt="">
+        </div>
+        <div class="w-full lg:w-full xl:w-1/2  flex justify-center  ">
+
+          <img src="./images/HeroImg02.svg" loading="lazy" class="w-full" alt="">
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="w-full  flex flex-col-reverse xl:flex-row px-4 gap-5 xl:gap-0 xl:px-16 pb-10">
+      <style>
+        .group:hover .box:not(:hover) {
+          width: 5rem;
+        }
+      </style>
+
+
+      <div class=" w-full xl:w-1/2  flex  items-center gap-2 group pr-4">
+        <div
+          class="box w-20 h-[50vh] lg:h-[80vh] xl:h-[60vh] 2xl:h-[50vh] rounded-lg  hover:w-full transition-all duration-300 overflow-hidden"
+          onmouseenter="this.querySelector('video').play()" onmouseleave="this.querySelector('video').pause()">
+          <video src="./images/Reel7Brintor.mp4" class="w-full h-full object-cover vissionise" muted loop></video>
+        </div>
+
+        <div
+          class="box w-20 h-[50vh] lg:h-[80vh] xl:h-[60vh] 2xl:h-[50vh] rounded-lg  hover:w-full transition-all duration-300 overflow-hidden"
+          onmouseenter="this.querySelector('video').play()" onmouseleave="this.querySelector('video').pause()">
+          <video src="./images/Reel8Brintor.mp4" class="w-full h-full object-cover notvision" muted loop></video>
+        </div>
+
+        <div
+          class="box  w-full h-[50vh] lg:h-[80vh] xl:h-[60vh] 2xl:h-[50vh] rounded-lg  hover:w-full transition-all duration-300 overflow-hidden"
+          onmouseenter="this.querySelector('video').play()">
+          <video src="./images/Reel10Brintor.mp4" class="w-full h-full object-cover vission" autoplay muted
+            loop></video>
+        </div>
+
+        <script>
+          const video1 = document.querySelector('.vissionise');
+          const video2 = document.querySelector('.notvision');
+          const video3 = document.querySelector('.vission');
+
+          video1.addEventListener('mouseenter', () => {
+            video3.pause();
+          });
+          video1.addEventListener('mouseleave', () => {
+            video3.play();
+          });
+
+          video2.addEventListener('mouseenter', () => {
+            video3.pause();
+          });
+          video2.addEventListener('mouseleave', () => {
+            video3.play();
+          });
+        </script>
+      </div>
+
+      <style>
+        .banner {
+          background-image: url('./images/gradientbanner.svg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          /* background-position: 100% 0%;  */
+          transition: background-position 0.6s ease;
+        }
+
+        .banner:hover {
+          background-position: 0% 100%;
+        }
+      </style>
+      <div
+        class="w-full  h-[50vh] lg:h-[100vh] xl:h-[60vh] 2xl:h-[50vh] text-white rounded-[23px]  relative flex  flex-col justify-center p-5 xl:p-10  banner">
+        <img src="./images/PurpleArrow.svg" loading="lazy" class="h-12 absolute -top-6 left-5  " alt="">
+        <img src="./images/Tiktioker.svg" loading="lazy" class="h-40 absolute hidden xl:flex -top-6 -right-4  " alt="">
+        <img src="./images/MultipleEmoji.svg" loading="lazy"
+          class="h-52 absolute hidden xl:flex -bottom-14  xl:-bottom-3  right-0  " alt="">
+
+        <h2 class=" MyCustomFont xl:text-start text-center  text-[6vw] xl:text-[3vw]">Reels nahi, deals chahiye?</h2>
+        <span class="PoppinsRegular xl:text-start text-center  text-[4vw] lg:text-[2vw] xl:text-[1.5vw]">TikTok se leads
+          aur sales dono lao!</span>
+        <div class="w-full 0 PoppinsRegular flex gap-3 flex-col xl:flex-row mt-4">
+          <button class="p-5 text-sm text-center leading-snug bg-black"
+            onclick="window.location.href='tel:+92 370 2785975'">Booked an Appointment With Our Expert</button>
+          <button class="p-5 text-sm border bg-black " onclick="window.location.href='tel:+92 370 2785975'">Get a Free
+            Consultation</button>
+        </div>
+      </div>
+
+
+
+    </section>
+
+    <section style="
+          background: #0500ff;
+          background: radial-gradient(
+            circle,
+            rgba(5, 0, 255, 1) 0%,
+            rgba(90, 87, 251, 1) 100%
+          );
+        " class="GradientParent pt-8 lg:pt-10 2xl:pt-12 xl:px-16 px-3 flex flex-col items-center gap-2 sm:gap-6">
+      <h1
+        class="SettleText text-center text-[3.6vh] lg:font-bold sm:text-3xl md:text-[6vw] lg:text-[3.5rem]  text-outline-yellow text-shadow-lg MyCustomFont">
+        Why Settle for Less?
+      </h1>
+
+
+
+
+      <div
+        class="GradWhiteText text-center text-[2.8vh] sm:text-3xl lg:text-[2.5rem] MyCustomFont text-white capitalize-first">
+        Jab clicks mil rahe hain, to customers kyun nahi?
+      </div>
+      <p class="KhabySmallText lg:text-xl text-[1.6vh]  PoppinsRegular text-white">
+        Hum hain yahan to fix that!
+      </p>
+      <div class="flex gap-4"> <a href="https://wa.me/+923702785975"
+          class="btnWhatsapp lg:text-[1.2vw] text-xs PoppinsMedium bg-[#07BA39] px-6 sm:px-10 text-white py-2 lg:py-[0.9vw] 2xl:py-[0.8vw] rounded-[30px] relative">
+          <img src="./images/BusinessWhatsapp.svg" loading="lazy"
+            class="whatsappIcon absolute -top-1 h-10 -left-5 sm:-top-2 sm:h-12 sm:-left-5 lg:-top-1 lg:-left-5"
+            alt="" />
+          +92 370 2785975
+        </a>
+        <button onclick="window.location.href='tel:+92 370 2785975'"
+          class="btnWhatsapp lg:text-[1.2vw] text-xs px-6 sm:px-10 py-2 lg:py-[0.9vw] 2xl:py-[0.8vw] rounded-[30px] bg-[#000000] text-[#FFFFFF] PoppinsMedium">
+          Free Strategy Call
+        </button>
+      </div>
+      <div class="mt-4"><img class="khabyHeight h-96" loading="lazy" src="./images/KhabyLame.svg" alt=""></div>
+      </div>
+    </section>
+
+    <section class="py-10 xl:px-16 px-3 ">
+      <div class=" w-full flex flex-col gap-10">
+        <div class="flex justify-center items-end text-[8vw] xl:text-9xl font-black PoppinsMedium gap-3 ">
+          <h1 class=" flex items-end text-[10vw] my-4  xl:my-6 CustomGradient">
+            How we do it
+            <!-- <span class="relative"> -->
+            <!-- <img class="w-12 h-12 absolute " src="./images/QuestionMark.svg" alt="?" /> -->
+            <!-- </span> -->
+
+
+          </h1>
+        </div>
+
+
+        <div class=" flex flex-col lg:flex-row justify-between gap-10">
+          <div class="w-full lg:w-[40%] flex flex-col gap-3">
+            <div><img class="pinkGirlWidth h-84 md:w-full lg:w-auto  rounded-xl " loading="lazy"
+                src="./images/influnecergirl.svg" alt=""></div>
+            <div onclick="window.location.href='tel:+92 370 2785975'"
+              class="Startedbtn border-2 border-[#F30069] text-[#F30069] flex justify-center transition-all duration-300 items-center w-full py-3 xl:py-3 lg:py-1 hover:bg-[#F30069] hover:text-white cursor-pointer">
+              Get Started
+            </div>
+          </div>
+          <div
+            class="GirldRightSide w-full lg:w-[53%] h-[510px] lg:h-[480px] xl:h-[510px] 2xl:h-[630px] overflow-y-auto hide-scrollbar flex flex-col">
+            <div class="flex flex-col gap-6">
+              <div class=" flex items-center   gap-3">
+                <p class="text-[1vw]  text-[#F30069]">01</p>
+                <h3 class="MyCustomFont lg:text-[2.2vw] text-[4vw]  ">influencer Agency</h3>
+              </div>
+              <div class="flex flex-col gap-4 pr-6 ">
+                <p class="text-[2.5vw] xl:text-[1vw] lg:text-[0.8vw] 2xl:text-[1vw]   opacity-70 PoppinsRegular">As
+                  an influencer agency in the US, our primary role is to act as the vital link between brands and
+                  influencers. This involves a meticulous process of identifying, vetting, and engaging influencers
+                  whose ethos, audience, and content align with the brand's identity and goals.</p>
+                <p class="text-[2.5vw] xl:text-[1vw] lg:text-[0.8vw] 2xl:text-[1vw]   opacity-70 PoppinsRegular">We
+                  focus on building dynamic partnerships that genuinely connect with target audiences, utilizing our
+                  extensive network of digital influencers from diverse niches and platforms.</p>
+                <p class="text-[2.5vw] xl:text-[1vw] lg:text-[0.8vw] 2xl:text-[1vw]   opacity-70 PoppinsRegular">Our
+                  agency is skilled in designing strategies that not only convey a brand’s message but also enhance it
+                  through influencer voices, sparking widespread engagement and elevating brand awareness.</p>
+              </div>
+              <div class="border border-gray-300 w-full my-6"></div>
+            </div>
+            <div class="flex flex-col gap-6">
+              <div class=" flex items-center   gap-3">
+                <p class="text-[1vw]  text-[#F30069]">02</p>
+                <h3 class="MyCustomFont lg:text-[2.2vw] text-[4vw]  ">Influencer Marketing Strategies</h3>
+              </div>
+              <div class="flex flex-col gap-4 pr-6 ">
+                <p class="text-[2.5vw] xl:text-[1vw] lg:text-[0.8vw] 2xl:text-[1vw]  opacity-70 PoppinsRegular">
+                  Developing a successful influencer marketing strategy is an art and science that Socially Powerful has
+                  mastered. We begin with a deep dive into the brand's objectives, target audience, and market
+                  positioning.
+                </p>
+                <p class="text-[2.5vw] xl:text-[1vw] lg:text-[0.8vw] 2xl:text-[1vw]  opacity-70 PoppinsRegular">Armed
+                  with this insight, we tailor a strategic blueprint that encompasses influencer selection, campaign
+                  concept, content direction, and distribution channels.
+                </p>
+                <p class="text-[2.5vw] xl:text-[1vw] lg:text-[0.8vw] 2xl:text-[1vw]  opacity-70 PoppinsRegular">Our
+                  strategies are designed to captivate attention, engage minds, and inspire action, ensuring that each
+                  campaign delivers maximum impact and measurable results.</p>
+              </div>
+              <div class="border border-gray-300 w-full my-6"></div>
+            </div>
+            <div class="flex flex-col gap-6">
+              <div class=" flex items-center   gap-3">
+                <p class="text-[1vw]  text-[#F30069]">03</p>
+                <h3 class="MyCustomFont lg:text-[2.2vw] text-[4vw]  ">Content Strategy</h3>
+              </div>
+              <div class="flex flex-col gap-4 pr-6 ">
+                <p class="text-[2.5vw] xl:text-[1vw] lg:text-[0.8vw] 2xl:text-[1vw]  opacity-70 PoppinsRegular">
+                  Content is the currency of the digital world, and at Socially Powerful, we understand its power to
+                  connect and convert. Our content strategy service focuses on creating compelling narratives that align
+                  with the brand’s message and resonate with the target audience.
+                </p>
+                <p class="text-[2.5vw] xl:text-[1vw] lg:text-[0.8vw] 2xl:text-[1vw]  opacity-70 PoppinsRegular">We
+                  work closely with influencers to craft content that’s genuine, captivating, and tailored to each
+                  platform, whether it’s Instagram Stories, YouTube videos, TikTok challenges, or others.
+
+                </p>
+                <p class="text-[2.5vw] xl:text-[1vw] lg:text-[0.8vw] 2xl:text-[1vw]  opacity-70 PoppinsRegular">Our
+                  aim is to produce content that cuts through the noise of the digital space, sparking engagement and
+                  building a stronger connection with the audience.</p>
+              </div>
+              <div class="border border-gray-300 w-full my-6"></div>
+            </div>
+            <div class="flex flex-col gap-6">
+              <div class=" flex items-center   gap-3">
+                <p class="text-[1vw]  text-[#F30069]">04</p>
+                <h3 class="MyCustomFont lg:text-[2.2vw] text-[4vw]  ">Paid Social</h3>
+              </div>
+              <div class="flex flex-col gap-4 pr-6 ">
+                <p class="text-[2vw] xl:text-[1vw] lg:text-[0.8vw] 2xl:text-[1vw]  opacity-70 PoppinsRegular">
+                  Amplifying reach and ensuring that content cuts through the digital noise requires a strategic
+                  approach to paid social. Our agency excels in creating targeted paid social campaigns that enhance
+                  visibility and drive engagement.
+
+                </p>
+                <p class="text-[2.5vw] xl:text-[1vw] lg:text-[0.8vw] 2xl:text-[1vw]  opacity-70 PoppinsRegular">By
+                  leveraging sophisticated targeting techniques and platform insights, we ensure that content reaches
+                  the intended audience at the optimal time, maximizing impact and ROI.
+                </p>
+                <p class="text-[2.5vw] xl:text-[1vw] lg:text-[0.8vw] 2xl:text-[1vw]  opacity-70 PoppinsRegular">Our
+                  continuous optimization process ensures that campaigns are agile, responsive, and always performing at
+                  their best in the United States</p>
+              </div>
+              <div class="border border-gray-300 w-full my-6"></div>
+            </div>
+            <div class="flex flex-col gap-6">
+              <div class=" flex items-center   gap-3">
+                <p class="text-[1vw]  text-[#F30069]">05</p>
+                <h3 class="MyCustomFont lg:text-[2.2vw] text-[4vw]  ">Influencer Campaign Measurement</h3>
+              </div>
+              <div class="flex flex-col gap-4 pr-6 ">
+                <p class="text-[2.5vw] xl:text-[1vw] lg:text-[0.8vw] 2xl:text-[1vw]  opacity-70 PoppinsRegular">
+                  Measuring the success of an influencer marketing campaign is crucial for understanding its impact and
+                  refining future strategies that work in the US market.
+
+                </p>
+                <p class="text-[2.5vw] xl:text-[1vw] lg:text-[0.8vw] 2xl:text-[1vw]  opacity-70 PoppinsRegular">
+                  Socially Powerful employs advanced analytics tools and methodologies to track key performance
+                  indicators, such as engagement rates, reach, conversion, and ROI.
+
+                </p>
+                <p class="text-[2.5vw] xl:text-[1vw] lg:text-[0.8vw] 2xl:text-[1vw]  opacity-70 PoppinsRegular">This
+                  data-driven approach allows us to provide our clients with transparent, actionable insights,
+                  demonstrating the tangible value of their influencer marketing investments.</p>
+              </div>
+              <div class="border border-gray-300 w-full my-6"></div>
+            </div>
+            <div class="flex flex-col gap-6">
+              <div class=" flex items-center   gap-3">
+                <p class="text-[1vw]  text-[#F30069]">06</p>
+                <h3 class="MyCustomFont lg:text-[2.2vw] text-[4vw]  ">Influencer Marketing Technology</h3>
+              </div>
+              <div class="flex flex-col gap-4 pr-6 ">
+                <p class="text-[2.5vw] xl:text-[1vw] lg:text-[0.8vw] 2xl:text-[1vw]  opacity-70 PoppinsRegular">At
+                  the heart of our operations is Aria, our proprietary influencer marketing platform. Aria leverages
+                  cutting-edge technology and AI to streamline the influencer marketing process, from influencer
+                  discovery and selection to campaign management and measurement.
+
+                </p>
+                <p class="text-[2.5vw] xl:text-[1vw] lg:text-[0.8vw] 2xl:text-[1vw]  opacity-70 PoppinsRegular">This
+                  technology enables us to match brands with the ideal influencers, optimize campaigns for peak
+                  performance, and deliver unparalleled results at scale.
+                </p>
+              </div>
+              <div class="border border-gray-300 w-full my-6"></div>
+            </div>
+            <div class="flex flex-col gap-6">
+              <div class=" flex items-center   gap-3">
+                <p class="text-[1vw]  text-[#F30069]">07</p>
+                <h3 class="MyCustomFont lg:text-[2.2vw] text-[4vw]  ">Influencer Matchmaking</h3>
+              </div>
+              <div class="flex flex-col gap-4 pr-6 ">
+                <p
+                  class="text-[2.5vw] xl:text-[1vw] lg:text-[0.8vw] 2xl:text-[1vw]  opacity-70 PoppinsRegular">
+                  Finding the perfect influencer-brand fit is key to campaign success. Our influencer matchmaking
+                  process goes beyond surface-level metrics like follower count, delving into engagement rates, audience
+                  demographics, content quality, and alignment with the brand's values.
+
+                </p>
+                <p
+                  class="text-[2.5vw]  xl:text-[1vw] lg:text-[0.8vw] 2xl:text-[1vw]  opacity-70 PoppinsRegular">
+                  This meticulous selection process ensures that our clients collaborate with influencers who can
+                  authentically champion their brand, creating genuine connections and driving meaningful engagement.
+                </p>
+              </div>
+              <div class="border border-gray-300 w-full my-6"></div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <style>
+      .marquee {
+        display: flex;
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+      }
+
+      .marquee-content {
+        display: inline-flex;
+        animation: marquee-left 20s linear infinite;
+      }
+
+      .marquee-left .marquee-content {
+        animation-name: marquee-left;
+      }
+
+      .marquee-right .marquee-content {
+        animation-name: marquee-right;
+      }
+
+      @keyframes marquee-left {
+        0% {
+          transform: translateX(0%);
+        }
+
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      @keyframes marquee-right {
+        0% {
+          transform: translateX(-50%);
+        }
+
+        100% {
+          transform: translateX(0%);
+        }
+      }
+    </style>
+
+    <section class="w-full my-6  px-4 sm:px-16 overflow-hidden">
+      <h2 class="my-10 MyCustomFont text-[5vw]  sm:text-[3.5vw] text-center leading-tight">
+        Your Thoughts, <span class="text-[#5A57FB] mb-2">Our Creation.</span>
+      </h2>
+
+      <div class="marquee marquee-left mb-2">
+        <div class="marquee-content">
+          <img src="./images/1.svg" loading="lazy" class="h-52 2xl:h-72  mx-1" />
+          <img src="./images/2.svg" loading="lazy" class="h-52 2xl:h-72  mx-1" />
+          <img src="./images/3.svg" loading="lazy" class="h-52 2xl:h-72  mx-1" />
+          <img src="./images/4.svg" loading="lazy" class="h-52 2xl:h-72  mx-1" />
+          <!-- Repeat for seamless scroll -->
+          <img src="./images/1.svg" loading="lazy" class="h-52 2xl:h-72  mx-1" />
+          <img src="./images/2.svg" loading="lazy" class="h-52 2xl:h-72  mx-1" />
+          <img src="./images/3.svg" loading="lazy" class="h-52 2xl:h-72  mx-1" />
+          <img src="./images/4.svg" loading="lazy" class="h-52 2xl:h-72  mx-1" />
+        </div>
+      </div>
+
+      <div class="marquee marquee-right mb-2">
+        <div class="marquee-content">
+          <img src="./images/5.svg" loading="lazy" class="h-52 2xl:h-72  mx-1" />
+          <img src="./images/6.svg" loading="lazy" class="h-52 2xl:h-72  mx-1" />
+          <img src="./images/7.svg" loading="lazy" class="h-52 2xl:h-72  mx-1" />
+          <img src="./images/8.svg" loading="lazy" class="h-52 2xl:h-72  mx-1" />
+          <!-- Repeat -->
+          <img src="./images/5.svg" loading="lazy" class="h-52 2xl:h-72  mx-1" />
+          <img src="./images/6.svg" loading="lazy" class="h-52 2xl:h-72  mx-1" />
+          <img src="./images/7.svg" loading="lazy" class="h-52 2xl:h-72  mx-1" />
+          <img src="./images/8.svg" loading="lazy" class="h-52 2xl:h-72  mx-1" />
+        </div>
+      </div>
+
+      <div class="marquee marquee-left">
+        <div class="marquee-content">
+          <img src="./images/9.svg" loading="lazy" class="h-52 2xl:h-72  mx-1" />
+          <img src="./images/10.svg" loading="lazy" class="h-52 2xl:h-72  mx-1" />
+          <img src="./images/11.svg" loading="lazy" class="h-52 2xl:h-72  mx-1" />
+          <img src="./images/12.svg" loading="lazy" class="h-52 2xl:h-72  mx-1" />
+          <img src="./images/13.svg" loading="lazy" class="h-52 2xl:h-72  mx-1" />
+          <!-- Repeat -->
+          <img src="./images/9.svg" loading="lazy" class="h-52 2xl:h-72  mx-1" />
+          <img src="./images/10.svg" loading="lazy" class="h-52 2xl:h-72  mx-1" />
+          <img src="./images/11.svg" loading="lazy" class="h-52 2xl:h-72  mx-1" />
+          <img src="./images/12.svg" loading="lazy" class="h-52 2xl:h-72  mx-1" />
+          <img src="./images/13.svg" loading="lazy" class="h-52 2xl:h-72  mx-1" />
+        </div>
+      </div>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+    <section class="w-full  my-16 px-16">
+      <h2 class="my-5 MyCustomFont text-[5vw]  sm:text-[3.5vw] text-center leading-tight">
+        Here From <span class="text-[#5A57FB] mb-2">Our Clients</span>
+      </h2>
+
+      <div class="slider  py-4 flex gap-3">
+
+
+        <div
+          class="w-auto mr-2 bg-white border  border-gray-300 rounded-2xl p-6 flex flex-col justify-center items-center text-center space-y-4 2xl:px-6 ">
+          <div class="flex flex-col items-center gap-2">
+            <img
+              src="https://lh3.googleusercontent.com/a/ACg8ocL2bqw9ego7DtGlw47A7ekA8ht9JtprysfngA1r5nqvca-sHQ=w108-h108-p-rp-mo-br100"
+              loading="lazy" alt="Reviewer" class="w-12 h-12 rounded-full border-2 border-yellow-400">
+            <p class="mt-2  font-semibold text-[3vw] lg:text-[1.5vw] text-gray-800">M. Mussadiq Khan</p>
+            <p class="text-gray-700 text-[2vw]  lg:text-[1vw]   PoppinsRegular md:h-40 lg:h-28 2xl:h-32 threexl_size ">
+              “I was honestly a bit confused about SEO at first, but their team did such a great job that I could
+              clearly see the difference. My website's ranking improved, and I started getting more inquiries. They're
+              really helpful and professional. Highly recommend them!”
+            </p>
+            <div class="w-full flex justify-center">
+              <img src="./images/Stars.svg" loading="lazy" alt="Star Rating" class="h-5 lg:h-4 xl:h-6">
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="w-auto mr-2 bg-white border  border-gray-300  rounded-2xl p-6 flex flex-col justify-center items-center text-center space-y-4 2xl:px-6">
+          <div class="flex flex-col items-center gap-2">
+            <img
+              src="https://lh3.googleusercontent.com/a/ACg8ocKVvDX1ECYB9DXPyQ4LDqe3MG_I_FmkFJ6kVPe6ZjoGZgl4aQ=w108-h108-p-rp-mo-br100"
+              loading="lazy" alt="Reviewer" class="w-12 h-12 rounded-full border-2 border-yellow-400">
+            <p class="mt-2 text-[3vw] lg:text-[1.5vw]  font-semibold text-gray-800">Abu Bakar</p>
+            <p class="text-gray-700 text-[2vw]  lg:text-[1vw]   PoppinsRegular md:h-40 lg:h-28 2xl:h-32 threexl_size">
+              “I hired Brintor for SEO services to help improve our company’s online presence, and they really took the
+              time to understand what we needed. The process was easy, and their team was always helpful whenever I had
+              questions. Thanks to their work, our website’s search rankings have improved a lot. I highly recommend
+              them for SEO services!”
+            </p>
+            <div class="w-full flex justify-center">
+              <img src="./images/Stars.svg" loading="lazy" alt="Star Rating" class="h-5 lg:h-4 xl:h-6">
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="w-auto mr-2 bg-white border  border-gray-300 rounded-2xl p-6 flex flex-col justify-center items-center text-center space-y-4 2xl:px-6">
+          <div class="flex flex-col items-center gap-2">
+            <img
+              src="https://lh3.googleusercontent.com/a-/ALV-UjU0ig6rA0JHQ7Y6476OAsU0O7AKi7rHIcw5vZ5kv5FlvIyV4Fg=w72-h72-p-rp-mo-br100"
+              loading="lazy" alt="Reviewer" class="w-12 h-12 rounded-full border-2 border-yellow-400">
+            <p class="mt-2 text-[3vw] lg:text-[1.5vw]  font-semibold text-gray-800">Saifullah Ali khan</p>
+            <p class="text-gray-700 text-[2vw] lg:text-[1vw]   PoppinsRegular md:h-40 lg:h-28 2xl:h-32 threexl_size">
+              “Brintor helped us design a new brand identity, and we happier with the results! Their creative team
+              listened carefully to our ideas and turned them into something amazing. The entire process was smooth and
+              professional. Highly recommended!”
+            </p>
+            <div class="w-full flex justify-center">
+              <img src="./images/Stars.svg" alt="Star Rating" loading="lazy" class="h-5  lg:h-4 xl:h-6">
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="w-auto mr-2 bg-white border  border-gray-300 rounded-2xl p-6 flex flex-col justify-center items-center text-center space-y-4 2xl:px-6">
+          <div class="flex flex-col items-center gap-2">
+            <img
+              src="https://lh3.googleusercontent.com/a/ACg8ocJmK_Kk3l2Zsg2nnODRkJW2BV_Eykn7F1cLptslQbJefaqF4oU=w108-h108-p-rp-mo-br100"
+              loading="lazy" alt="Reviewer" class="w-12 h-12 rounded-full border-2 border-yellow-400">
+            <p class="mt-2 text-[3vw] lg:text-[1.5vw]  font-semibold text-gray-800">Shazaib Khan</p>
+            <p class="text-gray-700 text-[2vw]  lg:text-[1vw]    PoppinsRegular md:h-40 lg:h-28 2xl:h-32 threexl_size ">
+              “I hired Brintor to revamp our company website and was really impressed by how they took the time to
+              understand what we needed. The process was smooth and their support was always available when I had
+              questions. I’d definitely recommend them!”
+            </p>
+            <div class="w-full flex justify-center">
+              <img src="./images/Stars.svg" alt="Star Rating" loading="lazy" class="h-5  lg:h-4 xl:h-6">
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-auto mr-2 bg-white border  border-gray-300 rounded-2xl p-6 flex flex-col justify-center items-center text-center space-y-4 2xl:px-6">
+          <div class="flex flex-col items-center gap-2">
+            <img
+              src="https://lh3.googleusercontent.com/a/ACg8ocLazT1qdcac878Y1GWjVAwRS56E7m-y43efKj704tRUWQjw6K0=w108-h108-p-rp-mo-ba2-br100"
+              loading="lazy" alt="Reviewer" class="w-12 h-12 rounded-full border-2 border-yellow-400">
+            <p class="mt-2 text-[3vw] lg:text-[1.5vw]  font-semibold text-gray-800">Osama Tariq</p>
+            <p class="text-gray-700 text-[2vw]  lg:text-[1vw]  PoppinsRegular md:h-40 lg:h-28 2xl:h-32 threexl_size ">
+              “One stop solution for all my IT needs. I have been working with them since years now. Keep up the good
+              work team👍”
+            </p>
+            <div class="w-full flex justify-center">
+              <img src="./images/Stars.svg" loading="lazy" alt="Star Rating" class="h-5 lg:h-4 xl:h-6">
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-auto mr-2 bg-white border  border-gray-300 rounded-2xl p-6 flex flex-col justify-center items-center text-center space-y-4 2xl:px-6">
+          <div class="flex flex-col items-center gap-2">
+            <img
+              src="https://lh3.googleusercontent.com/a-/ALV-UjVhOod9G8SY3YqoGQZs0nP7n_Lg5eKPBhQXOAd7uG4keHxJNu04gw=w108-h108-p-rp-mo-br100"
+              loading="lazy" alt="Reviewer" class="w-12 h-12 rounded-full border-2 border-yellow-400">
+            <p class="mt-2 text-[3vw] lg:text-[1.5vw]  font-semibold text-gray-800">Faiq Khan</p>
+            <p class="text-gray-700 text-[2vw]  lg:text-[1vw]   PoppinsRegular md:h-40 lg:h-28 2xl:h-32 threexl_size ">
+              “Highly professional team! They really took time to understand my business needs. Very satisfied with the
+              services.”
+            </p>
+            <div class="w-full flex justify-center">
+              <img src="./images/Stars.svg" alt="Star Rating" loading="lazy" class="h-5 lg:h-4  xl:h-6">
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <script>
+      $(document).ready(function () {
+        $('.slider').slick({
+          dots: false,
+          infinite: true,
+          speed: 500,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+              }
+            },
+            {
+              breakpoint: 1024,  
+              settings: {
+                slidesToShow: 2,
+              }
+            }
+          ]
+        });
+      });
+    </script>
+
+
+  </main>
+  <footer class="xl:px-16 px-3 ">
+    <section class="rounded-[30px] border border-gray-300 flex flex-col lg:flex-row md:gap-4 lg:gap-0">
+      <div
+        class="border-r border-gray-300 rounded-l-[30px] w-full lg:w-[25%] px-6 pLeft lg:pt-24 xl:pt-32 pt-12 xl:bg-[#F6F6F6]">
+        <div class=" flex flex-col gap-8">
+          <div><img class="h-14 md:h-20 lg:h-12 xl:h-14" src="./images/LogoBrintor.svg" loading="lazy" alt=""></div>
+          <p class=" text-[4vw] md:text-[3vw] lg:text-[1.1vw] opacity-70 pr-6 ">We turn your ideas into Digital
+            Masterpieces.</p>
+          <div class=" flex gap-3">
+            <a href="https://www.facebook.com/brintor.official"
+              class="border border-black rounded-full w-10 h-10 lg:w-10 lg:h-10 md:w-16 md:h-16 bg-black flex justify-center itms-center p-3"><img
+                src="./images/fbIcon.png" loading="lazy" alt=""></a>
+            <a href="https://wa.me/+923702785975"
+              class="border border-black rounded-full w-10 h-10 lg:w-10 lg:h-10 md:w-16 md:h-16 bg-black flex justify-center itms-center p-3"><img
+                src="./images/whatsappIcon.png" loading="lazy" alt=""></a>
+            <a href="https://www.linkedin.com/company/brintor/"
+              class="border border-black rounded-full w-10 h-10 lg:w-10 lg:h-10 md:w-16 md:h-16 bg-black flex justify-center itms-center p-3"><img
+                src="./images/linkedinIcon.png" loading="lazy" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div class=" lg:w-[75%] w-full flex flex-col justify-between  pt-6 lg:pt-24 xl:pt-32 gap-28">
+        <div class=" pl-6 lg:pl-16 pr-4 grid grid-col-1 lg:grid-cols-3 ">
+          <div class=" flex flex-col gap-6 ">
+            <div class=" PoppinsSemibold text-[5.5vw] md:text-[5vw] lg:text-[1.6vw]">Company</div>
+            <div class=" flex flex-col  gap-1 xl:gap-3 text-[3.5vw] lg:text-[1.1vw] PoppinsRegular">
+              <a href="https://brintor.com/" class="opacity-70">
+                Home
+            </a>
+              <a href="https://brintor.com/about-us" class="opacity-70">
+                About
+              </a>
+              <a href="https://brintor.com/contact-us" class="opacity-70">
+                Contact
+              </a>
+            </div>
+          </div>
+          <div class=" flex flex-col gap-6">
+            <div class=" PoppinsSemibold text-[5.5vw] md:text-[5vw] lg:text-[1.6vw] mt-4 md:mt-6 lg:mt-0">Contact info
+            </div>
+            <div class=" flex flex-col gap-6 md:gap-8 lg:gap-4 text-[3.5vw] lg:text-[1.1vw]">
+              <div class="flex flex-col gap-1 md:gap-4 lg:gap-1 2xl:gap-2">
+                <p class="PoppinsSemibold">ADDRESS:</p>
+                <p
+                  class="PoppinsRegular leadingLine  pr-3 lg:pr-8 xl:pr-3 2xl:pr-10 leading-[1.5rem] 2xl:leading-[1.7rem] opacity-70 ">
+                  PLOT NO 122-C BLOCK 2 COMMERCIAL AREA PECHS Karachi Sindh</p>
+              </div>
+              <div class="flex flex-col gap-1 md:gap-4 lg:gap-1 2xl:gap-2">
+                <p class="PoppinsSemibold">EMAIL:</p>
+                <a class="PoppinsRegular " href="mailto:info@brintor.com">info@brintor.com</a>
+              </div>
+              <div class="flex flex-col gap-1 md:gap-4 lg:gap-1 2xl:gap-2">
+                <p class="PoppinsSemibold">PHONE:</p>
+                <p class="PoppinsRegular cursor-pointer" onclick="window.location.href='tel:+92 21-34303796'">
+                  +021-34303796
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class=" flex flex-col gap-6">
+            <div class=" PoppinsSemibold text-[5.5vw] md:text-[5vw] lg:text-[1.6vw] mt-4 md:mt-6 lg:mt-0">Newsletter
+            </div>
+            <div class=" flex flex-col gap-6 lg:gap-4 text-[3.5vw] lg:text-[1.1vw]">
+              <p
+                class="PoppinsRegular leadingLine opacity-70 leading-[1.5rem] 2xl:leading-[1.7rem] 2xl:pr-4 pr-0 lg:pr-4">
+                Join our subscribers list to get the instant latest news and special offers.
+              </p>
+              <form action="">
+                <div class="border-2 border-black rounded-full w-full relative">
+                  <input
+                    class="w-full h-full outline-none py-5 rounded-full pl-6 pr-14 PoppinsRegular placeholder:text-gray-500"
+                    placeholder="Your Email" type="email" name="email"  id="newslatter"/>
+                <button type="submit"
+                onclick="sendNewsletter(event)"
+  class="absolute top-1/2 right-1 transform -translate-y-1/2 w-12 h-12 bg-[linear-gradient(150deg,_#61B6A1,_#5D7DAB)] rounded-full flex justify-center items-center p-4">
+  <img class="-rotate-45" src="./images/ArrowRotate.png" alt="">
+</button>
+
+                </div>
+              </form>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-300 py-3 text-center text-[3vw] lg:text-[1.1vw] opacity-70">Copyright © 2025
+          Brintor. All Rights Reserved</div>
+      </div>
+    </section>
+
+  </footer>
+  <br>
+
+
+  <script>
+  function sendEmail() {
+    const name = document.getElementById("name").value;
+    const phone = document.getElementById("phone").value;
+    const website = document.getElementById("website").value;
+   
+
+    const templateParams = {
+      name: name,
+      phone: phone,
+      website: website,
+      message: `Name: ${name}\nPhone: ${phone}\nWebsite: ${website}`
+    };
+
+    emailjs.send("service_owksgf4", "template_ondvxlb", templateParams)
+      .then(function (response) {
+        alert("Message sent successfully!");
+        console.log("SUCCESS!", response.status, response.text);
+      }, function (error) {
+        alert("Failed to send message!");
+        console.log("FAILED...", error);
+      });
+  }
+
+
+    function sendNewsletter(event) {
+    event.preventDefault();
+
+    const email = document.getElementById("newslatter").value;
+
+    if (!email) {
+      alert("Please enter your email.");
+      return;
+    }
+
+    const templateParams = {
+      name: email,
+      message: `${email} This Person to Our Website PPC landing page`
+    };
+
+    emailjs.send("service_owksgf4", "template_apnwfhc", templateParams)
+      .then(function (response) {
+        alert("Message sent successfully!");
+        console.log("SUCCESS!", response.status, response.text);
+      }, function (error) {
+        alert("Failed to send message!");
+        console.log("FAILED...", error);
+      });
+  }
+
+
+</script>
+</body>
+
+</html>

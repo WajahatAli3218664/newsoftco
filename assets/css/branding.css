@@ -1,0 +1,6376 @@
+.scrollbtArrow2 a{
+  font-weight: bold;
+}
+.scrollbtArrow2 a:hover{
+  color: #1D1D1D;
+}
+
+
+.maincontainer{
+    width: 100%;
+   
+}
+
+.Bannersection_web {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../img/BrandingBG.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+  inset: 0;
+  
+}
+
+
+.Bannersection_web::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  
+  background: linear-gradient(
+      to top,
+      #1D1D1D 20%,
+      #1D1D1D 20%,
+      rgba(29, 29, 29, 0.6) 25%,
+      rgba(29, 29, 29, 0.3) 40%,
+      rgba(29, 29, 29, 0) 100%
+  );
+}
+/* .BannersectionText{
+  
+  color: white;
+  padding:  0 80px;
+  padding-top: 28vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  
+  position: relative;  
+  z-index: 10;       
+} */
+.BannersectionText {
+  color: white;
+  padding: 0 80px;
+  padding-top: clamp(120px, 28vh, 240px);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  z-index: 10;
+
+}
+
+
+.bannerHeading{
+  font-size: 1.4rem;
+  font-weight:600;
+  margin-bottom: 10px;
+}
+.paraBannerSec{
+  font-size: 1rem;
+  margin-bottom: 0;
+  margin-top: 0;
+color: white !important;
+
+}
+.BannerTwoSide{
+  
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  
+
+}
+.BannerSideRight{
+  width: 40%;
+  
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.BannerSideLeft{
+  width: 30%;
+  
+  font-size: 1rem;
+  line-height: 1.5rem;
+color: white !important;
+/* padding-right: 100px; */
+margin-bottom: 0;
+}
+.FixBannerBtn{
+  font-size: 0.8rem;
+  background-color: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 1px 14px;
+  border-radius: 20px;
+}
+.SliderBanner {
+  overflow: hidden;
+  white-space: nowrap;
+  /* height: 10vh; */
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  background: transparent;
+}
+
+.sliderTrack {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scrollText 25s linear infinite ;
+  text-transform: uppercase;
+}
+
+.sliderTrack span {
+  font-size: 8rem;
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: 1px white; /* outline effect */
+  text-stroke: 1.5px white;         /* fallback */
+  margin-right: 3rem;
+}
+
+/* Animation */
+@keyframes scrollText {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+
+.Agency{
+   
+    padding: 50px 200px;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    /* justify-content: center; */
+    align-items: center;
+    
+}
+.DesignAgencybtn{
+    font-size: 12px;
+   
+    padding: 5px 10px;
+    background-color: #23282F;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.DownbtnSide h1{
+    font-size: 3vw;
+    text-align: center;
+   font-weight: bold;
+    margin-bottom: 0px !important;
+
+    
+}
+.lastTextAgency{
+    text-align: center;
+    color: gray;
+}
+.Line{
+    padding: 0 80px;
+}
+.logoAligner{
+   
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;        
+}
+.logoFlex{
+    display: flex;
+    gap: 40px;
+    height: 50px;
+}
+.bgWhiteSection{
+    /*  */
+    /* height: 100vh; */
+    background-color: white;
+}
+.bgWhiteHeader{
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #82899149;
+
+}
+.industry{
+    font-size: 12px;
+    color: #888B8E;
+}
+.btnUnder{
+    font-size: 12px;
+    color: black;
+    font-weight: 800;
+    border: 1px solid #F1F1F1;
+    padding: 6px 20px ;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.arrowHeight{
+    width: 16px;
+    height: 16px;
+    padding-bottom: 3px ;
+}
+.underline-text {
+    position: relative;
+    display: inline-block;
+  }
+.underline-text::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 1px; 
+    background-color: gray; 
+    transition: width 0.3s ease;
+  }
+  
+  .btnUnder:hover .underline-text::after {
+    width: 100%;
+  }
+
+
+
+  .bgWhiteLogo{
+    display: flex;
+    height: 32px;
+    gap: 20px;
+  }
+
+.GradinetPadding{
+    padding: 100px 80px;
+  }
+  .gradientInside {
+    
+    /* height: 90vh; */
+    background-image: url('../img/GradientImg.avif');
+    background-size: cover;
+    background-position: bottom;
+    padding: 100px 90px;
+    border-radius: 20px;
+  }
+  .insideGrad{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  .flexGradi{
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .LeftGradient{
+    
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .RightGradient{
+    
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 16px;
+
+  }
+  .LeftGradient h1{
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .btnsFlex{
+    display: flex;
+    gap: 12px;
+  }
+.btnBg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 20px;
+    border-radius: 20px;
+    gap: 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+.colorbtn{
+    color: black;
+    background-color: white;
+}
+.colorbtn:hover{
+    
+    background-color: rgb(236, 233, 233);
+}
+.colorbtnOld{
+    color: white;
+}
+.arrowHeightNew{
+    width: 14px;
+    height: 14px;
+    padding-bottom: 3px ;
+}
+.arrowHeightOld{
+    width: 14px;
+    height: 14px;
+    padding-bottom: 3px ;
+}
+.btnBg span img {
+    transition: transform 0.3s ease;
+  }
+  
+  .btnBg:hover span img {
+    transform: translateX(6px);
+  }
+  .textsizePraraRight{
+    font-size: 15px ;
+    padding-left: 36px;
+  }
+  .WhiteLineGrad{
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  }
+  .CenterWhiteGrad{
+    text-align: center;
+  }
+  .TextCenterGrad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+  }
+  .BlackPush{
+    padding: 120px 80px 100px 80px ;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+  }
+  .HeadPush{
+    
+    padding-right: 50%;
+  }
+  
+  .HeadPush h1{
+    font-size: 64px;
+    font-weight: bold;
+  }
+  .bodyPush{
+    display: flex;
+  }
+  .pushLeft{
+    
+    width: 33%;
+  }
+  .pushRight{
+    
+    width: 67%;
+  }
+  .Excellence{
+  
+    background-color: #262525;
+    padding: 5px 16px;
+    border-radius: 20px;
+    font-size: small;
+  }
+  .RightBorderpush{
+    
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction:column;
+    gap: 2rem;
+  }
+  .contentSeprate{
+    display: flex;
+   gap: 3rem; 
+  }
+  .ContentpushLeft{
+    
+    width: 50%;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    padding-right: 28px;
+  }
+  .ContentpushRight{
+    
+    width: 50%;
+    font-size: 0.9rem;
+  }
+  .WhiteLinePush{
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.097);
+  }
+
+
+
+
+  .ScrollImgSection{
+    background-color: white;
+    width: 100%;
+    padding: 20vh 40px;
+  }
+  .paddingScrollSide{
+    
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    position: relative;
+  }
+
+  .scrollLeftSide{
+
+width: 30%;
+/* height: 1300px; */
+  }
+
+
+
+
+
+
+
+
+  .scrollRightSide {
+    width: 70%;
+    /* padding: 100px 2rem; */
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    
+    
+  }
+  
+  .scrollImageWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  
+  
+  .ScrollImgSize {
+    border-radius: 20px;
+    position: relative;
+    max-width: 800px;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    will-change: transform, opacity;
+  }
+  
+  .ScrollImgSize::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  .scrollImage {
+    width: 100%;
+    display: block;
+  }
+  
+  /* Make sure the overlay content stays on top of gradient */
+  .checkScrollInside {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 40px 20px;
+    color: white;
+    z-index: 2;
+    width: 100%;
+  }
+  
+
+.WorkScrollInside{
+  width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.ScrollPadInside{
+  display: flex;
+  justify-content: space-between;
+
+}
+.btnCheckScr{
+  /*  */
+  display:  flex;
+}
+.UniquebtnScr{
+  border:  1px solid rgba(226, 220, 220, 0.413);
+  padding: 3px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: white;
+}
+.Flipp{
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.WhiteScrollbtn{
+  
+}
+.WhiteScrollbtn{
+  padding: 8px 20px ;
+  background-color: white;
+  color: #1D1D1D;
+  font-size: 0.7rem;
+  border-radius:20px ;
+}
+
+  .LeftScrollControl{
+    
+    position: sticky;
+    top: 110px; /* stick to top when reaches it */
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    color: black;
+
+  }
+  .HeadSideScrollLeft{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+  }
+  .BottomSideScrollLeft{
+  
+    width: 100%;
+    display: flex;
+    flex-direction: row !important;
+    gap: 3px;
+  }
+  .btnScrll{
+background-color: #F7F6F6;
+color: #706868;
+font-size: 0.8rem;
+border: 1px solid rgba(219, 215, 215, 0.281);
+padding: 1px 14px;
+border-radius: 20px;
+font-weight: 400;
+}
+.ScrollContentPad{
+  padding-right: 4rem;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+}
+/* background: linear-gradient(150deg, #61B6A1, #5D7DAB); */
+.scrollbtArrow{
+  background: linear-gradient(150deg, #61B6A1, #5D7DAB);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.scrollbtArrow2{
+  padding: 7px 16px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  background-color: transparent;
+  color: black;
+  border: 1px solid rgba(219, 215, 215, 0.751);
+
+}
+
+/* Disable any ::before or ::after animations */
+.no-hover::before,
+.no-hover::after {
+  display: none !important;
+}
+
+.WhiteScrollbtn::before,
+.WhiteScrollbtn::after{
+  display: none;
+}
+.arrowHeightScroll{
+  width: 10px;
+  height: 10px;
+  padding-bottom: 1px ;
+  
+}
+.arrowHeightScroll2{
+  width: 14px;
+  height: 14px;
+  padding-bottom: 1px ;
+  
+}
+
+
+
+
+
+.DropDownSection{
+  
+  padding: 200px 80px;
+}
+.DropLayer{
+  display: flex;
+  flex-direction: column;
+  
+  gap: 4rem;
+}
+.doinfFlexDrop{
+  display:  flex;
+
+}
+.GeneralLeft{
+  
+  width: 23%;
+}
+.GeneralRight{
+  
+  width: 77%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.StrtHeadDrop{
+  font-size: 4.4rem;
+  font-weight:600 ;
+}
+.topDropCont{
+  
+  display:  flex;
+
+
+}
+.DropCont{
+  
+}
+.topContDropone{
+  
+  width: 34%;
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+.topContDropTwo{
+  
+  width: 66%;
+}
+.DropLine{
+  height: 30px;
+  width: 3px;
+  background-color: #008AFC;
+  border-radius: 10px;
+}
+.DropLine2{
+  height: 30px;
+  width: 3px;
+  background-color: #1FB86D;
+  border-radius: 10px;
+}
+.DropLine3{
+  height: 30px;
+  width: 3px;
+  background-color: #E25A39;
+  border-radius: 10px;
+}
+.DropLine4{
+  height: 30px;
+  width: 3px;
+  background-color: #008AFC;
+  border-radius: 10px;
+}
+.styleFontDrop{
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+
+
+
+.DropGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.DropItem {
+  background-color: #1D1D1D;
+  border-radius: 6px;
+  overflow: hidden;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.DropToggle {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0.8rem 1rem;
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  /*  */
+  background-color: #262525
+}
+.DropToggle::before,
+.DropToggle::after{
+display: none;
+}
+.DropToggle .arrow {
+  transition: transform 0.5s ease;
+}
+
+.DropItem.active .arrow {
+  transform: rotate(180deg);
+}
+
+.DropContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  padding: 0 1rem;
+}
+
+.DropItem.active .DropContent {
+  max-height: 300px;
+  padding: 0.5rem 1rem 1rem;
+}
+.DropItem.active {
+  background-color: #1D1D1D;
+}
+
+.DropContent ul li{
+      font-size: 0.8rem;
+}
+
+
+
+
+
+
+.RecentClientMain{
+ 
+  background-color: #1D1D1D;
+}
+.RecentClient{
+ 
+  padding: 80px 78px 30px 78px;
+}
+.RecentCLientBorder{
+ 
+  display: flex;
+
+
+}
+.RecentClientLeft{
+ 
+  width: 33%;
+  display:  flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+
+.RecentFlex{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+}
+.btnClient{
+  background-color: #262525;
+  color: #b9b6b6;
+  font-size: 0.8rem;
+  border: 1px solid rgba(219, 215, 215, 0.281);
+  padding: 1px 14px;
+  border-radius: 20px;
+  font-weight: 400;
+  
+    }
+.RecentHead{
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.RecentSmallG {
+ 
+  width: 70%;
+  /* margin: 0 auto; */
+  /* padding: 10px; */
+}
+
+.logo-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: center; /* Vertically align images */
+  justify-content: space-between;
+}
+
+.logo-row img {
+  height: 45px; /* Set fixed height for alignment */
+  object-fit: contain;
+  /* */
+}
+
+.RecentClientRight {
+ 
+  width: 67%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.client-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 boxes per row */
+  gap: 8px; /* Between 6–10px as requested */
+}
+
+.client-box {
+  background-color: #262525;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.client-box img {
+  max-width: 100%;
+  height: 90px; /* Small consistent height */
+  object-fit: contain;
+}
+.SliderRecentBox{
+ 
+  display: flex;
+  flex-direction: column;  
+  align-items: end;
+}
+.SliderRecentPad{
+ 
+  padding: 30px 78px 30px 78px;
+  width: 67%;
+}
+
+
+
+
+.sliderContRec {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: #1D1D1D;
+  padding: 20px 0;
+  
+}
+
+.sliderWrapper2 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sliderTrack2 {
+  display: flex;
+  width: max-content;
+  animation: slideLoop 10s linear infinite;
+  gap: 10px;
+  align-items: center;
+}
+
+.sliderTrack2 img {
+  height: 70px;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: brightness(1.2);
+}
+
+/* Looping animation */
+@keyframes slideLoop {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Gradient fades */
+.sliderFade {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.fadeLeft {
+  left: 0;
+  background: linear-gradient(to right, #1D1D1D 0%, transparent 100%);
+}
+
+.fadeRight {
+  right: 0;
+  background: linear-gradient(to left, #1D1D1D 0%, transparent 100%);
+}
+
+.RecentLine{
+  width: 100%;
+  border-top: 1px solid rgba(238, 234, 234, 0.233);
+}
+
+.Testimonials{
+
+  background-color: white;
+  color: #1D1D1D;
+  display: flex;
+  flex-direction:column ;
+  gap: 4rem;
+  padding: 80px 0;
+}
+.TopTestimonial{
+
+  padding: 0 78px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.TopLeftTesti{
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+.btnTesti{
+  background-color: #F7F6F6;
+  color: #181717;
+  font-size: 0.8rem;
+  border: 1px solid rgba(219, 215, 215, 0.281);
+  padding: 1px 14px;
+  border-radius: 20px;
+  font-weight: 400;
+  
+}
+.btnTesti::before,
+.btnTesti::after
+{
+display: none !important;
+}
+.TestiHead{
+      color: #1D1D1D !important;
+      font-size: 1.7rem;
+      font-weight: 600;
+      margin-bottom: 0;
+}
+.TopRightTesti{
+    
+      display: flex;
+      align-items: end;
+      gap: 30px;
+}
+.TopRightTesti img{
+      height: 50px;
+ }
+.BottomTestimonial{
+
+  display: flex;
+  justify-content: space-around;
+  gap:1vw;
+  padding: 0 78px;
+}
+
+
+.BoxTesti{
+  background-color: #F5F6F6;
+  display: flex;
+  padding: 20px;
+  width: 40%;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  margin-right: 10px;
+  border-radius: 12px;
+}
+.TestiFlex{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.Testihh{
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  color: #1D1D1D !important;
+  /* border: 1px solid red; */
+  height: 10vh;
+}
+.Testipp{
+  font-size: 0.9rem;
+  color: #1D1D1D !important;
+  opacity:60% ;
+  /* border: 1px solid red; */
+  height: 30vh;
+
+
+}
+.FlexLineTesti{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.MainLineTesti{
+  border-top: 1px solid rgba(167, 165, 165, 0.685);
+  margin-top: 10px;
+}
+.TextTestiT{
+  font-size: 1rem;
+  font-weight: 600;
+}
+.TextTestiB{
+  font-size: 0.8rem;
+  font-weight: 600;
+  opacity: 60%;
+}
+
+
+
+
+
+
+
+.slick-slide {
+  outline: none;
+}
+
+.slick-dots,
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
+
+
+
+
+
+
+
+ section.scroll-panels {
+      position: relative;
+      overflow: visible;
+
+    }
+
+    section.scroll-panels .panel {
+      height: 100vh;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+            
+    }
+
+    section.scroll-panels .panel:nth-child(1) {
+      background: #F9FAFB;
+      color: #101010;
+      z-index: 1;
+    }
+
+    section.scroll-panels .panel:nth-child(2) {
+      background: #F9FAFB;
+      color: #101010;
+      z-index: 2;
+    }
+
+   
+
+    /* Optional: Give space above and below the section */
+    .spacer {
+      height: 100vh;
+      background: #f0f0f0;
+    }
+
+    .panelBoundary{
+        /* border: 1px solid red; */
+        width: 100%;
+        height: 100%;
+        padding: 100px 78px 0 78px;
+}
+.borderFlexPanel{
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 5vw;
+    background-color: #F9FAFB;
+
+}
+.leftPanel{
+    width: 50%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    /* background-color: #F9FAFB; */
+}
+.leftPanelChild{
+  display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.gapPanel{
+  display: flex;
+  flex-direction: column;
+    gap: 10px;
+}
+.UiUxText{
+  /* border: 1px solid red; */
+  display:  flex;
+  display: inline;
+  padding: 6px 8px;
+  border-radius:35% ;
+  background-color: #F0F1F3;
+  font-weight: bold;
+  
+}
+.whatUI{
+  font-size: 3rem;
+  font-weight: bold;
+}
+.textOverlay{
+  opacity: 60%;
+  font-size: 1.2vw;
+}
+.RightPanel {
+  width: 50% !important;
+  height: 70vh !important;
+  background-color: white;
+  border-radius: 10px;
+  /* border: 1px solid red; */
+  overflow: hidden; /* Prevent anything from going outside */
+}
+
+.insideRightPanel {
+  padding: 6vw !important;
+  height: 100%; /* Ensure it takes full height of RightPanel */
+  box-sizing: border-box; /* Ensures padding doesn't overflow */
+}
+
+.imgoverlay {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; /* or cover, depending on your design */
+  border-radius: 10px;
+  display: block;
+}
+
+
+@media (max-width: 446px) {
+  .maincontainer{
+    width: 100%;
+   
+}
+
+.Bannersection_web {
+  width: 100%;
+  height: 60vh !important;
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+  inset: 0;
+}
+
+.Bannersection_web::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  background: linear-gradient(
+      to top,
+      #1D1D1D 0%,
+      #1D1D1D 10%,
+      rgba(29, 29, 29, 0.6) 25%,
+      rgba(29, 29, 29, 0.3) 40%,
+      rgba(29, 29, 29, 0) 100%
+  );
+}
+  .BannersectionText{
+  
+    color: white;
+    padding:  0 15px !important;
+    padding-top: 10rem !important;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+    position: relative;  
+    z-index: 10;       
+  }
+  .bannerHeading{
+    font-size: 1.2rem !important;
+    font-weight:600;
+    margin-bottom: 10px;
+  }
+  .paraBannerSec{
+    font-size: 1rem !important;
+    margin-bottom: 0;
+    margin-top: 0;
+  color: white !important;
+  
+  }
+  .BannerTwoSide{
+    
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+  
+  }
+  .BannerSideRight{
+    display: none !important;
+    width: 40%;
+    
+    justify-content: end;
+    align-items: end;
+  }
+  .BannerSideLeft{
+    width: 100% !important;
+    
+    font-size: 1rem !important;
+    
+    line-height: 1.5rem !important;
+  color: white !important;
+  /* padding-right: 100px; */
+  margin-bottom: 0;
+  }
+  
+  .SliderBanner {
+    margin-top: 20px !important;
+    overflow: hidden;
+    white-space: nowrap;
+    /* height: 10vh; */
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    background: transparent;
+  }
+  
+  .sliderTrack {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrollText 25s linear infinite ;
+    text-transform: uppercase;
+  }
+  
+  .sliderTrack span {
+    font-size: 4rem !important;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 1px white; /* outline effect */
+    text-stroke: 1.5px white;         /* fallback */
+    margin-right: 3rem;
+  }
+  
+  /* Animation */
+  @keyframes scrollText {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+
+
+
+
+
+
+  .Agency{
+   margin-top: 10rem !important;
+    padding: 50px 20px !important;
+    
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    /* justify-content: center; */
+    align-items: center;
+    
+}
+.DesignAgencybtn{
+    font-size: 12px;
+   
+    padding: 5px 10px;
+    background-color: #23282F;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.DownbtnSide h1{
+    font-size: 1.5rem !important;
+    text-align: center;
+    font-weight: bold;
+   font-weight: 600 !important;
+    margin-bottom: 0px !important;
+
+    
+}
+.lastTextAgency{
+    text-align: center;
+    color: gray;
+    
+    font-size: 1rem !important;
+}
+.Line{
+    padding: 0 20px !important;
+}
+.logoAligner {
+  
+  padding: 50px 20px 150px 20px !important;
+  display: flex;
+  justify-content: center;        
+}
+
+.logoFlex {
+  display: flex;
+  flex-wrap: wrap; /* ✅ Allow wrapping */
+  gap: 40px;
+  height: auto; /* Allow content to grow */
+  justify-content: center; /* Optional: center the wrapped lines */
+}
+
+.logoFlex img {
+  width: 80px; /* Or any responsive size */
+  height: auto;
+}
+
+
+.bgWhiteSection{
+  /*  */
+  /* height: 100vh; */
+  background-color: white;
+}
+.bgWhiteHeader{
+  padding: 20px 20px !important;
+  display: flex;
+  flex-direction: column !important;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #82899149;
+  gap: 20px !important;
+
+}
+.industry{
+  font-size: 12px;
+  color: #888B8E;
+}
+.btnUnder{
+  font-size: 12px;
+  color: black;
+  font-weight: 800;
+  border: 1px solid #F1F1F1;
+  padding: 6px 20px ;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.arrowHeight{
+  width: 16px;
+  height: 16px;
+  padding-bottom: 3px ;
+}
+.underline-text {
+  position: relative;
+  display: inline-block;
+}
+.underline-text::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 1px; 
+  background-color: gray; 
+  transition: width 0.3s ease;
+}
+
+.btnUnder:hover .underline-text::after {
+  width: 100%;
+}
+
+
+
+.bgWhiteLogo{
+  display: flex;
+  height: 32px;
+  gap: 20px;
+}
+
+
+.GradinetPadding{
+  padding: 50px 20px !important;
+}
+.gradientInside {
+  
+  /* height: 90vh; */
+  background-image: url('../img/GradientImg.avif');
+  background-size: cover;
+  background-position: bottom;
+  padding: 40px 20px !important;
+  border-radius: 20px;
+}
+.insideGrad{
+  
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.flexGradi{
+  display: flex;
+  flex-direction: column !important;
+  justify-content: space-between;
+  gap: 2rem !important;
+
+}
+.LeftGradient{
+  
+  width: 80% !important;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 2rem !important;
+}
+.RightGradient{
+  
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 0px !important;
+
+}
+.LeftGradient h1{
+  font-size: 1.6rem !important;
+  font-weight: bold;
+}
+.btnsFlex{
+  display: flex;
+  flex-direction: column !important;
+  gap: 12px;
+}
+.btnBg{
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between !important;
+  padding: 8px 20px !important;
+  border-radius: 20px;
+  gap: 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+}
+.colorbtn{
+  color: black;
+  background-color: white;
+}
+.colorbtn:hover{
+  
+  background-color: rgb(236, 233, 233);
+}
+.colorbtnOld{
+  color: white;
+    padding-right: 6rem !important;
+
+}
+.arrowHeightNew{
+  width: 14px;
+  height: 14px;
+  padding-bottom: 3px ;
+}
+.arrowHeightOld{
+  width: 14px;
+  height: 14px;
+  padding-bottom: 3px ;
+}
+.btnBg span img {
+  transition: transform 0.3s ease;
+}
+
+.btnBg:hover span img {
+  transform: translateX(6px);
+}
+.textsizePraraRight{
+  font-size: 15px ;
+line-height: 1.6rem !important;
+  padding-left: 0px !important;
+}
+.WhiteLineGrad{
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+.CenterWhiteGrad{
+  text-align: center;
+}
+.TextCenterGrad{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem !important;
+  text-align: center !important;
+}
+.BlackPush{
+  padding: 50px 20px 50px 20px !important;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+.HeadPush{
+  
+  padding-right: 0% !important;
+}
+
+.HeadPush h1{
+  font-size: 2.2rem !important;
+  font-weight: bold;
+  line-height: 2.8rem !important;
+}
+.bodyPush{
+  display: flex;
+  flex-direction: column !important;
+}
+.pushLeft{
+  
+  width: 100% !important;
+}
+.pushRight{
+  
+  width: 100% !important;
+}
+.Excellence{
+  color: rgb(210, 204, 204);
+  background-color: #262525;
+  padding: 5px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem !important;
+}
+.RightBorderpush{
+  
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction:column;
+  gap: 1rem !important;
+}
+.contentSeprate{
+  display: flex;
+  flex-direction: column !important;
+ gap: 0.5rem !important; 
+}
+.ContentpushLeft{
+  
+  width: 100% !important;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  padding-right: 28px;
+  margin-top: 20px !important;
+}
+.ContentpushRight{
+  
+  width: 100% !important;
+  font-size: 0.9rem;
+}
+.WhiteLinePush{
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.097);
+  margin-bottom: 0 !important;
+}
+.ScrollImgSection{
+    background-color: white;
+    width: 100%;
+    padding: 60px 20px !important;
+
+   
+  }
+  .paddingScrollSide{
+    
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-between;
+    gap: 2rem;
+    position: relative;
+  }
+
+  .scrollLeftSide{
+
+width: 100% !important;
+/* height: 1300px; */
+  }
+
+.LeftScrollControl{
+    
+    position: sticky;
+    top: 110px; /* stick to top when reaches it */
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-between;
+    gap: 28px;
+    color: black;
+
+  }
+
+
+
+
+
+
+  .scrollRightSide {
+    
+    width: 100% !important;
+    /* padding: 100px 2rem; */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem !important;
+    
+    
+  }
+  
+  .scrollImageWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem !important;
+  }
+  
+  
+  .ScrollImgSize {
+    border-radius: 20px;
+    
+    position: relative;
+    max-width: 400px !important;
+    width: 100%;
+    height: 200px !important;
+    overflow: hidden;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    will-change: transform, opacity;
+  }
+  
+  .ScrollImgSize::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.5) 30%,
+      rgba(0, 0, 0, 0) 60%
+    ) !important;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  .scrollImage {
+    width: 100%;
+    display: block;
+  }
+  
+  /* Make sure the overlay content stays on top of gradient */
+  .checkScrollInside {
+    /* display: none !important; */
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px 20px !important;
+    color: white;
+    z-index: 2;
+    width: 100%;
+    height: 100px !important;
+  }
+  
+
+.WorkScrollInside{
+  width: 300px !important;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 15px;
+}
+.ScrollPadInside{
+  display: none !important;
+  display: flex;
+  justify-content: end !important;
+
+}
+
+.HeadSideScrollLeft{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+  }
+  .BottomSideScrollLeft{
+    
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+.btnCheckScr{
+  /*  */
+  display:  flex;
+}
+.UniquebtnScr{
+  border:  1px solid rgba(226, 220, 220, 0.413);
+  padding: 3px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: white;
+  
+}
+.Flipp{
+  font-size: 1.3rem !important;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+
+
+
+.DropDownSection{
+  
+  padding: 60px 20px !important;
+}
+.DropLayer{
+  display: flex;
+  flex-direction: column;
+  
+  gap: 4rem;
+}
+.doinfFlexDrop{
+  display:  flex;
+  flex-direction: column !important;
+  gap: 15px !important;
+
+}
+.GeneralLeft{
+  
+  width: 100% !important;
+}
+.GeneralRight{
+  
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.StrtHeadDrop{
+  font-size: 2.2rem !important;
+  font-weight:600 ;
+}
+.topDropCont{
+  
+  display:  flex;
+  flex-direction: column !important;
+  gap: 20px !important;
+
+
+}
+.DropCont{
+  
+}
+.topContDropone{
+  
+  width: 100% !important;
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+.topContDropTwo{
+  
+  width: 100% !important;
+}
+
+
+
+
+.DropGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr) !important;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 20px;
+
+
+
+}
+
+.RecentClientMain{
+ 
+  background-color: #1D1D1D;
+}
+.RecentClient{
+ 
+  padding: 80px 20px 30px 20px !important;
+}
+.RecentCLientBorder{
+ 
+  display: flex;
+  flex-direction: column !important;
+  gap: 1rem !important;
+
+
+}
+.RecentClientLeft{
+ 
+  width: 100% !important;
+  display:  flex;
+  flex-direction: column;
+  gap: 0.5rem !important;
+}
+
+.RecentFlex{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem !important;
+
+}
+.btnClient{
+  background-color: #262525;
+  color: #b9b6b6;
+  font-size: 0.8rem;
+  border: 1px solid rgba(219, 215, 215, 0.281);
+  padding: 1px 14px;
+  border-radius: 20px;
+  font-weight: 400;
+  
+    }
+.RecentHead{
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.RecentSmallG {
+ 
+  width: 100% !important;
+  /* margin: 0 auto; */
+  /* padding: 10px; */
+}
+
+.logo-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 20px;
+  align-items: center; /* Vertically align images */
+  justify-content: space-between;
+}
+
+.logo-row img {
+  height: 45px; /* Set fixed height for alignment */
+  object-fit: contain;
+  /* */
+}
+
+.RecentClientRight {
+ 
+  width: 100% !important;
+  margin: 0 auto;
+  padding: 0px !important;
+}
+
+.client-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) !important; /* 5 boxes per row */
+  gap: 8px; /* Between 6–10px as requested */
+}
+
+.client-box {
+  background-color: #262525;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px !important;
+  border-radius: 4px;
+}
+
+.client-box img {
+  max-width: 100%;
+  height: 90px; /* Small consistent height */
+  object-fit: contain;
+}
+.SliderRecentBox{
+  margin-top: 1rem !important;
+  display: flex;
+  flex-direction: column;  
+  align-items: end;
+}
+.SliderRecentPad{
+ 
+  padding: 30px 20px 30px 20px !important;
+  width: 100% !important;
+}
+
+
+
+
+
+.RecentLine{
+  width: 100%;
+  border-top: 1px solid rgba(238, 234, 234, 0.233);
+}
+
+.Testimonials{
+
+  background-color: white;
+  color: #1D1D1D;
+  display: flex;
+  flex-direction:column ;
+  gap: 4rem;
+  padding: 80px 0;
+}
+.TopTestimonial{
+
+  padding: 0 18px !important;
+  display: flex;
+  flex-direction: column !important;
+  justify-content: space-between;
+  gap: 1rem !important;
+}
+.TopLeftTesti{
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+.btnTesti{
+  background-color: #F7F6F6;
+  color: #181717;
+  font-size: 0.8rem;
+  border: 1px solid rgba(219, 215, 215, 0.281);
+  padding: 1px 14px;
+  border-radius: 20px;
+  font-weight: 400;
+  
+}
+.TestiHead{
+      color: #1D1D1D !important;
+      font-size: 1.7rem;
+      font-weight: 600;
+      margin-bottom: 0;
+}
+.TopRightTesti{
+    
+      display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important; /* 5 boxes per row */
+      width: 70% !important;
+      gap: 10px !important;
+}
+.TopRightTesti img{
+      height: 50px !important;
+ }
+.BottomTestimonial{
+padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+
+.BoxTesti{
+  background-color: #F5F6F6;
+  display: flex;
+  padding: 20px;
+  width: 40%;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  margin-right: 10px;
+  border-radius: 12px;
+}
+.TestiFlex{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.Testihh{
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  color: #1D1D1D !important;
+
+}
+.Testipp{
+  font-size: 0.9rem;
+  color: #1D1D1D !important;
+  opacity:60% ;
+  height: 28vh !important;
+
+}
+.FlexLineTesti{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.MainLineTesti{
+  border-top: 1px solid rgba(167, 165, 165, 0.685);
+  margin-top: 10px;
+}
+.TextTestiT{
+  font-size: 1rem;
+  font-weight: 600;
+}
+.TextTestiB{
+  font-size: 0.8rem;
+  font-weight: 600;
+  opacity: 60%;
+}
+
+
+
+
+
+
+
+.slick-slide {
+  outline: none;
+}
+
+.slick-dots,
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
+
+
+
+
+
+
+section.scroll-panels {
+      position: relative;
+      overflow: visible;
+    }
+
+    section.scroll-panels .panel {
+      height: 100vh;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    section.scroll-panels .panel:nth-child(1) {
+      background: #F9FAFB;
+      color: #101010;
+      z-index: 1;
+    }
+
+    section.scroll-panels .panel:nth-child(2) {
+      background: #F9FAFB;
+      color: #101010;
+      z-index: 2;
+    }
+
+   
+
+    /* Optional: Give space above and below the section */
+    .spacer {
+      height: 100vh;
+      background: #f0f0f0;
+    }
+
+    .panelBoundary{
+        /* border: 1px solid red; */
+        width: 100%;
+        height: 100%;
+        padding: 40px 32px 0 32px !important;
+}
+.borderFlexPanel{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    background-color: #F9FAFB;
+
+}
+.leftPanel{
+    width: 100% !important;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem !important;
+    /* background-color: #F9FAFB; */
+}
+.leftPanelChild{
+  display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.gapPanel{
+  display: flex;
+  flex-direction: column;
+    gap: 10px;
+}
+.UiUxText{
+  /* border: 1px solid red; */
+  display:  flex;
+  display: inline;
+  padding: 6px 8px;
+  border-radius:35% ;
+  background-color: #F0F1F3;
+  font-weight: bold;
+  
+}
+.whatUI{
+  font-size: 2rem !important;
+  font-weight: bold;
+  line-height: 3rem;
+}
+.textOverlay{
+  opacity: 60%;
+  font-size: 3vw !important;
+}
+.RightPanel {
+  width: 100% !important;
+  height: 45vh !important;
+  background-color: white;
+  border-radius: 10px;
+  /* border: 1px solid red; */
+  overflow: hidden; /* Prevent anything from going outside */
+}
+
+.insideRightPanel {
+  padding: 8vw !important;
+  height: 100%; /* Ensure it takes full height of RightPanel */
+  box-sizing: border-box; /* Ensures padding doesn't overflow */
+}
+
+.imgoverlay {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; /* or cover, depending on your design */
+  /* border: 1px solid red !important; */
+  border-radius: 10px;
+  display: block;
+}
+
+}
+
+/* 🧱 Medium (md): ≥ 640px */
+@media (min-width: 447px) and (max-width: 899px) {
+ .maincontainer{
+    width: 100%;
+   
+}
+
+.Bannersection_web {
+  width: 100%;
+  height: 70vh;
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+  inset: 0;
+}
+
+.Bannersection_web::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  background: linear-gradient(
+      to top,
+      #1D1D1D 0%,
+      #1D1D1D 10%,
+      rgba(29, 29, 29, 0.6) 25%,
+      rgba(29, 29, 29, 0.3) 40%,
+      rgba(29, 29, 29, 0) 100%
+  );
+}
+.BannersectionText{
+  
+  color: white;
+  padding: 480px 40px 0 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  
+  position: relative;  
+  z-index: 10;       
+}
+.bannerHeading{
+  font-size: 4.5vw;
+  font-weight:600;
+  margin-bottom: 10px;
+}
+.paraBannerSec{
+  font-size: 3vw;
+  margin-bottom: 0;
+  margin-top: 0;
+color: white !important;
+
+}
+.BannerTwoSide{
+  
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: start;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 10px;
+  
+
+}
+.BannerSideRight{
+  width: 40%;
+  
+  display: flex;
+  justify-content: start;
+  align-items: end;
+}
+.BannerSideLeft{
+  width: 80%;
+  
+  font-size: 2.5vw;
+  line-height: 2rem;
+color: white !important;
+/* padding-right: 100px; */
+margin-bottom: 0;
+}
+.FixBannerBtn{
+  font-size: 2vw;
+  background-color: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 1px 14px;
+  border-radius: 20px;
+}
+.SliderBanner {
+  overflow: hidden;
+  white-space: nowrap;
+  /* height: 10vh; */
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  background: transparent;
+}
+
+.sliderTrack {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scrollText 25s linear infinite ;
+  text-transform: uppercase;
+}
+
+.sliderTrack span {
+  font-size: 8rem;
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: 1px white; /* outline effect */
+  text-stroke: 1.5px white;         /* fallback */
+  margin-right: 3rem;
+}
+
+/* Animation */
+@keyframes scrollText {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+
+.Agency{
+   margin-top: 240px;
+    padding: 50px 80px;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    /* justify-content: center; */
+    align-items: center;
+    
+}
+.DesignAgencybtn{
+    font-size: 1.8vw;
+   
+    padding: 5px 10px;
+    background-color: #23282F;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.DownbtnSide h1{
+    font-size: 4.5vw;
+    text-align: center;
+   font-weight: bold;
+    margin-bottom: 0px !important;
+
+    
+}
+.lastTextAgency{
+    text-align: center;
+    color: gray;
+    font-size: 2.5vw;
+    line-height: 2.2rem;
+}
+.Line{
+    padding: 0 80px;
+}
+.logoAligner{
+   
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;        
+}
+.logoFlex{
+    display: flex;
+    gap: 40px;
+    height: 50px;
+}
+
+.bgWhiteSection{
+  /*  */
+  /* height: 100vh; */
+  background-color: white;
+}
+.bgWhiteHeader{
+  padding: 20px 20px !important;
+  display: flex;
+  flex-direction: column !important;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #82899149;
+  gap: 20px !important;
+
+}
+.industry{
+  font-size: 12px;
+  color: #888B8E;
+}
+.btnUnder{
+  font-size: 12px;
+  color: black;
+  font-weight: 800;
+  border: 1px solid #F1F1F1;
+  padding: 6px 20px ;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.arrowHeight{
+  width: 16px;
+  height: 16px;
+  padding-bottom: 3px ;
+}
+.underline-text {
+  position: relative;
+  display: inline-block;
+}
+.underline-text::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 1px; 
+  background-color: gray; 
+  transition: width 0.3s ease;
+}
+
+.btnUnder:hover .underline-text::after {
+  width: 100%;
+}
+
+
+
+.bgWhiteLogo{
+  display: flex;
+  height: 32px;
+  gap: 20px;
+}
+
+
+.GradinetPadding{
+  padding: 100px 40px !important;
+}
+.gradientInside {
+  
+  /* height: 90vh; */
+  background-image: url('../img/GradientImg.avif');
+  background-size: cover;
+  background-position: bottom;
+  padding: 40px 40px;
+  border-radius: 20px;
+}
+.insideGrad{
+  
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.flexGradi{
+  display: flex;
+  flex-direction: column !important;
+  justify-content: space-between;
+  gap: 2rem !important;
+
+}
+.LeftGradient{
+  
+  width: 55%;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 2rem !important;
+}
+.RightGradient{
+  
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 0px !important;
+
+}
+.LeftGradient h1{
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.btnsFlex{
+  display: flex;
+  /* flex-direction: column !important; */
+  gap: 12px;
+  width: 100%;
+}
+.btnBg{
+  
+  display: flex;
+  align-items: center;
+  justify-content: start !important;
+  padding: 8px 12px;
+  border-radius: 20px;
+  gap: 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+}
+.colorbtn{
+  color: black;
+  background-color: white;
+}
+.colorbtn:hover{
+  
+  background-color: rgb(236, 233, 233);
+}
+.colorbtnOld{
+  color: white;
+}
+.arrowHeightNew{
+  width: 14px;
+  height: 14px;
+  padding-bottom: 3px ;
+}
+.arrowHeightOld{
+  width: 14px;
+  height: 14px;
+  padding-bottom: 3px ;
+}
+.btnBg span img {
+  transition: transform 0.3s ease;
+}
+
+.btnBg:hover span img {
+  transform: translateX(6px);
+}
+.textsizePraraRight{
+  font-size: 1rem ;
+line-height: 1.6rem !important;
+  padding-left: 0px !important;
+}
+.WhiteLineGrad{
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+.CenterWhiteGrad{
+  text-align: center;
+}
+.TextCenterGrad{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem !important;
+  text-align: center !important;
+}
+
+
+
+
+
+
+
+
+  .BlackPush{
+  padding: 100px 40px 50px 40px !important;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+.HeadPush{
+  
+  padding-right: 35%;
+}
+
+.HeadPush h1{
+  font-size: 3.3rem;
+  font-weight: bold;
+  line-height: 3.8rem !important;
+}
+.bodyPush{
+  display: flex;
+  flex-direction: column !important;
+}
+.pushLeft{
+  
+  width: 100% !important;
+}
+.pushRight{
+  
+  width: 100% !important;
+}
+.Excellence{
+  color: rgb(210, 204, 204);
+  background-color: #262525;
+  padding: 5px 16px;
+  border-radius: 20px;
+  font-size: 1rem ;
+}
+.RightBorderpush{
+  
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction:column;
+  gap: 1rem !important;
+}
+.contentSeprate{
+  display: flex;
+  flex-direction: column !important;
+ gap: 0.5rem !important; 
+}
+.ContentpushLeft{
+  
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  padding-right: 28px;
+  margin-top: 20px !important;
+}
+.ContentpushRight{
+  
+  width: 100% !important;
+  font-size: 1rem;
+}
+.WhiteLinePush{
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.097);
+  margin-bottom: 0 !important;
+}
+
+
+
+
+
+
+.ScrollImgSection{
+    background-color: white;
+    width: 100%;
+    padding: 60px 40px;
+  }
+  .paddingScrollSide{
+    
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+  }
+
+  .scrollLeftSide{
+
+width: 100%;
+
+/* height: 1300px; */
+  }
+
+
+
+
+
+
+
+
+  .scrollRightSide {
+    width: 100%;
+    
+    /* padding: 100px 2rem; */
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    
+    
+  }
+  
+  .scrollImageWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  
+  
+  .ScrollImgSize {
+    border-radius: 20px;
+
+    position: relative;
+    max-width: 800px;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    will-change: transform, opacity;
+  }
+  
+  .ScrollImgSize::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  .scrollImage {
+    width: 100%;
+    display: block;
+  }
+  
+  /* Make sure the overlay content stays on top of gradient */
+  .checkScrollInside {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 40px 20px;
+    color: white;
+    z-index: 2;
+    width: 100%;
+  }
+  
+
+.WorkScrollInside{
+  width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.ScrollPadInside{
+  display: flex;
+  justify-content: space-between;
+
+}
+.btnCheckScr{
+  /*  */
+  display:  flex;
+}
+.UniquebtnScr{
+  border:  1px solid rgba(226, 220, 220, 0.413);
+  padding: 3px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: white;
+}
+.Flipp{
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.WhiteScrollbtn{
+  
+}
+.WhiteScrollbtn{
+  padding: 8px 20px ;
+  background-color: white;
+  color: #1D1D1D;
+  font-size: 0.7rem;
+  border-radius:20px ;
+}
+
+  .LeftScrollControl{
+    
+    position: sticky;
+    top: 110px; /* stick to top when reaches it */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    color: black;
+
+  }
+  .HeadSideScrollLeft{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+  }
+  .BottomSideScrollLeft{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: end;
+    gap: 3px;
+  }
+  .btnScrll{
+background-color: #F7F6F6;
+color: #706868;
+font-size: 2vw;
+border: 1px solid rgba(219, 215, 215, 0.281);
+padding: 1px 14px;
+border-radius: 20px;
+font-weight: 400;
+
+  }
+  .ScrollContentPad{
+    padding-right: 4rem;
+    font-size: 3vw;
+    line-height: 1.8rem;
+}
+scrollbtArrow{
+  background: linear-gradient(150deg, #61B6A1, #5D7DAB);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.scrollbtArrow2{
+  padding: 7px 16px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  background-color: transparent;
+  color: black;
+  border: 1px solid rgba(219, 215, 215, 0.751);
+
+}
+
+/* Disable any ::before or ::after animations */
+.no-hover::before,
+.no-hover::after {
+  display: none !important;
+}
+
+.WhiteScrollbtn::before,
+.WhiteScrollbtn::after{
+  display: none;
+}
+.arrowHeightScroll{
+  width: 10px;
+  height: 10px;
+  padding-bottom: 1px ;
+  
+}
+.arrowHeightScroll2{
+  width: 14px;
+  height: 14px;
+  padding-bottom: 1px ;
+  
+}
+
+
+
+
+
+
+
+.DropDownSection{
+  
+  padding: 150px 40px;
+}
+.DropLayer{
+  display: flex;
+  flex-direction: column;
+  
+  gap: 4rem;
+}
+.doinfFlexDrop{
+  display:  flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+.GeneralLeft{
+  
+  width: 100%;
+}
+.GeneralRight{
+  
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.StrtHeadDrop{
+  width: 95%;
+  font-size: 3.5rem;
+  font-weight:600 ;
+}
+.topDropCont{
+  
+  display:  flex;
+
+
+}
+.DropCont{
+  
+}
+.topContDropone{
+  
+  width: 34%;
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+.topContDropTwo{
+  
+  width: 66%;
+}
+.DropLine{
+  height: 30px;
+  width: 3px;
+  background-color: #008AFC;
+  border-radius: 10px;
+}
+.DropLine2{
+  height: 30px;
+  width: 3px;
+  background-color: #1FB86D;
+  border-radius: 10px;
+}
+.DropLine3{
+  height: 30px;
+  width: 3px;
+  background-color: #E25A39;
+  border-radius: 10px;
+}
+.DropLine4{
+  height: 30px;
+  width: 3px;
+  background-color: #008AFC;
+  border-radius: 10px;
+}
+.styleFontDrop{
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+
+
+
+.DropGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.DropItem {
+  background-color: #1D1D1D;
+  border-radius: 6px;
+  overflow: hidden;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.DropToggle {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0.8rem 1rem;
+  color: white;
+  font-weight: 600;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  /*  */
+  background-color: #262525
+}
+.DropToggle::before,
+.DropToggle::after{
+display: none;
+}
+.DropToggle .arrow {
+  transition: transform 0.5s ease;
+}
+
+.DropItem.active .arrow {
+  transform: rotate(180deg);
+}
+
+.DropContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  padding: 0 1rem;
+}
+
+.DropItem.active .DropContent {
+  max-height: 300px;
+  padding: 0.5rem 1rem 1rem;
+}
+.DropItem.active {
+  background-color: #1D1D1D;
+}
+
+.DropContent ul li{
+      font-size: 0.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.RecentClientMain{
+ 
+  background-color: #1D1D1D;
+}
+.RecentClient{
+ 
+  padding: 80px 40px 30px 40px;
+}
+.RecentCLientBorder{
+ 
+  display: flex;
+  flex-direction: column;
+  gap: 2rem ;
+
+
+}
+.RecentClientLeft{
+ 
+  width: 100%;
+  display:  flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  gap: 1.7rem;
+}
+
+.RecentFlex{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+}
+.btnClient{
+  background-color: #262525;
+  color: #b9b6b6;
+  font-size: 0.9rem;
+  border: 1px solid rgba(219, 215, 215, 0.281);
+  padding: 1px 14px;
+  border-radius: 20px;
+  font-weight: 400;
+  
+    }
+.RecentHead{
+  
+
+  font-size: 4vw;
+  font-weight: 600;
+}
+.RecentSmallG {
+ 
+  width: 50%;
+  /* margin: 0 auto; */
+  /* padding: 10px; */
+}
+
+.logo-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: center; /* Vertically align images */
+  justify-content: space-between;
+}
+
+.logo-row img {
+  height: 45px; /* Set fixed height for alignment */
+  object-fit: contain;
+  /* */
+}
+
+.RecentClientRight {
+  
+ 
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+.client-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 boxes per row */
+  gap: 8px; /* Between 6–10px as requested */
+}
+
+.client-box {
+  background-color: #262525;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  border-radius: 4px;
+}
+
+.client-box img {
+  max-width: 100%;
+  height: 90px; /* Small consistent height */
+  object-fit: contain;
+}
+.SliderRecentBox{
+ 
+  display: flex;
+  flex-direction: column;  
+  align-items: end;
+}
+.SliderRecentPad{
+ 
+  padding: 30px 40px 30px 40px;
+  width: 100%;
+}
+
+
+
+
+.sliderContRec {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: #1D1D1D;
+  padding: 20px 0;
+}
+
+.sliderWrapper2 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sliderTrack2 {
+  display: flex;
+  width: max-content;
+  animation: slideLoop 10s linear infinite;
+  gap: 10px;
+  align-items: center;
+}
+
+.sliderTrack2 img {
+  height: 70px;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: brightness(1.2);
+}
+
+/* Looping animation */
+@keyframes slideLoop {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Gradient fades */
+.sliderFade {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.fadeLeft {
+  left: 0;
+  background: linear-gradient(to right, #1D1D1D 0%, transparent 100%);
+}
+
+.fadeRight {
+  right: 0;
+  background: linear-gradient(to left, #1D1D1D 0%, transparent 100%);
+}
+
+.RecentLine{
+  width: 100%;
+  border-top: 1px solid rgba(238, 234, 234, 0.233);
+}
+.Testimonials{
+
+  background-color: white;
+  color: #1D1D1D;
+  display: flex;
+  flex-direction:column ;
+  gap: 4rem;
+  padding: 80px 20px !important;
+}
+
+.TopTestimonial{
+
+  padding: 0 40px !important;
+  display: flex;
+  flex-direction: column !important;
+  justify-content: space-between;
+  gap: 1rem !important;
+}
+.TopLeftTesti{
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+.btnTesti{
+  background-color: #F7F6F6;
+  color: #181717;
+  font-size: 0.9rem;
+  border: 1px solid rgba(219, 215, 215, 0.281);
+  padding: 1px 14px;
+  border-radius: 20px;
+  font-weight: 400;
+  
+}
+.TestiHead{
+      color: #1D1D1D !important;
+      font-size: 4vw;
+      font-weight: 600;
+      margin-bottom: 0;
+}
+.TopRightTesti{
+    
+      display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important; /* 5 boxes per row */
+      width: 70% !important;
+      gap: 10px !important;
+}
+.TopRightTesti img{
+      height: 50px !important;
+ }
+.BottomTestimonial{
+padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+
+.BoxTesti{
+  background-color: #F5F6F6;
+  display: flex;
+  padding: 20px;
+  width: 40%;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  margin-right: 10px;
+  border-radius: 12px;
+}
+.TestiFlex{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.Testihh{
+  font-size: 2.4vw;
+  font-weight: 600;
+  line-height: 1.8rem;
+  color: #1D1D1D !important;
+  height: 8vh !important;
+
+}
+.Testipp{
+  font-size: 2vw;
+  line-height: 1.6rem;
+height: 18vh ;
+  color: #1D1D1D !important;
+  opacity:60% ;
+}
+.FlexLineTesti{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.MainLineTesti{
+  border-top: 1px solid rgba(167, 165, 165, 0.685);
+  margin-top: 10px;
+}
+.TextTestiT{
+  font-size: 2.2vw;
+  font-weight: 600;
+}
+.TextTestiB{
+  font-size: 0.9rem;
+  font-weight: 600;
+  opacity: 60%;
+}
+
+
+
+
+
+
+
+.slick-slide {
+  outline: none;
+}
+
+.slick-dots,
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
+
+
+
+
+
+section.scroll-panels {
+      position: relative;
+      overflow: visible;
+    }
+
+    section.scroll-panels .panel {
+      height: 100vh;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    section.scroll-panels .panel:nth-child(1) {
+      background: #F9FAFB;
+      color: #101010;
+      z-index: 1;
+    }
+
+    section.scroll-panels .panel:nth-child(2) {
+      background: #F9FAFB;
+      color: #101010;
+      z-index: 2;
+    }
+
+   
+
+    /* Optional: Give space above and below the section */
+    .spacer {
+      height: 100vh;
+      background: #f0f0f0;
+    }
+
+    .panelBoundary{
+        /* border: 1px solid red; */
+        width: 100%;
+        height: 100%;
+        padding: 40px 32px 0 32px !important;
+}
+.borderFlexPanel{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    background-color: #F9FAFB;
+    /* border: 1px solid red; */
+
+}
+.leftPanel{
+    width: 100% !important;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem !important;
+    /* background-color: #F9FAFB; */
+}
+.leftPanelChild{
+  display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.gapPanel{
+  display: flex;
+  flex-direction: column;
+    gap: 10px;
+}
+.UiUxText{
+  /* border: 1px solid red; */
+  display:  flex;
+  display: inline;
+  padding: 6px 8px;
+  border-radius:35% ;
+  background-color: #F0F1F3;
+  font-weight: bold;
+  
+}
+.whatUI{
+  font-size: 2rem !important;
+  font-weight: bold;
+  line-height: 3rem;
+}
+.textOverlay{
+  opacity: 60%;
+  font-size: 2.5vw !important;
+}
+/* .RightPanel{
+    width: 100% !important;
+    height: 40vh !important;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid red;
+    
+}
+.insideRightPanel{
+  padding: 6vw !important;  
+ 
+}
+.imgoverlay{
+  border: 1px solid rgba(65, 64, 64, 0.224); 
+  border-radius: 10px;
+  border: 1px solid red !important;
+
+ 
+  
+} */
+.RightPanel {
+  width: 100% !important;
+  height: 48vh !important;
+  background-color: white;
+  border-radius: 10px;
+  /* border: 1px solid red; */
+  overflow: hidden; /* Prevent anything from going outside */
+}
+
+.insideRightPanel {
+  padding: 6vw !important;
+  height: 100%; /* Ensure it takes full height of RightPanel */
+  box-sizing: border-box; /* Ensures padding doesn't overflow */
+}
+
+.imgoverlay {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; /* or cover, depending on your design */
+  /* border: 1px solid red !important; */
+  border-radius: 10px;
+  display: block;
+}
+
+
+
+
+
+}
+
+/* 💻 Large (lg): ≥ 768px */
+@media (min-width: 900px) and (max-width: 1200px) {
+.maincontainer{
+    width: 100%;
+   
+}
+
+.Bannersection_web {
+  width: 100%;
+  height: 100vh;
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+  inset: 0;
+}
+
+.Bannersection_web::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  background: linear-gradient(
+      to top,
+      #1D1D1D 0%,
+      #1D1D1D 10%,
+      rgba(29, 29, 29, 0.6) 25%,
+      rgba(29, 29, 29, 0.3) 40%,
+      rgba(29, 29, 29, 0) 100%
+  );
+}
+.BannersectionText{
+  
+  color: white;
+  padding: 120px 80px 0 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  
+  position: relative;  
+  z-index: 10;       
+}
+.bannerHeading{
+  color: white;
+  font-size: 1.4rem;
+  font-weight:600;
+  margin-bottom: 10px;
+}
+.Agency{
+   
+    padding: 50px 200px;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    /* justify-content: center; */
+    align-items: center;
+    
+}
+.DesignAgencybtn{
+    font-size: 12px;
+   
+    padding: 5px 10px;
+    background-color: #23282F;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.DownbtnSide h1{
+    font-size: 2vw;
+    text-align: center;
+   font-weight: bold;
+    margin-bottom: 0px !important;
+    line-height: 2rem;
+
+    
+}
+.lastTextAgency{
+    text-align: center;
+    color: gray;
+    
+}
+.Line{
+    padding: 0 80px;
+}
+.logoAligner{
+   
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;        
+}
+.logoFlex{
+    display: flex;
+    gap: 40px;
+    height: 50px;
+}
+.bgWhiteSection{
+    /*  */
+    /* height: 100vh; */
+    background-color: white;
+}
+.bgWhiteHeader{
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #82899149;
+
+}
+.industry{
+    font-size: 12px;
+    color: #888B8E;
+}
+.btnUnder{
+    font-size: 12px;
+    color: black;
+    font-weight: 800;
+    border: 1px solid #F1F1F1;
+    padding: 6px 20px ;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.arrowHeight{
+    width: 16px;
+    height: 16px;
+    padding-bottom: 3px ;
+}
+.underline-text {
+    position: relative;
+    display: inline-block;
+  }
+.underline-text::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 1px; 
+    background-color: gray; 
+    transition: width 0.3s ease;
+  }
+  
+  .btnUnder:hover .underline-text::after {
+    width: 100%;
+  }
+
+
+
+  .bgWhiteLogo{
+    display: flex;
+    height: 32px;
+    gap: 20px;
+  }
+
+.GradinetPadding{
+    padding: 100px 80px;
+  }
+  .gradientInside {
+    
+    /* height: 90vh; */
+    background-image: url('../img/GradientImg.avif');
+    background-size: cover;
+    background-position: bottom;
+    padding: 100px 90px;
+    border-radius: 20px;
+  }
+  .insideGrad{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  .flexGradi{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem ;
+    flex-direction: column;
+  }
+  .LeftGradient{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .RightGradient{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 0px;
+
+  }
+  .LeftGradient h1{
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .btnsFlex{
+    display: flex;
+    gap: 12px;
+  }
+.btnBg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 20px;
+    border-radius: 20px;
+    gap: 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+.colorbtn{
+    color: black;
+    background-color: white;
+}
+.colorbtn:hover{
+    
+    background-color: rgb(236, 233, 233);
+}
+.colorbtnOld{
+    color: white;
+}
+.arrowHeightNew{
+    width: 14px;
+    height: 14px;
+    padding-bottom: 3px ;
+}
+.arrowHeightOld{
+    width: 14px;
+    height: 14px;
+    padding-bottom: 3px ;
+}
+.btnBg span img {
+    transition: transform 0.3s ease;
+  }
+  
+  .btnBg:hover span img {
+    transform: translateX(6px);
+  }
+  .textsizePraraRight{
+    font-size: 15px ;
+    padding-left: 0px;
+  }
+  .WhiteLineGrad{
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  }
+  .CenterWhiteGrad{
+    text-align: center;
+  }
+  .TextCenterGrad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+  }
+  .BlackPush{
+    padding: 120px 80px 100px 80px ;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+  }
+  .HeadPush{
+    
+    padding-right: 50%;
+  }
+  
+  .HeadPush h1{
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .bodyPush{
+    display: flex;
+  }
+  .pushLeft{
+    
+    width: 33%;
+  }
+  .pushRight{
+    
+    width: 67%;
+  }
+  .Excellence{
+  
+    background-color: #262525;
+    padding: 5px 16px;
+    border-radius: 20px;
+    font-size: small;
+  }
+  .RightBorderpush{
+    
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction:column;
+    gap: 2rem;
+  }
+  .contentSeprate{
+    display: flex;
+   gap: 3rem; 
+  }
+  .ContentpushLeft{
+    
+    width: 50%;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    padding-right: 28px;
+  }
+  .ContentpushRight{
+    
+    width: 50%;
+    font-size: 0.9rem;
+  }
+  .WhiteLinePush{
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.097);
+  }
+.ScrollImgSection{
+    background-color: white;
+    width: 100%;
+    padding: 60px 40px;
+  }
+  .paddingScrollSide{
+    
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    position: relative;
+  }
+
+  .scrollLeftSide{
+
+width: 30%;
+/* height: 1300px; */
+  }
+
+
+
+
+
+
+
+
+  .scrollRightSide {
+    width: 70%;
+    /* padding: 100px 2rem; */
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    
+    
+  }
+  
+  .scrollImageWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  
+  
+  .ScrollImgSize {
+    border-radius: 20px;
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    height: 358px;
+    overflow: hidden;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    will-change: transform, opacity;
+  }
+  
+  .ScrollImgSize::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  .scrollImage {
+    width: 100%;
+    display: block;
+  }
+  
+  /* Make sure the overlay content stays on top of gradient */
+  .checkScrollInside {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 40px 20px;
+    color: white;
+    z-index: 2;
+    width: 100%;
+  }
+  
+
+.WorkScrollInside{
+  width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.ScrollPadInside{
+  display: flex;
+  justify-content: space-between;
+
+}
+.btnCheckScr{
+  /*  */
+  display:  flex;
+}
+.UniquebtnScr{
+  border:  1px solid rgba(226, 220, 220, 0.413);
+  padding: 3px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: white;
+}
+.Flipp{
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.WhiteScrollbtn{
+  
+}
+.WhiteScrollbtn{
+  padding: 8px 20px ;
+  background-color: white;
+  color: #1D1D1D;
+  font-size: 0.7rem;
+  border-radius:20px ;
+}
+
+  .LeftScrollControl{
+    
+    position: sticky;
+    top: 110px; /* stick to top when reaches it */
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    color: black;
+
+  }
+  .HeadSideScrollLeft{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+  }
+  .BottomSideScrollLeft{
+  
+    width: 100%;
+    display: flex;
+    flex-direction: column !important;
+    gap: 3px;
+  }
+  .btnScrll{
+background-color: #F7F6F6;
+color: #706868;
+font-size: 0.8rem;
+border: 1px solid rgba(219, 215, 215, 0.281);
+padding: 1px 14px;
+border-radius: 20px;
+font-weight: 400;
+
+  }
+  .ScrollContentPad{
+    padding-right: 4rem;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+}
+scrollbtArrow{
+  background: linear-gradient(150deg, #61B6A1, #5D7DAB);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.scrollbtArrow2{
+  padding: 7px 16px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  background-color: transparent;
+  color: black;
+  border: 1px solid rgba(219, 215, 215, 0.751);
+
+}
+
+/* Disable any ::before or ::after animations */
+.no-hover::before,
+.no-hover::after {
+  display: none !important;
+}
+
+.WhiteScrollbtn::before,
+.WhiteScrollbtn::after{
+  display: none;
+}
+.arrowHeightScroll{
+  width: 10px;
+  height: 10px;
+  padding-bottom: 1px ;
+  
+}
+.arrowHeightScroll2{
+  width: 14px;
+  height: 14px;
+  padding-bottom: 1px ;
+  
+}
+.DropDownSection{
+  
+  padding: 200px 80px;
+}
+.DropLayer{
+  display: flex;
+  flex-direction: column;
+  
+  gap: 4rem;
+}
+.doinfFlexDrop{
+  display:  flex;
+
+}
+.GeneralLeft{
+  
+  width: 23%;
+}
+.GeneralRight{
+  
+  width: 77%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.StrtHeadDrop{
+  font-size: 3.4rem;
+  font-weight:600 ;
+}
+.topDropCont{
+  
+  display:  flex;
+
+
+}
+
+
+section.scroll-panels {
+      position: relative;
+      overflow: visible;
+    }
+
+    section.scroll-panels .panel {
+      height: 100vh;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    section.scroll-panels .panel:nth-child(1) {
+      background: #F9FAFB;
+      color: #101010;
+      z-index: 1;
+    }
+
+    section.scroll-panels .panel:nth-child(2) {
+      background: #F9FAFB;
+      color: #101010;
+      z-index: 2;
+    }
+
+   
+
+    /* Optional: Give space above and below the section */
+    .spacer {
+      height: 100vh;
+      background: #f0f0f0;
+    }
+
+    .panelBoundary{
+        /* border: 1px solid red; */
+        width: 100%;
+        height: 100%;
+        padding: 100px 78px 0 78px;
+}
+.borderFlexPanel{
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 5vw;
+    background-color: #F9FAFB;
+
+}
+.leftPanel{
+    width: 50%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem !important;
+    /* background-color: #F9FAFB; */
+}
+.leftPanelChild{
+  display: flex;
+    flex-direction: column;
+    gap: 1rem !important;
+}
+.gapPanel{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.UiUxText{
+  /* border: 1px solid red; */
+  display:  flex;
+  display: inline;
+  padding: 6px 8px;
+  border-radius:35% ;
+  background-color: #F0F1F3;
+  font-weight: bold;
+
+}
+.whatUI{
+  font-size: 3vw;
+  font-weight: bold;
+  line-height: 3rem;
+}
+.textOverlay{
+  opacity: 60%;
+  font-size: 1.2vw;
+}
+.RightPanel {
+  width: 50% !important;
+  height: 70vh !important;
+  background-color: white;
+  border-radius: 10px;
+  /* border: 1px solid red; */
+  overflow: hidden; /* Prevent anything from going outside */
+}
+
+.insideRightPanel {
+  padding: 4vw !important;
+  height: 100%; /* Ensure it takes full height of RightPanel */
+  box-sizing: border-box; /* Ensures padding doesn't overflow */
+}
+
+.imgoverlay {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; /* or cover, depending on your design */
+  border-radius: 10px;
+  display: block;
+}
+.Testihh{
+  
+  height: 12vh !important;
+
+}
+.Testipp{
+
+height: 43vh !important;
+ 
+}
+.TextTestiB{
+  font-size: 1vw;
+}
+
+.DropToggle {
+  font-size: 1vw;
+}
+.paraBannerSec{
+  display: none;
+}
+}
+
+/* 🖥️ Extra Large (xl): ≥ 1024px */
+@media (min-width: 1200px) and (max-width: 1279px) {
+
+
+
+  
+}
+
+/* 🖥️💼 2XL: ≥ 1280px */
+@media (min-width: 1280px) and (max-width: 1535px) {
+
+}
+
+/* 🖥️🏢 3XL: ≥ 1536px */
+@media (min-width: 1536px) {
+.maincontainer{
+    width: 100%;
+   
+}
+
+.Bannersection_web {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../img/BrandingBG.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+  inset: 0;
+}
+
+
+.Bannersection_web::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  background: linear-gradient(
+      to top,
+      #1D1D1D 0%,
+      #1D1D1D 10%,
+      rgba(29, 29, 29, 0.6) 25%,
+      rgba(29, 29, 29, 0.3) 40%,
+      rgba(29, 29, 29, 0) 100%
+  );
+}
+/* .BannersectionText{
+  
+  color: white;
+  padding:  0 80px;
+  padding-top: 28vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  
+  position: relative;  
+  z-index: 10;       
+} */
+.BannersectionText {
+  color: white;
+  padding:  200px 120px 0 120px !important;
+  padding-top: clamp(120px, 28vh, 240px);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  z-index: 10;
+
+}
+
+
+.bannerHeading{
+  font-size: 2.2vw;
+  font-weight:600;
+  margin-bottom: 10px;
+}
+.paraBannerSec{
+  font-size: 1.8vw;
+  margin-bottom: 0;
+  margin-top: 0;
+color: white !important;
+
+}
+.BannerTwoSide{
+  
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  
+
+}
+.BannerSideRight{
+  width: 40%;
+  
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.BannerSideLeft{
+  width: 40% !important;
+  
+  font-size: 1.2vw;
+  line-height: 2rem;
+color: white !important;
+/* padding-right: 100px; */
+margin-bottom: 0;
+}
+.FixBannerBtn{
+  font-size: 0.8rem;
+  background-color: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 1px 14px;
+  border-radius: 20px;
+}
+.SliderBanner {
+  overflow: hidden;
+  white-space: nowrap;
+  /* height: 10vh; */
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  background: transparent;
+}
+
+.sliderTrack {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scrollText 25s linear infinite ;
+  text-transform: uppercase;
+}
+
+.sliderTrack span {
+  font-size: 8rem;
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: 1px white; /* outline effect */
+  text-stroke: 1.5px white;         /* fallback */
+  margin-right: 3rem;
+}
+
+/* Animation */
+@keyframes scrollText {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+
+.Agency{
+   
+    padding: 80px 250px !important;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    /* justify-content: center; */
+    align-items: center;
+    
+}
+.DesignAgencybtn{
+    font-size: 12px;
+   
+    padding: 5px 10px;
+    background-color: #23282F;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.DownbtnSide h1{
+    font-size: 3vw;
+    text-align: center;
+   font-weight: bold;
+    margin-bottom: 0px !important;
+
+    
+}
+.lastTextAgency{
+    text-align: center;
+    color: gray;
+    font-size: 1.2vw;
+}
+.Line{
+    padding: 0 80px;
+}
+.logoAligner{
+   
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;        
+}
+.logoFlex{
+    display: flex;
+    gap: 40px;
+    height: 50px;
+    margin-bottom: 50px !important;
+}
+.bgWhiteSection{
+    /*  */
+    /* height: 100vh; */
+    background-color: white;
+}
+.bgWhiteHeader{
+    padding: 20px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #82899149;
+
+}
+.industry{
+    font-size: 12px;
+    color: #888B8E;
+}
+.btnUnder{
+    font-size: 12px;
+    color: black;
+    font-weight: 800;
+    border: 1px solid #F1F1F1;
+    padding: 6px 20px ;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.arrowHeight{
+    width: 16px;
+    height: 16px;
+    padding-bottom: 3px ;
+}
+.underline-text {
+    position: relative;
+    display: inline-block;
+  }
+.underline-text::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 1px; 
+    background-color: gray; 
+    transition: width 0.3s ease;
+  }
+  
+  .btnUnder:hover .underline-text::after {
+    width: 100%;
+  }
+
+
+
+  .bgWhiteLogo{
+    display: flex;
+    height: 32px;
+    gap: 20px;
+  }
+
+.GradinetPadding{
+    padding: 100px 120px;
+  }
+  .gradientInside {
+    
+    /* height: 90vh; */
+    background-image: url('../img/GradientImg.avif');
+    background-size: cover;
+    background-position: bottom;
+    padding: 100px 90px;
+    border-radius: 20px;
+  }
+  .insideGrad{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  .flexGradi{
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .LeftGradient{
+    
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .RightGradient{
+    
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 16px;
+
+  }
+  .LeftGradient h1{
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .btnsFlex{
+    display: flex;
+    gap: 12px;
+  }
+.btnBg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 20px;
+    border-radius: 20px;
+    gap: 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+.colorbtn{
+    color: black;
+    background-color: white;
+}
+.colorbtn:hover{
+    
+    background-color: rgb(236, 233, 233);
+}
+.colorbtnOld{
+    color: white;
+}
+.arrowHeightNew{
+    width: 14px;
+    height: 14px;
+    padding-bottom: 3px ;
+}
+.arrowHeightOld{
+    width: 14px;
+    height: 14px;
+    padding-bottom: 3px ;
+}
+.btnBg span img {
+    transition: transform 0.3s ease;
+  }
+  
+  .btnBg:hover span img {
+    transform: translateX(6px);
+  }
+  .textsizePraraRight{
+    font-size: 15px ;
+    padding-left: 36px;
+  }
+  .WhiteLineGrad{
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  }
+  .CenterWhiteGrad{
+    text-align: center;
+  }
+  .TextCenterGrad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+  }
+  .BlackPush{
+    padding: 120px 120px 100px 120px ;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+  }
+  .HeadPush{
+    
+    padding-right: 50%;
+  }
+  
+  .HeadPush h1{
+    font-size: 64px;
+    font-weight: bold;
+  }
+  .bodyPush{
+    display: flex;
+  }
+  .pushLeft{
+    
+    width: 33%;
+  }
+  .pushRight{
+    
+    width: 67%;
+  }
+  .Excellence{
+  
+    background-color: #262525;
+    padding: 5px 16px;
+    border-radius: 20px;
+    font-size: small;
+  }
+  .RightBorderpush{
+    
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction:column;
+    gap: 2rem;
+  }
+  .contentSeprate{
+    display: flex;
+   gap: 3rem; 
+  }
+  .ContentpushLeft{
+    
+    width: 50%;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    padding-right: 28px;
+  }
+  .ContentpushRight{
+    
+    width: 50%;
+    font-size: 0.9rem;
+  }
+  .WhiteLinePush{
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.097);
+  }
+
+
+
+
+  .ScrollImgSection{
+    background-color: white;
+    width: 100%;
+    padding: 60px 120px;
+  }
+  .paddingScrollSide{
+    
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    position: relative;
+  }
+
+  .scrollLeftSide{
+
+width: 30%;
+/* height: 1300px; */
+  }
+
+
+
+
+
+
+
+
+  .scrollRightSide {
+    width: 70%;
+    /* padding: 100px 2rem; */
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    
+    
+  }
+  
+  .scrollImageWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  
+  
+  .ScrollImgSize {
+    border-radius: 20px;
+    position: relative;
+    max-width: 1000px;
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    will-change: transform, opacity;
+  }
+  
+  .ScrollImgSize::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  .scrollImage {
+    width: 100%;
+    display: block;
+  }
+  
+  /* Make sure the overlay content stays on top of gradient */
+  .checkScrollInside {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 40px 20px;
+    color: white;
+    z-index: 2;
+    width: 100%;
+  }
+  
+
+.WorkScrollInside{
+  width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.ScrollPadInside{
+  display: flex;
+  justify-content: space-between;
+
+}
+.btnCheckScr{
+  /*  */
+  display:  flex;
+}
+.UniquebtnScr{
+  border:  1px solid rgba(226, 220, 220, 0.413);
+  padding: 3px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: white;
+}
+.Flipp{
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.WhiteScrollbtn{
+  
+}
+.WhiteScrollbtn{
+  padding: 8px 20px ;
+  background-color: white;
+  color: #1D1D1D;
+  font-size: 0.7rem;
+  border-radius:20px ;
+}
+
+  .LeftScrollControl{
+    
+    position: sticky;
+    top: 110px; /* stick to top when reaches it */
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    color: black;
+
+  }
+  .HeadSideScrollLeft{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+  }
+  .BottomSideScrollLeft{
+  
+    width: 100%;
+    display: flex;
+    flex-direction: row !important;
+    gap: 3px;
+  }
+  .btnScrll{
+background-color: #F7F6F6;
+color: #706868;
+font-size: 0.8rem;
+border: 1px solid rgba(219, 215, 215, 0.281);
+padding: 1px 14px;
+border-radius: 20px;
+font-weight: 400;
+
+  }
+  .ScrollContentPad{
+    padding-right: 4rem;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+}
+.scrollbtArrow{
+  background: linear-gradient(150deg, #61B6A1, #5D7DAB);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.scrollbtArrow2{
+  padding: 7px 16px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  background-color: transparent;
+  color: black;
+  border: 1px solid rgba(219, 215, 215, 0.751);
+
+}
+
+/* Disable any ::before or ::after animations */
+.no-hover::before,
+.no-hover::after {
+  display: none !important;
+}
+
+.WhiteScrollbtn::before,
+.WhiteScrollbtn::after{
+  display: none;
+}
+.arrowHeightScroll{
+  width: 10px;
+  height: 10px;
+  padding-bottom: 1px ;
+  
+}
+.arrowHeightScroll2{
+  width: 14px;
+  height: 14px;
+  padding-bottom: 1px ;
+  
+}
+
+
+
+
+
+.DropDownSection{
+  
+  padding: 200px 120px;
+}
+.DropLayer{
+  display: flex;
+  flex-direction: column;
+  
+  gap: 4rem;
+}
+.doinfFlexDrop{
+  display:  flex;
+
+}
+.GeneralLeft{
+  
+  width: 23%;
+}
+.GeneralRight{
+  
+  width: 77%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.GeneralRight h1{
+  font-size: 5vw;
+  font-weight: bold;
+}
+.StrtHeadDrop{
+  font-size: 4.4rem;
+  font-weight:600 ;
+}
+.topDropCont{
+  
+  display:  flex;
+
+
+}
+.DropCont{
+  
+}
+.topContDropone{
+  
+  width: 34%;
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+.topContDropTwo{
+  
+  width: 66%;
+}
+.DropLine{
+  height: 30px;
+  width: 3px;
+  background-color: #008AFC;
+  border-radius: 10px;
+}
+.DropLine2{
+  height: 30px;
+  width: 3px;
+  background-color: #1FB86D;
+  border-radius: 10px;
+}
+.DropLine3{
+  height: 30px;
+  width: 3px;
+  background-color: #E25A39;
+  border-radius: 10px;
+}
+.DropLine4{
+  height: 30px;
+  width: 3px;
+  background-color: #008AFC;
+  border-radius: 10px;
+}
+.styleFontDrop{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+
+
+
+.DropGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.DropItem {
+  background-color: #1D1D1D;
+  border-radius: 6px;
+  overflow: hidden;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.DropToggle {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0.8rem 1rem;
+  color: white;
+  font-weight: 600;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  /*  */
+  background-color: #262525
+}
+.DropToggle::before,
+.DropToggle::after{
+display: none;
+}
+.DropToggle .arrow {
+  transition: transform 0.5s ease;
+}
+
+.DropItem.active .arrow {
+  transform: rotate(180deg);
+}
+
+.DropContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  padding: 0 1rem;
+}
+
+.DropItem.active .DropContent {
+  max-height: 300px;
+  padding: 0.5rem 1rem 1rem;
+}
+.DropItem.active {
+  background-color: #1D1D1D;
+}
+
+.DropContent ul li{
+      font-size: 0.8rem;
+}
+
+
+
+
+
+
+.RecentClientMain{
+ 
+  background-color: #1D1D1D;
+}
+.RecentClient{
+ 
+  padding: 80px 120px 30px 120px;
+}
+.RecentCLientBorder{
+ 
+  display: flex;
+
+
+}
+.RecentClientLeft{
+ 
+  width: 33%;
+  display:  flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+
+.RecentFlex{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+}
+.btnClient{
+  background-color: #262525;
+  color: #b9b6b6;
+  font-size: 0.8rem;
+  border: 1px solid rgba(219, 215, 215, 0.281);
+  padding: 1px 14px;
+  border-radius: 20px;
+  font-weight: 400;
+  
+    }
+.RecentHead{
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.RecentSmallG {
+ 
+  width: 70%;
+  /* margin: 0 auto; */
+  /* padding: 10px; */
+}
+
+.logo-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: center; /* Vertically align images */
+  justify-content: space-between;
+}
+
+.logo-row img {
+  height: 45px; /* Set fixed height for alignment */
+  object-fit: contain;
+  /* */
+}
+
+.RecentClientRight {
+ 
+  width: 67%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.client-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 boxes per row */
+  gap: 8px; /* Between 6–10px as requested */
+}
+
+.client-box {
+  background-color: #262525;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.client-box img {
+  max-width: 100%;
+  height: 90px; /* Small consistent height */
+  object-fit: contain;
+}
+.SliderRecentBox{
+ 
+  display: flex;
+  flex-direction: column;  
+  align-items: end;
+}
+.SliderRecentPad{
+ 
+  padding: 30px 40px 30px 40px;
+  width: 67%;
+}
+
+
+
+
+.sliderContRec {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: #1D1D1D;
+  padding: 20px 0;
+  
+}
+
+.sliderWrapper2 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sliderTrack2 {
+  display: flex;
+  width: max-content;
+  animation: slideLoop 10s linear infinite;
+  gap: 10px;
+  align-items: center;
+}
+
+.sliderTrack2 img {
+  height: 70px;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: brightness(1.2);
+}
+
+/* Looping animation */
+@keyframes slideLoop {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Gradient fades */
+.sliderFade {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.fadeLeft {
+  left: 0;
+  background: linear-gradient(to right, #1D1D1D 0%, transparent 100%);
+}
+
+.fadeRight {
+  right: 0;
+  background: linear-gradient(to left, #1D1D1D 0%, transparent 100%);
+}
+
+.RecentLine{
+  width: 100%;
+  border-top: 1px solid rgba(238, 234, 234, 0.233);
+}
+.Testimonials{
+
+  background-color: white;
+  color: #1D1D1D;
+  display: flex;
+  flex-direction:column ;
+  gap: 4rem;
+  padding: 80px 0;
+}
+.TopTestimonial{
+
+  padding: 0 120px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.TopLeftTesti{
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+.btnTesti{
+  background-color: #F7F6F6;
+  color: #181717;
+  font-size: 0.8rem;
+  border: 1px solid rgba(219, 215, 215, 0.281);
+  padding: 1px 14px;
+  border-radius: 20px;
+  font-weight: 400;
+  
+}
+.TestiHead{
+      color: #1D1D1D !important;
+      font-size: 2.5vw;
+      font-weight: 700;
+      margin-bottom: 0;
+}
+.TopRightTesti{
+    
+      display: flex;
+      align-items: end;
+      gap: 30px;
+}
+.TopRightTesti img{
+      height: 50px;
+ }
+.BottomTestimonial{
+padding: 0;
+
+  display: flex;
+  gap: 1rem;
+}
+
+
+.BoxTesti{
+  background-color: #F5F6F6;
+  display: flex;
+
+  padding: 20px;
+  width: 40%;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+}
+.TestiFlex{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.Testihh{
+  font-size: 1.5vw;
+  font-weight: 600;
+  line-height: 1.8rem;
+  color: #1D1D1D !important;
+}
+.Testipp{
+  font-size: 1.2vw;
+  color: #1D1D1D !important;
+  opacity:60% ;
+}
+.FlexLineTesti{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.MainLineTesti{
+  border-top: 1px solid rgba(167, 165, 165, 0.685);
+  margin-top: 30px;
+}
+.TextTestiT{
+  font-size: 1.2vw;
+  font-weight: 600;
+}
+.TextTestiB{
+  font-size: 0.8rem;
+  font-weight: 600;
+  opacity: 60%;
+}
+ .panelBoundary{
+        /* border: 1px solid red; */
+        width: 100%;
+        height: 100%;
+        padding: 100px 120px 0 120px;
+}
+.bgBlackwithImg{
+  background-color: #1D1D1D;
+  padding: 0 120px;
+
+}
+
+.NewSection{
+  background-color: #F9FAFB;
+  padding: 15vh 120px;
+}
+}
+@media (min-width: 1920px) {
+.maincontainer{
+    width: 100%;
+   
+}
+
+.Bannersection_web {
+  width: 100%;
+  height: 100vh;
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+  inset: 0;
+}
+
+
+.Bannersection_web::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  background: linear-gradient(
+      to top,
+      #1D1D1D 0%,
+      #1D1D1D 10%,
+      rgba(29, 29, 29, 0.6) 25%,
+      rgba(29, 29, 29, 0.3) 40%,
+      rgba(29, 29, 29, 0) 100%
+  );
+}
+/* .BannersectionText{
+  
+  color: white;
+  padding:  0 80px;
+  padding-top: 28vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  
+  position: relative;  
+  z-index: 10;       
+} */
+.BannersectionText {
+  color: white;
+  padding:  320px 300px 50px 300px !important;
+
+  /* padding-top: clamp(120px, 28vh, 240px); */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  z-index: 10;
+
+}
+
+
+.bannerHeading{
+  font-size: 3vw;
+  font-weight:600;
+  margin-bottom: 10px;
+}
+.paraBannerSec{
+  font-size: 2vw;
+  margin-bottom: 0;
+  margin-top: 0;
+color: white !important;
+
+}
+.BannerTwoSide{
+  
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  
+
+}
+.BannerSideRight{
+  width: 40%;
+  
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.BannerSideLeft{
+  width: 50% !important;
+  
+  font-size: 1.2vw;
+  line-height: 2.2rem;
+color: white !important;
+/* padding-right: 100px; */
+margin-bottom: 0;
+}
+.FixBannerBtn{
+  font-size: 1rem;
+  background-color: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 1px 14px;
+  border-radius: 20px;
+}
+.SliderBanner {
+  overflow: hidden;
+  white-space: nowrap;
+  /* height: 10vh; */
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  background: transparent;
+}
+
+.sliderTrack {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scrollText 25s linear infinite ;
+  text-transform: uppercase;
+}
+
+.sliderTrack span {
+  font-size: 8rem;
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: 1px white; /* outline effect */
+  text-stroke: 1.5px white;         /* fallback */
+  margin-right: 3rem;
+}
+
+/* Animation */
+@keyframes scrollText {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+.Agency{
+   
+    padding: 100px 350px !important;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    /* justify-content: center; */
+    align-items: center;
+    
+}
+.DesignAgencybtn{
+    font-size: 16px;
+   
+    padding: 5px 20px;
+    background-color: #23282F;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+
+    
+    
+}
+
+.DownbtnSide{
+  padding: 0;
+  width: 100%;
+}
+.DownbtnSide h1{
+    font-size: 3vw !important;
+    text-align: center;
+    font-weight: bold;
+   
+    margin-bottom: 0px !important;
+
+    
+}
+.lastTextAgency{
+    text-align: center;
+    color: gray;
+    font-size: 1.2vw !important;
+    padding: 0 5px;
+}
+.Line{
+    padding: 0 80px;
+}
+.logoAligner{
+   
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;        
+}
+.logoFlex{
+    display: flex;
+    gap: 40px;
+    height: 50px;
+    margin-bottom: 60px !important;
+}
+.bgWhiteSection{
+    /*  */
+    /* height: 100vh; */
+    background-color: white;
+}
+.bgWhiteHeader{
+    padding: 20px 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #82899149;
+
+}
+.industry{
+    font-size: 12px;
+    color: #888B8E;
+}
+.btnUnder{
+    font-size: 12px;
+    color: black;
+    font-weight: 800;
+    border: 1px solid #F1F1F1;
+    padding: 6px 20px ;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.arrowHeight{
+    width: 16px;
+    height: 16px;
+    padding-bottom: 3px ;
+}
+.underline-text {
+    position: relative;
+    display: inline-block;
+  }
+.underline-text::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 1px; 
+    background-color: gray; 
+    transition: width 0.3s ease;
+  }
+  
+  .btnUnder:hover .underline-text::after {
+    width: 100%;
+  }
+
+
+
+  .bgWhiteLogo{
+    display: flex;
+    height: 32px;
+    gap: 20px;
+  }
+
+.GradinetPadding{
+    padding: 100px 300px;
+  }
+  .gradientInside {
+    
+    /* height: 90vh; */
+    background-image: url('../img/GradientImg.avif');
+    background-size: cover;
+    background-position: bottom;
+    padding: 100px 90px;
+    border-radius: 20px;
+  }
+  .insideGrad{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  .flexGradi{
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .LeftGradient{
+    
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .RightGradient{
+    
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 16px;
+
+  }
+  .LeftGradient h1{
+    font-size: 50px;
+    font-weight: bold;
+    padding-right: 5px;
+  }
+  .btnsFlex{
+    display: flex;
+    gap: 12px;
+  }
+.btnBg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 20px;
+    border-radius: 20px;
+    gap: 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+.colorbtn{
+    color: black;
+    background-color: white;
+}
+.colorbtn:hover{
+    
+    background-color: rgb(236, 233, 233);
+}
+.colorbtnOld{
+    color: white;
+}
+.arrowHeightNew{
+    width: 14px;
+    height: 14px;
+    padding-bottom: 3px ;
+}
+.arrowHeightOld{
+    width: 14px;
+    height: 14px;
+    padding-bottom: 3px ;
+}
+.btnBg span img {
+    transition: transform 0.3s ease;
+  }
+  
+  .btnBg:hover span img {
+    transform: translateX(6px);
+  }
+  .textsizePraraRight{
+    font-size: 15px ;
+    padding-left: 36px;
+  }
+  .WhiteLineGrad{
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  }
+  .CenterWhiteGrad{
+    text-align: center;
+  }
+  .TextCenterGrad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+  }
+  .BlackPush{
+    padding: 120px 300px 100px 300px ;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+  }
+  .HeadPush{
+    
+    padding-right: 50%;
+  }
+  
+  .HeadPush h1{
+    font-size: 64px;
+    font-weight: bold;
+  }
+  .bodyPush{
+    display: flex;
+  }
+  .pushLeft{
+    
+    width: 33%;
+  }
+  .pushRight{
+    
+    width: 67%;
+  }
+  .Excellence{
+  
+    background-color: #262525;
+    padding: 5px 16px;
+    border-radius: 20px;
+    font-size: small;
+  }
+  .RightBorderpush{
+    
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction:column;
+    gap: 2rem;
+  }
+  .contentSeprate{
+    display: flex;
+   gap: 3rem; 
+  }
+  .ContentpushLeft{
+    
+    width: 50%;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    padding-right: 28px;
+  }
+  .ContentpushRight{
+    
+    width: 50%;
+    font-size: 0.9rem;
+  }
+  .WhiteLinePush{
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.097);
+  }
+
+
+
+
+  .ScrollImgSection{
+    background-color: white;
+    width: 100%;
+    padding: 60px 300px;
+  }
+  .paddingScrollSide{
+    
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    position: relative;
+  }
+
+  .scrollLeftSide{
+
+width: 30%;
+/* height: 1300px; */
+  }
+
+
+
+
+
+
+
+
+  .scrollRightSide {
+    width: 70%;
+    /* padding: 100px 2rem; */
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    
+    
+  }
+  
+  .scrollImageWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  
+  
+  .ScrollImgSize {
+    border-radius: 20px;
+    position: relative;
+    max-width: 1000px;
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    will-change: transform, opacity;
+  }
+  
+  .ScrollImgSize::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  .scrollImage {
+    width: 100%;
+    display: block;
+  }
+  
+  /* Make sure the overlay content stays on top of gradient */
+  .checkScrollInside {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 40px 20px;
+    color: white;
+    z-index: 2;
+    width: 100%;
+  }
+  
+
+.WorkScrollInside{
+  width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.ScrollPadInside{
+  display: flex;
+  justify-content: space-between;
+
+}
+.btnCheckScr{
+  /*  */
+  display:  flex;
+}
+.UniquebtnScr{
+  border:  1px solid rgba(226, 220, 220, 0.413);
+  padding: 3px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: white;
+}
+.Flipp{
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.WhiteScrollbtn{
+  
+}
+.WhiteScrollbtn{
+  padding: 8px 20px ;
+  background-color: white;
+  color: #1D1D1D;
+  font-size: 0.7rem;
+  border-radius:20px ;
+}
+
+  .LeftScrollControl{
+    
+    position: sticky;
+    top: 110px; /* stick to top when reaches it */
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    color: black;
+
+  }
+  .HeadSideScrollLeft{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+  }
+ .BottomSideScrollLeft{
+  
+    width: 100%;
+    display: flex;
+    flex-direction: column !important;
+    gap: 8px;
+  }
+  .btnScrll{
+background-color: #F7F6F6;
+color: #706868;
+font-size: 1vw;
+border: 1px solid rgba(219, 215, 215, 0.281);
+padding: 1px 14px;
+border-radius: 20px;
+font-weight: 400;
+
+  }
+  .ScrollContentPad{
+    padding-right: 4rem;
+    font-size: 1.5vw;
+    line-height: 2.2rem;
+}
+.scrollbtArrow{
+    background: linear-gradient(150deg, #61B6A1, #5D7DAB);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.scrollbtArrow2{
+  padding: 7px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  background-color: transparent;
+  color: black;
+  border: 1px solid rgba(219, 215, 215, 0.751);
+
+}
+
+
+/* Disable any ::before or ::after animations */
+.no-hover::before,
+.no-hover::after {
+  display: none !important;
+}
+
+.WhiteScrollbtn::before,
+.WhiteScrollbtn::after{
+  display: none;
+}
+.arrowHeightScroll{
+  width: 10px;
+  height: 10px;
+  padding-bottom: 1px ;
+  
+}
+.arrowHeightScroll2{
+  width: 14px;
+  height: 14px;
+  padding-bottom: 1px ;
+  
+}
+
+
+
+
+
+.DropDownSection{
+  
+  padding: 200px 300px;
+}
+.DropLayer{
+  display: flex;
+  flex-direction: column;
+  
+  gap: 4rem;
+}
+.doinfFlexDrop{
+  display:  flex;
+
+}
+.GeneralLeft{
+  
+  width: 23%;
+}
+.GeneralRight{
+  
+  width: 77%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.GeneralRight h1{
+  font-size: 3vw;
+  font-weight: bold;
+}
+.StrtHeadDrop{
+  font-size: 4.4rem;
+  font-weight:600 ;
+}
+.topDropCont{
+  
+  display:  flex;
+
+
+}
+.DropCont{
+  
+}
+.topContDropone{
+  
+  width: 34%;
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+.topContDropTwo{
+  
+  width: 66%;
+}
+.DropLine{
+  height: 30px;
+  width: 3px;
+  background-color: #008AFC;
+  border-radius: 10px;
+}
+.DropLine2{
+  height: 30px;
+  width: 3px;
+  background-color: #1FB86D;
+  border-radius: 10px;
+}
+.DropLine3{
+  height: 30px;
+  width: 3px;
+  background-color: #E25A39;
+  border-radius: 10px;
+}
+.DropLine4{
+  height: 30px;
+  width: 3px;
+  background-color: #008AFC;
+  border-radius: 10px;
+}
+.styleFontDrop{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+
+
+
+.DropGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.DropItem {
+  background-color: #1D1D1D;
+  border-radius: 6px;
+  overflow: hidden;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.DropToggle {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0.8rem 1rem;
+  color: white;
+  font-weight: 600;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  /*  */
+  background-color: #262525
+}
+.DropToggle::before,
+.DropToggle::after{
+display: none;
+}
+.DropToggle .arrow {
+  transition: transform 0.5s ease;
+}
+
+.DropItem.active .arrow {
+  transform: rotate(180deg);
+}
+
+.DropContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  padding: 0 1rem;
+}
+
+.DropItem.active .DropContent {
+  max-height: 300px;
+  padding: 0.5rem 1rem 1rem;
+}
+.DropItem.active {
+  background-color: #1D1D1D;
+}
+
+.DropContent ul li{
+      font-size: 0.8rem;
+}
+
+
+
+
+
+
+.RecentClientMain{
+ 
+  background-color: #1D1D1D;
+}
+.RecentClient{
+ 
+  padding: 80px 40px 30px 40px;
+}
+.RecentCLientBorder{
+ 
+  display: flex;
+
+
+}
+.RecentClientLeft{
+ 
+  width: 33%;
+  display:  flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+
+.RecentFlex{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+}
+.btnClient{
+  background-color: #262525;
+  color: #b9b6b6;
+  font-size: 0.8rem;
+  border: 1px solid rgba(219, 215, 215, 0.281);
+  padding: 1px 14px;
+  border-radius: 20px;
+  font-weight: 400;
+  
+    }
+.RecentHead{
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.RecentSmallG {
+ 
+  width: 70%;
+ 
+ 
+}
+
+.logo-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: center; 
+  justify-content: space-between;
+}
+
+.logo-row img {
+  height: 45px; /* Set fixed height for alignment */
+  object-fit: contain;
+  /* */
+}
+
+.RecentClientRight {
+ 
+  width: 67%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.client-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  gap: 8px; 
+}
+
+.client-box {
+  background-color: #262525;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.client-box img {
+  max-width: 100%;
+  height: 90px; 
+  object-fit: contain;
+}
+.SliderRecentBox{
+ 
+  display: flex;
+  flex-direction: column;  
+  align-items: end;
+}
+.SliderRecentPad{
+ 
+  padding: 30px 40px 30px 40px;
+  width: 67%;
+}
+
+
+
+
+.sliderContRec {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: #1D1D1D;
+  padding: 20px 0;
+  
+}
+
+.sliderWrapper2 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sliderTrack2 {
+  display: flex;
+  width: max-content;
+  animation: slideLoop 10s linear infinite;
+  gap: 10px;
+  align-items: center;
+}
+
+.sliderTrack2 img {
+  height: 70px;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: brightness(1.2);
+}
+
+/* Looping animation */
+@keyframes slideLoop {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Gradient fades */
+.sliderFade {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.fadeLeft {
+  left: 0;
+  background: linear-gradient(to right, #1D1D1D 0%, transparent 100%);
+}
+
+.fadeRight {
+  right: 0;
+  background: linear-gradient(to left, #1D1D1D 0%, transparent 100%);
+}
+
+.RecentLine{
+  width: 100%;
+  border-top: 1px solid rgba(238, 234, 234, 0.233);
+}
+
+
+
+.Testimonials{
+
+  background-color: white;
+  color: #1D1D1D;
+  display: flex;
+  flex-direction:column ;
+  gap: 4rem;
+  padding: 80px 0;
+}
+.TopTestimonial{
+
+  padding: 0 300px;
+  display: flex;
+  justify-content: space-between  ;
+  gap: 20px;
+}
+.TopLeftTesti{
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+.btnTesti{
+  background-color: #F7F6F6;
+  color: #181717;
+  font-size: 0.9rem;
+  border: 1px solid rgba(219, 215, 215, 0.281);
+  padding: 1px 14px;
+  border-radius: 20px;
+  font-weight: 400;
+  
+}
+.TestiHead{
+      color: #1D1D1D !important;
+      font-size: 2vw;
+      font-weight: 800;
+      margin-bottom: 0;
+}
+.TopRightTesti{
+    
+      display: flex;
+      align-items: end;
+      gap: 30px;
+}
+.TopRightTesti img{
+      height: 60px;
+ }
+.BottomTestimonial{
+
+   padding: 0; 
+  display: flex;
+  gap: 1rem;
+}
+
+
+.BoxTesti{
+  background-color: #F5F6F6;
+  display: flex;
+
+  padding: 20px;
+  width: 40%;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+}
+.TestiFlex{
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+.Testihh{
+  font-size: 1.4vw;
+  font-weight: 600;
+  line-height: 2rem;
+  color: #1D1D1D !important;
+  height: 8vh;
+}
+.Testipp{
+  font-size: 1.1vw;
+  color: #1D1D1D !important;
+  opacity:60% ;
+  height: 20vh;
+}
+.FlexLineTesti{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.MainLineTesti{
+  border-top: 1px solid rgba(167, 165, 165, 0.685);
+  margin-top: 30px;
+}
+.TextTestiT{
+  font-size: 1.1vw;
+  font-weight: 600;
+}
+.TextTestiB{
+  font-size: 1rem;
+  font-weight: 600;
+  opacity: 60%;
+}
+  
+
+
+  
+
+
+
+
+
+
+.slick-slide {
+  outline: none;
+}
+
+.slick-dots,
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
+
+}
