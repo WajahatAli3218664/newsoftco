@@ -15,13 +15,16 @@ html, body {
 .container {
   max-width: 100% !important;
   overflow-x: hidden !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
 }
 
 /* Testimonials - Complete Fix */
 .Testimonials {
   width: 100% !important;
   overflow: hidden !important;
-  padding: 60px 0 !important;
+  padding: 60px 15px !important;
+  background: #f8f9fa !important;
 }
 
 .TopTestimonial {
@@ -29,50 +32,76 @@ html, body {
   justify-content: space-between !important;
   align-items: center !important;
   margin-bottom: 40px !important;
-  padding: 0 15px !important;
+  flex-wrap: wrap !important;
+}
+
+.TopLeftTesti {
+  flex: 1 !important;
+  min-width: 250px !important;
+}
+
+.TopRightTesti {
+  display: flex !important;
+  gap: 15px !important;
+  flex-wrap: wrap !important;
 }
 
 .BottomTestimonial {
   width: 100% !important;
   overflow: visible !important;
   padding: 0 !important;
+  margin: 0 auto !important;
 }
 
 .BottomTestimonial.slick-initialized {
   display: block !important;
 }
 
+.BottomTestimonial .slick-list {
+  margin: 0 -15px !important;
+  padding: 20px 0 !important;
+}
+
+.BottomTestimonial .slick-slide {
+  padding: 0 15px !important;
+}
+
 .BoxTesti {
   background: #fff !important;
-  border-radius: 10px !important;
-  padding: 30px !important;
-  margin: 0 15px !important;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1) !important;
-  min-height: 300px !important;
+  border-radius: 12px !important;
+  padding: 35px 30px !important;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.08) !important;
+  min-height: 320px !important;
   display: flex !important;
   flex-direction: column !important;
   justify-content: space-between !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.BoxTesti:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.12) !important;
 }
 
 .TestiFlex {
   display: flex !important;
   flex-direction: column !important;
   gap: 15px !important;
-  margin-bottom: 20px !important;
+  margin-bottom: 25px !important;
 }
 
 .Testihh {
   font-size: 20px !important;
-  font-weight: 600 !important;
-  line-height: 1.4 !important;
-  color: #333 !important;
-  margin: 0 0 15px 0 !important;
+  font-weight: 700 !important;
+  line-height: 1.5 !important;
+  color: #1a1a1a !important;
+  margin: 0 0 12px 0 !important;
 }
 
 .Testipp {
   font-size: 15px !important;
-  line-height: 1.7 !important;
-  color: #666 !important;
+  line-height: 1.8 !important;
+  color: #555 !important;
   margin: 0 !important;
 }
 
@@ -81,32 +110,65 @@ html, body {
   align-items: center !important;
   gap: 15px !important;
   margin-top: auto !important;
+  padding-top: 20px !important;
+  border-top: 1px solid #eee !important;
 }
 
 .MainLineTesti {
   width: 50px !important;
   height: 3px !important;
-  background: #25D366 !important;
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%) !important;
   flex-shrink: 0 !important;
 }
 
 .TextTestiT {
   font-size: 16px !important;
-  font-weight: 600 !important;
-  color: #333 !important;
-  margin: 0 !important;
+  font-weight: 700 !important;
+  color: #1a1a1a !important;
+  margin: 0 0 3px 0 !important;
 }
 
 .TextTestiB {
   font-size: 14px !important;
-  color: #999 !important;
-  margin: 5px 0 0 0 !important;
+  color: #888 !important;
+  margin: 0 !important;
+  font-weight: 400 !important;
+}
+
+/* Footer Fix */
+footer {
+  width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+.footer-box {
+  width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+.f-items {
+  width: 100% !important;
+  padding: 0 15px !important;
+}
+
+.footer-item {
+  padding: 0 15px !important;
+}
+
+.f-item {
+  width: 100% !important;
+}
+
+.footer-bottom {
+  width: 100% !important;
+  padding: 20px 15px !important;
+  text-align: center !important;
 }
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .Testimonials {
-    padding: 40px 0 !important;
+    padding: 40px 10px !important;
   }
   
   .TopTestimonial {
@@ -121,12 +183,12 @@ html, body {
   }
   
   .TestiHead {
-    font-size: 24px !important;
+    font-size: 26px !important;
+    line-height: 1.3 !important;
   }
   
   .BoxTesti {
-    margin: 0 10px !important;
-    padding: 20px !important;
+    padding: 25px 20px !important;
     min-height: auto !important;
   }
   
@@ -136,6 +198,7 @@ html, body {
   
   .Testipp {
     font-size: 14px !important;
+    line-height: 1.7 !important;
   }
   
   .TextTestiT {
@@ -143,6 +206,23 @@ html, body {
   }
   
   .TextTestiB {
+    font-size: 13px !important;
+  }
+  
+  .MainLineTesti {
+    width: 40px !important;
+  }
+  
+  /* Footer Mobile */
+  .footer-item {
+    margin-bottom: 30px !important;
+  }
+  
+  .f-item.about {
+    padding-right: 0 !important;
+  }
+  
+  .footer-bottom p {
     font-size: 13px !important;
   }
 }
@@ -155,11 +235,11 @@ html, body {
 
 .slick-list {
   overflow: hidden !important;
-  margin: 0 -15px !important;
 }
 
 .slick-track {
   display: flex !important;
+  align-items: stretch !important;
 }
 
 .slick-slide {
@@ -169,4 +249,10 @@ html, body {
 
 .slick-slide > div {
   width: 100% !important;
+  display: flex !important;
+}
+
+.slick-slide .BoxTesti {
+  width: 100% !important;
+  height: 100% !important;
 }
