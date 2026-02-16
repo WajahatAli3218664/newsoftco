@@ -1,0 +1,56 @@
+/* Performance Optimization CSS */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  will-change: scroll-position;
+  -webkit-overflow-scrolling: touch;
+}
+
+img {
+  content-visibility: auto;
+  will-change: transform;
+}
+
+/* GPU Acceleration */
+.FixBannerBtn,
+.Excellence,
+.scrollbtArrow,
+.scrollbtArrow2,
+button,
+a {
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
+}
+
+/* Smooth Animations */
+* {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Lazy Loading */
+img[loading="lazy"] {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+img[loading="lazy"].loaded {
+  opacity: 1;
+}
+
+/* Reduce Paint */
+.testimonial-style-one,
+.service-hover-item,
+.BoxTesti {
+  contain: layout style paint;
+}
