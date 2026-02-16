@@ -1,37 +1,120 @@
 /* Mobile Responsive Fixes */
 
+/* Fix horizontal scroll issues */
+body, html {
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+}
+
+* {
+  box-sizing: border-box !important;
+}
+
 /* Testimonials Section */
+.Testimonials {
+  width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+.BottomTestimonial {
+  width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+.BoxTesti {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 25px 20px !important;
+  margin: 20px 0 !important;
+  box-sizing: border-box !important;
+}
+
+.TestiFlex {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 15px !important;
+  width: 100% !important;
+}
+
+.Testihh {
+  font-size: 20px !important;
+  line-height: 1.4 !important;
+  margin-bottom: 10px !important;
+  word-wrap: break-word !important;
+  width: 100% !important;
+}
+
+.Testipp {
+  font-size: 15px !important;
+  line-height: 1.7 !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  width: 100% !important;
+}
+
+.FlexLineTesti {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  margin-top: 20px !important;
+  width: 100% !important;
+}
+
+.MainLineTesti {
+  width: 50px !important;
+  height: 3px !important;
+  flex-shrink: 0 !important;
+  background: currentColor !important;
+}
+
+.TextTestiT {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  margin-bottom: 5px !important;
+}
+
+.TextTestiB {
+  font-size: 14px !important;
+  opacity: 0.7 !important;
+}
+
 @media (max-width: 768px) {
   .Testimonials {
-    padding: 20px 15px !important;
+    padding: 30px 15px !important;
+  }
+  
+  .TopTestimonial {
+    flex-direction: column !important;
+    gap: 20px !important;
+    margin-bottom: 30px !important;
+    width: 100% !important;
+  }
+  
+  .TopLeftTesti,
+  .TopRightTesti {
+    width: 100% !important;
+  }
+  
+  .TestiHead {
+    font-size: 26px !important;
+    line-height: 1.3 !important;
+  }
+  
+  .btnTesti {
+    padding: 10px 20px !important;
+    font-size: 14px !important;
   }
   
   .BoxTesti {
-    width: 100% !important;
-    margin: 15px 0 !important;
     padding: 20px 15px !important;
-  }
-  
-  .TestiFlex {
-    flex-direction: column !important;
   }
   
   .Testihh {
     font-size: 18px !important;
-    line-height: 1.4 !important;
   }
   
   .Testipp {
     font-size: 14px !important;
-    line-height: 1.6 !important;
-  }
-  
-  .TextTestiT {
-    font-size: 16px !important;
-  }
-  
-  .TextTestiB {
-    font-size: 13px !important;
   }
 }
 
