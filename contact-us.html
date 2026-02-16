@@ -595,32 +595,28 @@ s0.parentNode.insertBefore(s1,s0);
 
 <script>
  function sendEmail(event) {
-  event.preventDefault(); // Prevent form from submitting
+  event.preventDefault();
 
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
   const website = document.getElementById("website").value;
   const comments = document.getElementById("comments").value;
 
-  console.log("Run Btn");
-  console.log(name, email, website, comments);
-
   const templateParams = {
-    name,
-    email,
-    website,
-    comments,
-    message: `Name: ${name}\nemail: ${email}\nWebsite: ${website}\ncomments: ${comments}`
+    to_email: 'wajahat345678@gmail.com',
+    from_name: name,
+    from_email: email,
+    website: website,
+    message: comments
   };
 
   emailjs.send("service_owksgf4", "template_ondvxlb", templateParams)
     .then(function (response) {
       alert("Message sent successfully!");
-      console.log("SUCCESS!", response.status, response.text);
       document.getElementById("name").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("website").value = "";
-    document.getElementById("comments").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("website").value = "";
+      document.getElementById("comments").value = "";
     }, function (error) {
       alert("Failed to send message!");
       console.log("FAILED...", error);
