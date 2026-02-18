@@ -422,6 +422,17 @@
 })(jQuery); // End jQuery
 // Services dropdown reliable click handler (desktop fail-safe)
 document.addEventListener('DOMContentLoaded', function () {
+  // Ensure native lazy images become visible once loaded.
+  document.querySelectorAll('img[loading="lazy"]').forEach(function (img) {
+    var markLoaded = function () { img.classList.add('loaded'); };
+    if (img.complete && img.naturalWidth > 0) {
+      markLoaded();
+    } else {
+      img.addEventListener('load', markLoaded, { once: true });
+      img.addEventListener('error', markLoaded, { once: true });
+    }
+  });
+
   document.addEventListener('click', function (e) {
     var trigger = e.target.closest('nav.navbar.validnavs ul.nav > li.dropdown > a.dropdown-toggle');
 

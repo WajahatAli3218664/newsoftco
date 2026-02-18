@@ -6617,6 +6617,21 @@ footer {
 	padding-bottom: 4%;
 }
 
+/* PK pages: keep footer static (no internal scroll region). */
+.pk-page footer,
+.pk-page .footer-box,
+.pk-page footer .container,
+.pk-page footer .f-items,
+.pk-page footer .row,
+.pk-page footer .footer-item,
+.pk-page footer .f-item {
+	height: auto !important;
+	min-height: 0 !important;
+	max-height: none !important;
+	overflow: visible !important;
+	overflow-y: visible !important;
+}
+
 footer .f-item.about {
 	position: relative;
 	z-index: 1;
