@@ -1,0 +1,14 @@
+{
+  "name": "softco-digital",
+  "version": "1.0.0",
+  "description": "Softco Digital Website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "vercel build",
+    "start": "vercel dev"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.8"
+  }
+}

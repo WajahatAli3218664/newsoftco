@@ -612,10 +612,6 @@ s0.parentNode.insertBefore(s1,s0);
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
 <script>
- (function () {
-       emailjs.init("PlyYRnFVHyUpSTd3e"); 
-     })();
-
  function sendEmail(event) {
    event.preventDefault();
 
@@ -629,23 +625,33 @@ s0.parentNode.insertBefore(s1,s0);
      return;
    }
 
-   // Use EmailJS to send email
-   const templateParams = {
-     to_email: 'glenmaxwell2312@gmail.com',
-     from_name: name,
-     from_email: email,
-     website: website,
-     message: comments + '\n\nCountry: Pakistan'
-   };
-
-   emailjs.send("service_owksgf4", "template_ondvxlb", templateParams)
-     .then(function(response) {
+   // Use Vercel API to send email
+   fetch('/api/send-email', {
+     method: 'POST',
+     headers: {
+       'Content-Type': 'application/json',
+     },
+     body: JSON.stringify({
+       name: name,
+       email: email,
+       website: website,
+       message: comments,
+       country: 'Pakistan'
+     })
+   })
+   .then(response => response.json())
+   .then(data => {
+     if (data.success) {
        alert("Message sent successfully!");
        clearForm();
-     }, function(error) {
-       alert("Failed to send message!");
-       console.log("FAILED...", error);
-     });
+     } else {
+       alert("Failed to send message: " + (data.error || 'Unknown error'));
+     }
+   })
+   .catch(error => {
+     alert("Failed to send message!");
+     console.error("FAILED...", error);
+   });
  }
 
  function clearForm() {
