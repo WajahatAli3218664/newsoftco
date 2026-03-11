@@ -437,6 +437,7 @@ s0.parentNode.insertBefore(s1,s0);
     <div class="form-row" style="display:none;">
       <input type="text" placeholder="GCL ID" id="gcl_id" class="form-half" />
     </div>
+    <input type="hidden" id="source_ref_id" name="source_ref_id" />
 
     <textarea placeholder="Tell us about Project *" id="comments" class="form-textarea"></textarea>
 
@@ -619,7 +620,8 @@ s0.parentNode.insertBefore(s1,s0);
  // Get GCL ID from URL automatically
  function getGCLID() {
    const urlParams = new URLSearchParams(window.location.search);
-   const gclId = urlParams.get('gclid') || '';
+   // Get source_ref_id from URL or localStorage
+  let sourceRefId = urlParams.get('source_ref_id') || localStorage.getItem('source_ref_id') || '';
    if (gclId) {
      document.getElementById('gcl_id').value = gclId;
    }

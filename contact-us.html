@@ -439,6 +439,7 @@ s0.parentNode.insertBefore(s1,s0);
     <div class="form-row" style="display:none;">
       <input type="text" placeholder="GCL ID" id="gcl_id" class="form-half" />
     </div>
+    <input type="hidden" id="source_ref_id" name="source_ref_id" />
 
     <textarea placeholder="Tell us about Project *" id="comments" class="form-textarea"></textarea>
 
@@ -641,10 +642,18 @@ s0.parentNode.insertBefore(s1,s0);
    const urlParams = new URLSearchParams(window.location.search);
    gclId = urlParams.get('gclid') || '';
    
-   // Also capture UTM parameters
-   const utmSource = urlParams.get('utm_source') || '';
-   const utmMedium = urlParams.get('utm_medium') || '';
-   const utmCampaign = urlParams.get('utm_campaign') || '';
+   // Get source_ref_id from URL or localStorage
+   let sourceRefId = urlParams.get('source_ref_id') || localStorage.getItem('source_ref_id') || '';
+   
+   // Save to localStorage if present in URL
+   if (urlParams.get('source_ref_id')) {
+     localStorage.setItem('source_ref_id', urlParams.get('source_ref_id'));
+   }
+   
+   // Populate hidden field
+   if (sourceRefId) {
+     document.getElementById('source_ref_id').value = sourceRefId;
+   }
    
    if (gclId) {
      document.getElementById('gcl_id').value = gclId;
@@ -662,6 +671,7 @@ s0.parentNode.insertBefore(s1,s0);
    const email = document.getElementById("email").value;
    const website = document.getElementById("website").value;
    const gcl_id = document.getElementById("gcl_id").value;
+   const source_ref_id = document.getElementById("source_ref_id").value;
    const comments = document.getElementById("comments").value;
 
    if (!name || !email || !comments) {
@@ -680,6 +690,7 @@ s0.parentNode.insertBefore(s1,s0);
        email: email,
        website: website,
        gcl_id: gcl_id,
+       source_ref_id: source_ref_id,
        message: comments,
        country: userCountry
      })

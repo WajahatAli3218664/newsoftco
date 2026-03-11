@@ -15,7 +15,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const { name, email, website, gcl_id, message, country } = req.body;
+  const { name, email, website, gcl_id, source_ref_id, message, country } = req.body;
 
   // Validate required fields
   if (!name || !email || !message) {
