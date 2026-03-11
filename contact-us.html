@@ -615,32 +615,26 @@ s0.parentNode.insertBefore(s1,s0);
  let countryLoading = true;
  
  async function getUserCountry() {
-   // Try ipapi.co first
+   // Use ipwhois.io - free API with CORS support
    try {
-     const response = await fetch('https://ipapi.co/json/');
+     const response = await fetch('https://ipwho.is/');
      if (response.ok) {
        const data = await response.json();
        userCountry = data.country_code || 'PK';
-       console.log('User country detected (ipapi):', userCountry);
+       console.log('User country detected:', userCountry);
        countryLoading = false;
        return;
      }
    } catch (error) {
-     console.log('ipapi.co failed, trying fallback');
+     console.log('ipwho.is failed:', error);
    }
    
-   // Fallback: use ip-api.com
-   try {
-     const response = await fetch('http://ip-api.com/json/?fields=status,countryCode');
-     if (response.ok) {
-       const data = await response.json();
-       if (data.status === 'success') {
-         userCountry = data.countryCode || 'PK';
-         console.log('User country detected (ip-api):', userCountry);
-       }
-     }
-   } catch (error) {
-     console.log('ip-api.com also failed, defaulting to PK');
+   // Fallback: use browser language as hint
+   const lang = navigator.language || navigator.userLanguage;
+   if (lang && lang.startsWith('en')) {
+     // Default to US for English browsers, but we can also use PK as fallback
+     userCountry = 'US';
+   } else {
      userCountry = 'PK';
    }
    countryLoading = false;
