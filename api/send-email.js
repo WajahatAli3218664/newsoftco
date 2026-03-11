@@ -48,15 +48,15 @@ Message: ${message}
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'glenmaxwell2312@gmail.com',
-        pass: 'sjjb oflr mexq zjdp' // App password
+        user: 'fahadahmed500000@gmail.com',
+        pass: 'ndfn onwf hvcm hymj' // App password
       }
     });
 
     // Send email
     await transporter.sendMail({
       from: 'glenmaxwell2312@gmail.com',
-      to: 'glenmaxwell2312@gmail.com',
+      to: 'fahadahmed500000@gmail.com',
       subject: emailSubject,
       text: emailBody
     });
