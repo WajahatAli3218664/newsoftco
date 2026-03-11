@@ -611,7 +611,6 @@ s0.parentNode.insertBefore(s1,s0);
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
-</body>
 <script>
  function sendEmail(event) {
    event.preventDefault();
@@ -626,34 +625,23 @@ s0.parentNode.insertBefore(s1,s0);
      return;
    }
 
-   // Use PHP for sending emails (Gmail SMTP)
-   sendViaPHP(name, email, website, comments);
- }
+   // Use EmailJS to send email
+   const templateParams = {
+     to_email: 'glenmaxwell2312@gmail.com',
+     from_name: name,
+     from_email: email,
+     website: website,
+     message: comments + '\n\nCountry: Pakistan'
+   };
 
- function sendViaPHP(name, email, website, comments) {
-   const formData = new FormData();
-   formData.append('name', name);
-   formData.append('email', email);
-   formData.append('website', website);
-   formData.append('comments', comments);
-   formData.append('country', 'PK');
-
-   fetch('send-email.php', {
-     method: 'POST',
-     body: formData
-   })
-   .then(response => response.text())
-   .then(text => {
-     console.log('Server response:', text);
-     alert('Message sent successfully! We will get back to you soon.');
-     clearForm();
-   })
-   .catch(error => {
-     console.error('Error:', error);
-     // Email might have sent even if there's a network error
-     alert('Message sent successfully! We will get back to you soon.');
-     clearForm();
-   });
+   emailjs.send("service_owksgf4", "template_ondvxlb", templateParams)
+     .then(function(response) {
+       alert("Message sent successfully!");
+       clearForm();
+     }, function(error) {
+       alert("Failed to send message!");
+       console.log("FAILED...", error);
+     });
  }
 
  function clearForm() {
@@ -664,4 +652,3 @@ s0.parentNode.insertBefore(s1,s0);
  }
 </script>
 </body>
-</html>
