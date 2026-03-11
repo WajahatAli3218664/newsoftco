@@ -616,6 +616,15 @@ s0.parentNode.insertBefore(s1,s0);
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
 <script>
+ // Get GCL ID from URL automatically
+ function getGCLID() {
+   const urlParams = new URLSearchParams(window.location.search);
+   const gclId = urlParams.get('gclid') || '';
+   if (gclId) {
+     document.getElementById('gcl_id').value = gclId;
+   }
+ }
+
  function sendEmail(event) {
    event.preventDefault();
 

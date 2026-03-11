@@ -616,6 +616,7 @@ s0.parentNode.insertBefore(s1,s0);
 <script>
  // Get user country on page load
  let userCountry = 'Unknown';
+ let gclId = '';
  
  function getUserCountry() {
    // Use browser language as hint
@@ -635,8 +636,18 @@ s0.parentNode.insertBefore(s1,s0);
    console.log('User country detected (browser language):', userCountry);
  }
  
+ // Get GCL ID from URL automatically
+ function getGCLID() {
+   const urlParams = new URLSearchParams(window.location.search);
+   gclId = urlParams.get('gclid') || '';
+   if (gclId) {
+     document.getElementById('gcl_id').value = gclId;
+   }
+ }
+ 
  // Initialize country detection on page load
  getUserCountry();
+ getGCLID();
 
  function sendEmail(event) {
    event.preventDefault();
