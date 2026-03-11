@@ -27,7 +27,7 @@
   <link href="assets/css/performance.css" rel="stylesheet" />
   <link href="assets/css/mobile-responsive.css" rel="stylesheet" />
   <link href="assets/css/testimonial-fix.css" rel="stylesheet" />
-  <link href="assets/css/ContactUs.css" rel="stylesheet" />
+  <link href="assets/css/Contactus.css" rel="stylesheet" />
   <link href="assets/css/OnlyContactForm.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.css" />
   <link href="assets/css/uiux.css" rel="stylesheet" />
@@ -611,33 +611,24 @@ s0.parentNode.insertBefore(s1,s0);
   <script defer src="assets/js/performance.js"></script>
 <script>
  // Get user country on page load
- let userCountry = null;
- let countryLoading = true;
+ let userCountry = 'Unknown';
  
- async function getUserCountry() {
-   // Use ipwhois.io - free API with CORS support
-   try {
-     const response = await fetch('https://ipwho.is/');
-     if (response.ok) {
-       const data = await response.json();
-       userCountry = data.country_code || 'PK';
-       console.log('User country detected:', userCountry);
-       countryLoading = false;
-       return;
-     }
-   } catch (error) {
-     console.log('ipwho.is failed:', error);
-   }
+ function getUserCountry() {
+   // Use browser language as hint
+   const lang = navigator.language || navigator.userLanguage || '';
    
-   // Fallback: use browser language as hint
-   const lang = navigator.language || navigator.userLanguage;
-   if (lang && lang.startsWith('en')) {
-     // Default to US for English browsers, but we can also use PK as fallback
+   // Check for common Pakistan indicators
+   if (lang.toLowerCase().includes('ur') || 
+       lang.toLowerCase().includes('pa')) {
+     userCountry = 'PK';
+   } else if (lang.toLowerCase().includes('en')) {
+     // Default to US for English browsers
      userCountry = 'US';
    } else {
-     userCountry = 'PK';
+     userCountry = 'Unknown';
    }
-   countryLoading = false;
+   
+   console.log('User country detected (browser language):', userCountry);
  }
  
  // Initialize country detection on page load
@@ -662,7 +653,7 @@ s0.parentNode.insertBefore(s1,s0);
      from_name: name,
      from_email: email,
      website: website,
-     message: comments + '\n\nCountry: ' + (userCountry || 'Unknown')
+     message: comments + '\n\nCountry: ' + userCountry
    };
 
    emailjs.send("service_owksgf4", "template_ondvxlb", templateParams)
