@@ -435,7 +435,7 @@ s0.parentNode.insertBefore(s1,s0);
     </div>
 
     <div class="form-row" style="display:none;">
-      <input type="text" placeholder="GCL ID" id="gcl_id" class="form-half" />
+      <input type="text" placeholder="GCL ID" id="gclid" class="form-half" />
     </div>
     <input type="hidden" id="source_ref_id" name="source_ref_id" />
 
@@ -623,7 +623,7 @@ s0.parentNode.insertBefore(s1,s0);
    // Get source_ref_id from URL or localStorage
   let sourceRefId = urlParams.get('source_ref_id') || localStorage.getItem('source_ref_id') || '';
    if (gclId) {
-     document.getElementById('gcl_id').value = gclId;
+     document.getElementById('gclid').value = gclId;
    }
  }
 
@@ -633,7 +633,7 @@ s0.parentNode.insertBefore(s1,s0);
    const name = document.getElementById("name").value;
    const email = document.getElementById("email").value;
    const website = document.getElementById("website").value;
-   const gcl_id = document.getElementById("gcl_id").value;
+   const gclid = document.getElementById("gclid").value;
    const comments = document.getElementById("comments").value;
 
    if (!name || !email || !comments) {
@@ -651,7 +651,7 @@ s0.parentNode.insertBefore(s1,s0);
        name: name,
        email: email,
        website: website,
-       gcl_id: gcl_id,
+       gclid: gclid,
        message: comments,
        country: 'Pakistan'
      })

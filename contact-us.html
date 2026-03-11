@@ -437,7 +437,7 @@ s0.parentNode.insertBefore(s1,s0);
     </div>
 
     <div class="form-row" style="display:none;">
-      <input type="text" placeholder="GCL ID" id="gcl_id" class="form-half" />
+      <input type="text" placeholder="GCL ID" id="gclid" class="form-half" />
     </div>
     <input type="hidden" id="source_ref_id" name="source_ref_id" />
 
@@ -617,7 +617,6 @@ s0.parentNode.insertBefore(s1,s0);
 <script>
  // Get user country on page load
  let userCountry = 'Unknown';
- let gclId = '';
  
  function getUserCountry() {
    // Use browser language as hint
@@ -633,36 +632,61 @@ s0.parentNode.insertBefore(s1,s0);
    } else {
      userCountry = 'Unknown';
    }
-   
-   console.log('User country detected (browser language):', userCountry);
  }
  
- // Get GCL ID from URL automatically
- function getGCLID() {
+ // Tracking Utility - Session based (expires after 1 hour)
+ const TRACKING_EXPIRY_HOURS = 1;
+ 
+ function initTracking() {
    const urlParams = new URLSearchParams(window.location.search);
-   gclId = urlParams.get('gclid') || '';
+   const now = Date.now();
    
-   // Get source_ref_id from URL or localStorage
-   let sourceRefId = urlParams.get('source_ref_id') || localStorage.getItem('source_ref_id') || '';
+   // === GCLID Handling ===
+   let gclid = sessionStorage.getItem('gclid') || '';
+   let gclidTime = parseInt(sessionStorage.getItem('gclid_time')) || 0;
    
-   // Save to localStorage if present in URL
-   if (urlParams.get('source_ref_id')) {
-     localStorage.setItem('source_ref_id', urlParams.get('source_ref_id'));
+   // Check if gclid expired
+   if (gclid && (now - gclidTime > TRACKING_EXPIRY_HOURS * 60 * 60 * 1000)) {
+     gclid = '';
+     sessionStorage.removeItem('gclid');
+     sessionStorage.removeItem('gclid_time');
    }
    
-   // Populate hidden field
+   // Get new gclid from URL (overwrites old)
+   const newGclid = urlParams.get('gclid') || '';
+   if (newGclid) {
+     gclid = newGclid;
+     sessionStorage.setItem('gclid', gclid);
+     sessionStorage.setItem('gclid_time', now);
+   }
+   
+   // === source_ref_id Handling ===
+   // Only use from current URL, don't persist old values across sessions
+   let sourceRefId = urlParams.get('source_ref_id') || '';
+   
    if (sourceRefId) {
-     document.getElementById('source_ref_id').value = sourceRefId;
+     sessionStorage.setItem('source_ref_id', sourceRefId);
+     sessionStorage.setItem('source_ref_id_time', now);
+   } else {
+     // Check if source_ref_id from current session is still valid
+     let sourceTime = parseInt(sessionStorage.getItem('source_ref_id_time')) || 0;
+     if (now - sourceTime > TRACKING_EXPIRY_HOURS * 60 * 60 * 1000) {
+       sessionStorage.removeItem('source_ref_id');
+       sessionStorage.removeItem('source_ref_id_time');
+       sourceRefId = '';
+     } else {
+       sourceRefId = sessionStorage.getItem('source_ref_id') || '';
+     }
    }
    
-   if (gclId) {
-     document.getElementById('gcl_id').value = gclId;
-   }
+   // Populate hidden fields
+   if (gclid) document.getElementById('gclid').value = gclid;
+   if (sourceRefId) document.getElementById('source_ref_id').value = sourceRefId;
  }
  
- // Initialize country detection on page load
+ // Initialize on page load
  getUserCountry();
- getGCLID();
+ initTracking();
 
  function sendEmail(event) {
    event.preventDefault();
@@ -670,7 +694,7 @@ s0.parentNode.insertBefore(s1,s0);
    const name = document.getElementById("name").value;
    const email = document.getElementById("email").value;
    const website = document.getElementById("website").value;
-   const gcl_id = document.getElementById("gcl_id").value;
+   const gclid = document.getElementById("gclid").value;
    const source_ref_id = document.getElementById("source_ref_id").value;
    const comments = document.getElementById("comments").value;
 
@@ -689,7 +713,7 @@ s0.parentNode.insertBefore(s1,s0);
        name: name,
        email: email,
        website: website,
-       gcl_id: gcl_id,
+       gclid: gclid,
        source_ref_id: source_ref_id,
        message: comments,
        country: userCountry

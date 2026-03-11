@@ -15,7 +15,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const { name, email, website, gcl_id, source_ref_id, message, country } = req.body;
+  const { name, email, website, gclid, source_ref_id, message, country } = req.body;
 
   // Validate required fields
   if (!name || !email || !message) {
@@ -30,7 +30,7 @@ New Contact Form Submission
 Name: ${name}
 Email: ${email}
 Website: ${website || 'Not provided'}
-GCL ID: ${gcl_id || 'Not provided'}
+GCL ID: ${gclid || 'Not provided'}
 Source Ref ID: ${source_ref_id || 'Not provided'}
 Country: ${country || 'Unknown'}
 Message: ${message}
