@@ -436,7 +436,7 @@ s0.parentNode.insertBefore(s1,s0);
       <input type="text" placeholder="Website" id="website" class="form-half" />
     </div>
 
-    <div class="form-row">
+    <div class="form-row" style="display:none;">
       <input type="text" placeholder="GCL ID" id="gcl_id" class="form-half" />
     </div>
 
@@ -640,6 +640,12 @@ s0.parentNode.insertBefore(s1,s0);
  function getGCLID() {
    const urlParams = new URLSearchParams(window.location.search);
    gclId = urlParams.get('gclid') || '';
+   
+   // Also capture UTM parameters
+   const utmSource = urlParams.get('utm_source') || '';
+   const utmMedium = urlParams.get('utm_medium') || '';
+   const utmCampaign = urlParams.get('utm_campaign') || '';
+   
    if (gclId) {
      document.getElementById('gcl_id').value = gclId;
    }
