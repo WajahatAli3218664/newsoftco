@@ -23,7 +23,7 @@ export default async function handler(req, res) {
   }
 
   // Create email content
-  const emailSubject = `New Contact Form Submission from ${name}`;
+  const emailSubject = `Softco Digital - New Contact Form Submission from ${name}`;
   const emailBody = `
 New Contact Form Submission
 
