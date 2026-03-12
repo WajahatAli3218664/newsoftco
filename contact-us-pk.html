@@ -700,8 +700,7 @@ s0.parentNode.insertBefore(s1,s0);
    .then(response => response.json())
    .then(data => {
      if (data.success) {
-       alert("Message sent successfully!");
-       clearForm();
+       window.location.href = 'thank-you.html';
      } else {
        alert("Failed to send message: " + (data.error || 'Unknown error'));
      }
