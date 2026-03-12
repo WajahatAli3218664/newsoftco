@@ -617,15 +617,56 @@ s0.parentNode.insertBefore(s1,s0);
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
 <script>
- // Get GCL ID from URL automatically
- function getGCLID() {
+ // Tracking Utility - Session based (expires after 1 hour)
+ const TRACKING_EXPIRY_HOURS = 1;
+ 
+ function initTracking() {
    const urlParams = new URLSearchParams(window.location.search);
-   // Get source_ref_id from URL or localStorage
-  let sourceRefId = urlParams.get('source_ref_id') || localStorage.getItem('source_ref_id') || '';
-   if (gclId) {
-     document.getElementById('gclid').value = gclId;
+   const now = Date.now();
+   
+   // === GCLID Handling ===
+   let gclid = sessionStorage.getItem('gclid') || '';
+   let gclidTime = parseInt(sessionStorage.getItem('gclid_time')) || 0;
+   
+   // Check if gclid expired
+   if (gclid && (now - gclidTime > TRACKING_EXPIRY_HOURS * 60 * 60 * 1000)) {
+     gclid = '';
+     sessionStorage.removeItem('gclid');
+     sessionStorage.removeItem('gclid_time');
    }
+   
+   // Get new gclid from URL (overwrites old)
+   const newGclid = urlParams.get('gclid') || '';
+   if (newGclid) {
+     gclid = newGclid;
+     sessionStorage.setItem('gclid', gclid);
+     sessionStorage.setItem('gclid_time', now);
+   }
+   
+   // === source_ref_id Handling ===
+   let sourceRefId = urlParams.get('source_ref_id') || '';
+   
+   if (sourceRefId) {
+     sessionStorage.setItem('source_ref_id', sourceRefId);
+     sessionStorage.setItem('source_ref_id_time', now);
+   } else {
+     let sourceTime = parseInt(sessionStorage.getItem('source_ref_id_time')) || 0;
+     if (now - sourceTime > TRACKING_EXPIRY_HOURS * 60 * 60 * 1000) {
+       sessionStorage.removeItem('source_ref_id');
+       sessionStorage.removeItem('source_ref_id_time');
+       sourceRefId = '';
+     } else {
+       sourceRefId = sessionStorage.getItem('source_ref_id') || '';
+     }
+   }
+   
+   // Populate hidden fields
+   if (gclid) document.getElementById('gclid').value = gclid;
+   if (sourceRefId) document.getElementById('source_ref_id').value = sourceRefId;
  }
+ 
+ // Initialize on page load
+ initTracking();
 
  function sendEmail(event) {
    event.preventDefault();
